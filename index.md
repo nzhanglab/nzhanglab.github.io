@@ -1,7 +1,6 @@
 ---
 layout: page
-title: simple site
-tagline: Zhang Lab 
+title: NR Zhang Statistical Genomics Lab
 description: NR Zhang Lab Website
 ---
 
