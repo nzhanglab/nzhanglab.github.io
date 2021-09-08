@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
     <!-- Enable responsive viewport -->
@@ -20,6 +21,7 @@
     <link href="{{ ASSET_PATH }}/css/kbroman.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
+    <link rel="SHORTCUT ICON" href="{{ BASE_PATH }}/assets/me.ico"/>
 
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -28,27 +30,15 @@
   </head>
 
   <body>
-   <div class="navbar">
+    <div class="navbar">
       <div class="navbar-inner">
         <div class="container-narrow">
+          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
           <ul class="nav">
-			  <li><a  href="{{ HOME_PATH }}">Home</a></li> 
-
-              <li><a href="{{ BASE_PATH }}/pages/bio.html">About the PI</a></li>
-
-              <li><a href="{{ BASE_PATH }}/pages/people.html">Team</a></li>
-              
-			  <li><a href="{{ BASE_PATH }}/pages/research.html">Research</a></li>
-
-              <li><a href="{{ BASE_PATH }}/pages/pubs.html">Publication</a></li>
-
+              <li><a href="{{ BASE_PATH }}/pages/people.html">People</a></li>
+              <li><a href="{{ BASE_PATH }}/pages/pubs.html">Publications</a></li>
               <li><a href="{{ BASE_PATH }}/pages/software.html">Software</a></li>
-
               <li><a href="{{ BASE_PATH }}/pages/teaching.html">Teaching</a></li>
-
-              <li><a href="{{ BASE_PATH }}/pages/computing.html">Tips</a></li>
-
-			  <!-- <li><a href="{{ BASE_PATH }}/assets/wu-cv.pdf">CV (pdf)</a></li> -->
           </ul>
         </div>
       </div>
@@ -59,13 +49,8 @@
       <div class="content">
         {{ content }}
       </div>
+
       <hr>
-      <footer>
-        <p><small>
-  <!-- start of Karl's footer; modify this part -->
-  <!-- end of Karl's footer; modify this part -->
-        </small></p>
-      </footer>
 
     </div>
 
