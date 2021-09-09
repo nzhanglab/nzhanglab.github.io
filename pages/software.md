@@ -35,7 +35,7 @@ description: List of software developed by our group
 
 <br/><br/> 
 
-### For copy number profiling and tumor heterogeneity analysis:
+### For copy number intra-tumor heterogeneity analysis:
 
 **CANOPY** (Tumor phylogeny reconstruction by spatial and temporal bulk RNA sequencing)
 ([CRAN](https://cran.r-project.org/web/packages/Canopy/))

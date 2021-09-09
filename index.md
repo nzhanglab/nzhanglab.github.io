@@ -1,8 +1,12 @@
 ---
 layout: page
-title: Zhang Statistical Genomics Lab
+title: 
 description: NR Zhang Lab Website
 ---
+
+  ![Lab building](/assets/images/frontimage.png)
+
+## Zhang Statistical Genomics Lab
 
 We are a multidisciplinary team working at the intersection of Statistics, Computer Science, and Biology, seeking new ways to think about and work with genomic data. 
 

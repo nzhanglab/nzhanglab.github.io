@@ -22,8 +22,6 @@ Jane Zhang, PhD Student (Statistics)
 
 
 <br/><br/> 
-<br/><br/> 
-<br/><br/> 
 
 ### Alumni
 

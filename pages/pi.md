@@ -9,23 +9,20 @@ description: About the PI
 
     <div class="row-fluid">
         
-        <div class="span2">
+        <div class="span3">
             <a href="../assets/pics/nrz_small.JPEG">
             <img src="../assets/pics/nrz_small.JPEG"
-                  title="Nancy R. Zhang" alt="Nancy R. Zhang"  width="300"/></a>
+                  title="Nancy R. Zhang" alt="Nancy R. Zhang"  width="500"/></a>
         </div>
 
-        <div class="span5">
+        <div class="span7">
             <h3>Nancy Zhang</h3>
             Ge Li and Ning Zhang Professor of Statistics<br/>
             <a href="https://statistics.wharton.upenn.edu/">Department of Statistics and Data Science</a><br/>
             <a href="https://www.wharton.upenn.edu/">The Wharton School</a><br/>
-            <a href="https://www.med.upenn.edu/gcb/">Member, Graduate Group in Genomics and Computational Biology</a><br/>
+            Member, <a href="https://www.med.upenn.edu/gcb/">Graduate Group in Genomics and Computational Biology</a><br/>
             
-            <div id="hide_email">
-            Email: <code>nzh</code><b>I</b><code></code><b>don't</b><code></code><b>like</b><code>@wharton</code><b>spam!
-            </b><code>.</code><b>So</b><code>.upenn.edu</code><b>please</b><br/>
-            </div>
+            Email: nzh "at" wharton "dot" upenn "dot" edu
         </div>
 
     </div>
