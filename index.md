@@ -10,6 +10,4 @@ We are excited by the rich new data types coming from recent technology, such as
 
 We strive to develop transparent and scalable methods, and apply these methods to answer questions in biology and medicine.
 
-We are situated in the Department of Statistics and Data Science, within the Wharton School at the University of Pennsylvania.
-
 We are looking for motivated students and postdocs to join us.  If you are interested, please contact the PI.  

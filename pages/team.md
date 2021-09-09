@@ -1,60 +1,30 @@
 ---
 layout: page
-title: Testing your site locally
-description: How to test your GitHub Pages site locally.
+title: Team
+description: List of Lab Members
 ---
 
-To test your site locally, you'll need
+**Current Members**
 
-- [ruby](https://www.ruby-lang.org/en/)
-- the [github-pages](https://github.com/github/pages-gem) gem
+Yuntian Fu, PhD Student (GCB)
 
-### Installing ruby
+Paul Hess, Postdoc
 
-There are
-[lots of different ways to install ruby](https://www.ruby-lang.org/en/installation/).
+Sijia Huang, Bioinformatician (IBI)
 
+Kevin Lin, Postdoc
 
-In Mac OS X, older versions of ruby will already be installed.  But I
-use the [Ruby Version Manager (RVM)](https://rvm.io/) to have a more
-recent version.  You could also use [Homebrew](https://brew.sh/).
+Kaishu Mason, PhD Student (Statistics)
 
-In Windows, use [RubyInstaller](https://rubyinstaller.org/). (In most
-of this tutorial, I've assumed you're using a Mac or some flavor of
-Unix. It's possible that none of this was usable for Windows
-folks. Sorry!)
+Chi-Yun Wu, PhD Student (GCB)
 
+Jane Zhang, PhD Student (Statistics)
 
-### Installing the github-pages gem
+**Alumni**
 
-Run the following command:
-
-    gem install github-pages
-
-This will install the `github-pages` gem and all dependencies
-(including [jekyll](https://jekyllrb.com/)).
-
-Later, to update the gem, type:
-
-    gem update github-pages
-
-
-### Testing your site locally
-
-To construct and test your site locally, go into the directory and
-type
-
-    jekyll build
-
-This will create (or modify) a `_site/` directory, containing
-everything from `assets/`, and then the `index.md` and all
-`pages/*.md` files, converted to html. (So there'll be
-`_site/index.html` and the various `_site/pages/*.html`.)
-
-Type the following in order to &ldquo;serve&rdquo; the site.
-This will first run `build`, and so it does _not_ need to be
-preceded by `jekyll build`.
-
-    jekyll serve
-
-Now open your browser and go to <http://localhost:4000>
+Name | Year of Departure | Position in Lab | Position after Lab
+-----|-------------------|-----------------|-------------------
+Divyansh Agarwal | 2020 | MD-PhD Student (GCB)|Resident, Massachusetts General Hospital, Harvard Medical School
+Zilu Zhou | 2020 | PhD Student (GCB) | Data Scientist, Google
+Jingshu Wang | 2019 | Postdoc | Assistant Professor, Univ. of Chicago Dept. of Statistics
+Xuran Wang | 2019 | PhD Student | AMCS | Postdoc, Carnegie Mellow Dept. of Statistics
