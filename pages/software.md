@@ -4,7 +4,7 @@ title: Software
 description: List of software developed by our group
 ---
 
-## For single cell data analysis:
+### For single cell data analysis:
 
 **Alleloscope** (allele-specific copy number estimation for scDNA and scATAC sequencing)
 ([Github](https://github.com/seasoncloud/Alleloscope))
@@ -33,7 +33,9 @@ description: List of software developed by our group
 **TASC** (Toolkit for noise modeling in single cell RNA-seq with spike-ins)]
 ([Github](https://github.com/scrna-seq/TASC)]
 
-## For copy number profiling and tumor heterogeneity analysis:
+<br/><br/> 
+
+### For copy number profiling and tumor heterogeneity analysis:
 
 **CANOPY** (Tumor phylogeny reconstruction by spatial and temporal bulk RNA sequencing)
 ([CRAN](https://cran.r-project.org/web/packages/Canopy/))
@@ -56,7 +58,9 @@ description: List of software developed by our group
 **FALCON-X** (Allele-specific copy number estimation using whole exome sequencing data)
 ([CRAN](https://cran.r-project.org/web/packages/falconx/index.html))
 
-## General statistical tools:
+<br/><br/> 
+
+### General statistical tools:
 
 **GCAT** (Two-sample tests for categorical data utilizing similarity information among the categories)
 ([CRAN](https://cran.r-project.org/web/packages/gCat/index.html))
