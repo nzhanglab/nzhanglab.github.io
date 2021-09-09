@@ -1,5 +1,5 @@
 ---
-layout: frontpage
+layout: page
 title: Nancy Zhang @ Penn Statistics
 description: About the PI
 ---
