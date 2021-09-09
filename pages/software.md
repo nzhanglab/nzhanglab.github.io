@@ -4,71 +4,72 @@ title: Software
 description: List of software developed by our group
 ---
 
-For single cell data analysis:
+##For single cell data analysis:
+
+**Alleloscope** (allele-specific copy number estimation for scDNA and scATAC sequencing)
+([Github](https://github.com/seasoncloud/Alleloscope))
+
+**cTP-Net** (single cell Transcriptome to Protein prediction with deep neural network)
+([Github](https://github.com/zhouzilu/cTPnet/))
+
+**DENDRO** (Genetic heterogeneity profiling by scRNA-seq)
+([Github](https://github.com/zhouzilu/DENDRO))
+
+**DESCEND** (Expression distribution deconvolution for single cell RNA-seq)
+([Github](https://github.com/jingshuw/descend))
+
+**MUSIC** (Bulk expression deconvolution with scRNA-seq reference) 
+([Github](https://github.com/xuranw/MuSiC))
+
+**SAVER** (Gene expression imputation and denoising for single cell RNA sequencing)
+([Github](https://github.com/mohuangx/SAVER))
+
+**SAVER-X** (SAVER harnessing external data)
+([Github](https://singlecell.wharton.upenn.edu/saver-x/))
+
+**SCALE** (Single cell allele-specific expression analysis)  
+([Github](https://github.com/yuchaojiang/SCALE))
 
 **TASC** (Toolkit for noise modeling in single cell RNA-seq with spike-ins)]
 ([Github](https://github.com/scrna-seq/TASC)]
 
-SCALE (Single cell allele-specific expression analysis)  
-https://github.com/yuchaojiang/SCALE
+##For copy number profiling and tumor heterogeneity analysis:
 
-DESCEND (Expression distribution deconvolution for single cell RNA-seq)
-https://github.com/jingshuw/descend
+**CANOPY** (Tumor phylogeny reconstruction by spatial and temporal bulk RNA sequencing)
+([CRAN](https://cran.r-project.org/web/packages/Canopy/))
 
-MUSIC (Bulk expression deconvolution with scRNA-seq reference) 
-https://github.com/xuranw/MuSiC
+**MARATHON** (Comprehensive pipeline for copy number profiling in normal and tumor samples)
+([Github](https://github.com/yuchaojiang/MARATHON))
 
-DENDRO (Genetic heterogeneity profiling by scRNA-seq)
-https://github.com/zhouzilu/DENDRO
+**SWAN** (Structural variant profiling using paired-end genome sequencing data)
+([Bitbucket](https://bitbucket.org/charade/swan/overview))
 
-SAVER (Gene expression imputation and denoising for single cell RNA sequencing)
-https://github.com/mohuangx/SAVER
+**CODEX/CODEX2** (statistical framework for full-spectrum CNV profiling in whole genome, whole exome, and targeted DNA sequencing) 
+([Github](https://github.com/yuchaojiang/CODEX2))
 
-SAVER-X (SAVER harnessing external data)
-https://singlecell.wharton.upenn.edu/saver-x/
+**iCNV** (Integration across array and sequencing platforms for copy number detection)
+([Github](https://github.com/zhouzilu/iCNV))
 
-cTP-Net (single cell Transcriptome to Protein prediction with deep neural network)
-https://github.com/zhouzilu/cTPnet/
+**FALCON** (Allele-specific copy number estimation using whole genome sequencing data)
+([CRAN](https://cran.r-project.org/web/packages/falcon/index.html))
 
-Alleloscope (allele-specific copy number estimation for scDNA and scATAC sequencing)
-https://github.com/seasoncloud/Alleloscope
+**FALCON-X** (Allele-specific copy number estimation using whole exome sequencing data)
+([CRAN](https://cran.r-project.org/web/packages/falconx/index.html))
 
-For copy number profiling and tumor heterogeneity analysis:
+##General statistical tools:
 
-CANOPY (Tumor phylogeny reconstruction by spatial and temporal bulk RNA sequencing)
-https://cran.r-project.org/web/packages/Canopy/
+**GCAT** (Two-sample tests for categorical data utilizing similarity information among the categories)
+([CRAN](https://cran.r-project.org/web/packages/gCat/index.html))
 
-MARATHON (Comprehensive pipeline for copy number profiling in normal and tumor samples)
-https://github.com/yuchaojiang/MARATHON
+**GSEG** (Change-point detection for multivariate data through a similarity graph on the observations)
+([CRAN](https://cran.r-project.org/web/packages/gSeg/index.html))
 
-SWAN (Structural variant profiling using paired-end genome sequencing data)
-https://bitbucket.org/charade/swan/overview
+**LEAPP** (Latent factor (“batch effect”) adjustment in multiple hypothesis testing)
+([CRAN](https://cran.r-project.org/web/packages/leapp/index.html))
 
-CODEX/CODEX2 (statistical framework for full-spectrum CNV profiling in whole genome, whole exome, and targeted DNA sequencing) 
-https://github.com/yuchaojiang/CODEX2
+**SEMBLANCE** (rank-semblance kernel for data compression, niche detection, and feature extraction)
+([CRAN](https://cran.r-project.org/web/packages/Semblance/index.html))
 
-iCNV (Integration across array and sequencing platforms for copy number detection)
-https://github.com/zhouzilu/iCNV
+**SEQCBS** (Segmentation and Bayesian confidence interval calculation for matched case/control point processes)
+([CRAN](https://cran.r-project.org/web/packages/seqCBS/index.html))
 
-FALCON (Allele-specific copy number estimation using whole genome sequencing data)
-https://cran.r-project.org/web/packages/falcon/index.html
-
-FALCON-X (Allele-specific copy number estimation using whole exome sequencing data)
-https://cran.r-project.org/web/packages/falconx/index.html
-
-General statistical tools:
-
-SEMBLANCE (rank-semblance kernel for data compression, niche detection, and feature extraction)
-https://cran.r-project.org/web/packages/Semblance/index.html
-
-GSEG (Change-point detection for multivariate data through a similarity graph on the observations)
-https://cran.r-project.org/web/packages/gSeg/index.html
-
-GCAT (Two-sample tests for categorical data utilizing similarity information among the categories)
-https://cran.r-project.org/web/packages/gCat/index.html
-
-SEQCBS (Segmentation and Bayesian confidence interval calculation for matched case/control point processes)
-https://cran.r-project.org/web/packages/seqCBS/index.html
-
-LEAPP (Latent factor (“batch effect”) adjustment in multiple hypothesis testing)
-https://cran.r-project.org/web/packages/leapp/index.html

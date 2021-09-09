@@ -4,9 +4,13 @@ title: Publications
 description: Publications
 ---
 
-Wu C-Y, Lau BT, Kim H, Sathe A, Grimes SM, Ji HP, Zhang NR* (2021) Integrative single-cell analysis of allele-specific copy number alterations and chromatin accessibility in cancer.  Nature Biotechnology, doi: 10.1038/s41587-021-00911-w
+## Publications since 2012
 
-Mukherjee S, Agarwal D, Zhang NR & Bhattacharya BB (2020) Distribution-Free Multisample Tests Based on Optimal Matchings with Applications to Single Cell Genomics, Journal of the American Statistical Association, DOI: 10.1080/01621459.2020.1791131
+**For complete list, see [Google Scholar](https://scholar.google.com/citations?user=6EErockAAAAJ&hl=en).**
+
+Wu C-Y, Lau BT, Kim H, Sathe A, Grimes SM, Ji HP, Zhang NR* (2021) Integrative single-cell analysis of allele-specific copy number alterations and chromatin accessibility in cancer.  Nature Biotechnology, doi: 10.1038/s41587-021-00911-w 
+
+Mukherjee S, Agarwal D, Zhang NR & Bhattacharya BB (2020) Distribution-Free Multisample Tests Based on Optimal Matchings with Applications to Single Cell Genomics, Journal of the American Statistical Association.
 
 Rozenblatt-Rosen et al. (2020) The Human Tumor Atlas Network (HTAN): charting tumor transitions across space and time at single-cell resolution. Cell 181, 236.  (Consortia paper as part of HTAN)
 
