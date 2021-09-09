@@ -4,7 +4,7 @@ title:
 description: NR Zhang Lab Website
 ---
 
-  ![Lab building](/assets/images/frontimage.png)
+  ![Lab building](assets/images/frontimage.png)
 
 ## Zhang Statistical Genomics Lab
 

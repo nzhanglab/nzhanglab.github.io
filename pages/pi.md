@@ -21,8 +21,10 @@ description: About the PI
             <a href="https://statistics.wharton.upenn.edu/">Department of Statistics and Data Science</a><br/>
             <a href="https://www.wharton.upenn.edu/">The Wharton School</a><br/>
             Member, <a href="https://www.med.upenn.edu/gcb/">Graduate Group in Genomics and Computational Biology</a><br/>
-            
-            Email: nzh "at" wharton "dot" upenn "dot" edu
+            <a href="https://www.upenn.edu/">University of Pennsylvania</a><br/>
+	    <a href="https://statistics.wharton.upenn.edu/profile/nzh/">My Wharton Faculty Page</a><br/>
+            <a href="https://scholar.google.com/citations?user=6EErockAAAAJ&hl=en">My Google Scholar Page</a><br/>
+
         </div>
 
     </div>
@@ -46,4 +48,4 @@ The recurring themes in my research are copy number variant analysis, single-cel
 
 These topics have motivated some “general” methods development in Statistics, in the areas of change-point analysis, variable selection, model selection, and nonparametric inference.
 
-[My Google Scholar Page](https://scholar.google.com/citations?user=6EErockAAAAJ&hl=en)
+
