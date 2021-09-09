@@ -10,8 +10,8 @@ description: About the PI
     <div class="row-fluid">
         
         <div class="span2">
-            <a href="assets/pics/nrz_small.jpg">
-            <img src="assets/pics/nrz_small.jpg"
+            <a href="../assets/pics/nrz_small.jpg">
+            <img src="../assets/pics/nrz_small.jpg"
                   title="Nancy R. Zhang" alt="Nancy R. Zhang"  width="300"/></a>
         </div>
 
