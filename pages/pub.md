@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Publications
+title: Publications (since 2012)
 description: Publications
 ---
-
-## Publications since 2012
 
 **For complete list, see [Google Scholar](https://scholar.google.com/citations?user=6EErockAAAAJ&hl=en).**
 
