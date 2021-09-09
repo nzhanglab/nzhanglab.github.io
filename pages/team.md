@@ -4,7 +4,7 @@ title: Team
 description: List of Lab Members
 ---
 
-**Current Members**
+### Current Members
 
 Yuntian Fu, PhD Student (GCB)
 
@@ -20,7 +20,12 @@ Chi-Yun Wu, PhD Student (GCB)
 
 Jane Zhang, PhD Student (Statistics)
 
-**Alumni**
+
+<br/><br/> 
+<br/><br/> 
+<br/><br/> 
+
+### Alumni
 
 Name | Year of Departure | Position in Lab | Position after Lab
 :----|:------------------|:----------------|:------------------
