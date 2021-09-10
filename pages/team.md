@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Team
+title: Meet the Team!
 description: List of Lab Members
 ---
 
@@ -8,8 +8,6 @@ description: List of Lab Members
 
 
 <br/>
-
-### Meet the Team!
 
 Yuntian Fu, PhD Student (GCB)
 
