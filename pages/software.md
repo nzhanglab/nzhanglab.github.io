@@ -3,7 +3,7 @@ layout: page
 title: Software
 description: List of software developed by our group
 ---
-**In alphabetical order ...*
+**In alphabetical order ...**
 
 ### For single cell data analysis:
 

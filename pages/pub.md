@@ -4,7 +4,6 @@ title: Publications (since 2012)
 description: Publications
 ---
 
-**For complete list, see [Google Scholar](https://scholar.google.com/citations?user=6EErockAAAAJ&hl=en).**
 
 Wu C-Y, Lau BT, Kim H, Sathe A, Grimes SM, Ji HP, Zhang NR* (2021) Integrative single-cell analysis of allele-specific copy number alterations and chromatin accessibility in cancer.  **Nature Biotechnology**, doi: 10.1038/s41587-021-00911-w 
 
@@ -104,3 +103,4 @@ Natsoulis G, Bell JM, Xu H, Buenrostro JD, Ordonez H, Grimes S, Newburger D, Jen
 
 Siegmund DO, Zhang NR, Yakir B (2011) False discovery rate for scanning statistics, **Biometrika** 98, 979.
 
+**For complete list, see [Google Scholar](https://scholar.google.com/citations?user=6EErockAAAAJ&hl=en).**

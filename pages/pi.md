@@ -45,9 +45,9 @@ My research in statistical genetics have more or less tried to answer questions 
 - What questions can be meaningfully addressed using the data from a specific protocol?
 - How can our procedure for answering these questions be made transparent, rigorous, and scalable?  
 
-Currently I am focusing on data from single cell and spatial transcriptomic experiments. 
+For the last few years my lab has been focusing on data from single cell and spatial transcriptomic experiments. 
 
-The recurring themes in my research are copy number variant analysis, single-cell RNA-sequencing data analysis, bulk tissue deconvolution, and characterization of intratumor heterogeneity.  
+The recurring themes in my research are copy number variant analysis, single-cell RNA-sequencing data analysis, bulk tissue deconvolution, and characterization of intratissue heterogeneity.  
 
 These topics have motivated some “general” methods development in Statistics, in the areas of change-point analysis, variable selection, model selection, and nonparametric inference.
 
