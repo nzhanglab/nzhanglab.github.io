@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publications (since 2012)
+title: Publications (since 2011)
 description: Publications
 ---
 
