@@ -4,7 +4,12 @@ title: Team
 description: List of Lab Members
 ---
 
-### Current Members
+**We are looking for motivated and talented students from Statistics, Biology, Computer Science, Bioinformatics, or similar fields.  [Contact Nancy](mailto:nzh@wharton.upenn.edu) if you are interested, please include your CV and brief research statement.**
+
+
+<br/>
+
+### Meet the Team!
 
 Yuntian Fu, PhD Student (GCB)
 
