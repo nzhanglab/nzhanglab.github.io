@@ -27,7 +27,7 @@ description: About the PI
 	   
  	    <a href="https://statistics.wharton.upenn.edu/profile/nzh/">My Wharton Faculty Page</a><br/>
             <a href="https://scholar.google.com/citations?user=6EErockAAAAJ&hl=en">My Google Scholar Page</a><br/>
-	    <a href="../assets/nzhang_cv.pdf">Download my CV</a>
+	    <a href="../assets/nzhang_cv.pdf">Download my CV</a><br/>
 	    My Email:  nzh "at" wharton "dot" upenn "dot" edu
         </div>
 
