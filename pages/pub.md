@@ -28,7 +28,6 @@ Nguyen S et al. (2019) Elite control of HIV is associated with distinct function
 
 Agarwal D, Zhang NR* (2019) A rank-based semblance kernel on probability spaces, **Science Advances** 5 (12), eaau9630.
 
-
 Huang M, Wang J, Torre E, Dueck H, Shaffer S, Bonasio R, Murray J, Raj A, Li M, Zhang NR* (2018) SAVER: Gene expression recovery for single cell RNA sequencing, **Nature Methods** 15, 539.
 
 Zhou Z, Wang W, Wang L-S, Zhang NR* (2018) Integrative DNA copy number detection and genotyping from sequencing and array-based platforms, **Bioinformatics** 34, 2349.

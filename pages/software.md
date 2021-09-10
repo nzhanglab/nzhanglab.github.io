@@ -3,6 +3,7 @@ layout: page
 title: Software
 description: List of software developed by our group
 ---
+**In alphabetical order ...*
 
 ### For single cell data analysis:
 
@@ -40,11 +41,11 @@ description: List of software developed by our group
 **CANOPY** (Tumor phylogeny reconstruction by spatial and temporal bulk RNA sequencing)
 ([CRAN](https://cran.r-project.org/web/packages/Canopy/))
 
-**MARATHON** (Comprehensive pipeline for copy number profiling in normal and tumor samples)
-([Github](https://github.com/yuchaojiang/MARATHON))
+**FALCON** (Allele-specific copy number estimation using whole genome sequencing data)
+([CRAN](https://cran.r-project.org/web/packages/falcon/index.html))
 
-**SWAN** (Structural variant profiling using paired-end genome sequencing data)
-([Bitbucket](https://bitbucket.org/charade/swan/overview))
+**FALCON-X** (Allele-specific copy number estimation using whole exome sequencing data)
+([CRAN](https://cran.r-project.org/web/packages/falconx/index.html))
 
 **CODEX/CODEX2** (statistical framework for full-spectrum CNV profiling in whole genome, whole exome, and targeted DNA sequencing) 
 ([Github](https://github.com/yuchaojiang/CODEX2))
@@ -52,11 +53,12 @@ description: List of software developed by our group
 **iCNV** (Integration across array and sequencing platforms for copy number detection)
 ([Github](https://github.com/zhouzilu/iCNV))
 
-**FALCON** (Allele-specific copy number estimation using whole genome sequencing data)
-([CRAN](https://cran.r-project.org/web/packages/falcon/index.html))
+**MARATHON** (Comprehensive pipeline for copy number profiling in normal and tumor samples)
+([Github](https://github.com/yuchaojiang/MARATHON))
 
-**FALCON-X** (Allele-specific copy number estimation using whole exome sequencing data)
-([CRAN](https://cran.r-project.org/web/packages/falconx/index.html))
+**SWAN** (Structural variant profiling using paired-end genome sequencing data)
+([Bitbucket](https://bitbucket.org/charade/swan/overview))
+
 
 <br/><br/> 
 
