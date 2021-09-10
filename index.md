@@ -4,7 +4,7 @@ title:
 description: NR Zhang Lab Website
 ---
 
-![Lab building](assets/pics/frontimage.png)
+![Lab building](assets/pics/frontimage.jpeg)
 
 ## Zhang Statistical Genomics Lab @ UPENN
 
