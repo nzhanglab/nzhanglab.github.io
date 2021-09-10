@@ -50,4 +50,3 @@ The recurring themes in my research are copy number variant analysis, single-cel
 
 These topics have motivated some “general” methods development in Statistics, in the areas of change-point analysis, variable selection, model selection, and nonparametric inference.
 
-[My Google Scholar Page](https://scholar.google.com/citations?user=6EErockAAAAJ&hl=en)
