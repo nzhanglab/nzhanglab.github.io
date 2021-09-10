@@ -20,7 +20,8 @@ description: About the PI
             Ge Li and Ning Zhang Professor of Statistics<br/>
             <a href="https://statistics.wharton.upenn.edu/">Department of Statistics and Data Science</a><br/>
             <a href="https://www.wharton.upenn.edu/">The Wharton School</a><br/>
-            <a href="https://www.med.upenn.edu/gcb/">Member, Graduate Group in Genomics and Computational Biology</a><br/>
+            <a href="https://www.upenn.edu/">University of Pennsylvania</a><br/>
+            Member, <a href="https://www.med.upenn.edu/gcb/">Graduate Group in Genomics and Computational Biology</a><br/>
             
 <br/><br/> 
 	   
