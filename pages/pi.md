@@ -12,7 +12,7 @@ description: About the PI
         <div class="span3">
             <a href="../assets/pics/nrz_small.JPEG">
             <img src="../assets/pics/nrz_small.JPEG"
-                  title="Nancy R. Zhang" alt="Nancy R. Zhang"  width="500"/></a>
+                  title="Nancy R. Zhang" alt="Nancy R. Zhang"  width="400"/></a>
         </div>
 
         <div class="span7">
@@ -22,8 +22,11 @@ description: About the PI
             <a href="https://www.wharton.upenn.edu/">The Wharton School</a><br/>
             Member, <a href="https://www.med.upenn.edu/gcb/">Graduate Group in Genomics and Computational Biology</a><br/>
             <a href="https://www.upenn.edu/">University of Pennsylvania</a><br/>
+	    
+	    <br/><br/> 
 	    <a href="https://statistics.wharton.upenn.edu/profile/nzh/">My Wharton Faculty Page</a><br/>
             <a href="https://scholar.google.com/citations?user=6EErockAAAAJ&hl=en">My Google Scholar Page</a><br/>
+	    My Email:  nzh "at" wharton "dot" upenn "dot" edu
 
         </div>
 
