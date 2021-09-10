@@ -1,6 +1,5 @@
 ---
 layout: page
-title: 
 description: NR Zhang Lab Website
 ---
 
