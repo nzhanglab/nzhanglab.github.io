@@ -4,6 +4,39 @@ title: Publications (since 2011)
 description: Publications
 ---
 
+Klötzer KA, Abedini A, Balzer MS, Liang X, Levinsohn J, Ha E, Hogan JJ, Quinn G, Bloom RD, Schuller M, Eller K, Zhang NR*, Susztak K*. (2024) Unraveling the Cellular Features of Kidney Disease in a Cross-Species Integrated Single-Cell Kidney Atlas via Pathway-Level Gene Expression Coordination with ScSpectra.  **Submitted**.
+
+Fu Y, Kim H, Adams JI, Grimes SM, Huang S, Lau BT, Sathe A, Hess P, Ji HP, Zhang NR* (2024) Single cell and spatial alternative splicing analysis with long read sequencing.  **Submitted**.
+
+Wu C-Y, Rong J, Sathe A, Hess PR, Lau BT, Grimes SM, Huang S, Ji HP, Zhang NR* (2024). Cancer subclone detection based on DNA copy number in single cell and spatial omic sequencing data.  **Submitted**.
+
+Zhang Z, Mathew D, Lim T, Mason K, Martinez CM, Huang S, Wherry EJ, Susztak K, Minn AJ, Ma Z, Zhang NR* (2024) Signal recovery in single cell batch integration. **Submitted**.
+
+Gier RA, Hueros RA, Rong J, DeMarshall M, Karakasheva TA, Muir AB, Falk GW, Zhang NR, Shaffer SM. (2023) Clonal cell states link Barrett’s esophagus and esophageal adenocarcinoma.  **Submitted**.
+
+Mathew D, Marmarelis ME, Foley C, Bauml M, Ye D, Ghinnagow R, Ngiow SF, Klapholz M, Jun S, Zhang Z, Zorc R, Diehn M, Hwang W-T, Zhang NR, Langer CJ, Wherry EJ, Minn AJ (2024) Clinical and Immunological Responses to Combined JAK Inhibition and PD1 Blockade for Lung Cancer. **Science**, accepted.
+
+Lin K and Zhang NR* (2023) Quantifying common and distinct information in single-cell multimodal data with Tilted Canonical Correlation Analysis.  **Proceedings of the National Academy of Sciences**, 120 (32) e2303647120.
+
+Mason K, Sathe A, Hess P, Rong J, Wu C-Y, Furth E, Susztak K, Levinsohn J, Ji HP, Zhang NR* (2024) Niche-DE: niche differential gene expression analysis in spatial transcriptomics data identifies context-dependent cell-cell interactions. **Genome Biology** 25, 14.
+
+Hickey JW et al. (2023) Organization of the human intestine at single-cell resolution. **Nature** 619 (7970), 572-584.
+
+Chen S, Zhu B, Huang S, Hickey JW, Lin KZ, Snyder M, Greenleaf WJ, Nolan GP, Zhang NR*, Ma Z* (2023) Integration of spatial and single-cell data across modalities with weak linkage.  **Nature Biotechnology** (2023). https://doi.org/10.1038/s41587-023-01935-0
+
+Sathe A, Mason K, Grimes SM, Zhou Z, Lau BT, Bai X, Su A, Tan X, Lee H, Suarez CJ, Nguyen Q, Poultsides G, Zhang NR, Ji HP (2022) Colorectal cancer metastases in the liver establish immunosuppressive spatial networking between tumor associated SPP1+ macrophages and fibroblasts.  **Clinical Cancer Research* 29, 244.
+
+Jiang Y, Harigaya Y, Zhang Z, Zhang H, Zang C, and Zhang NR* (2022) Nonparametric single-cell multiomic characterization of trio relationships between transcription factors, target genes, and cis-regulatory regions.  **Cell Systems** 13, 737.
+
+Bibby J, Agarwal D, Freiwald T, Kunz N, Merle NS, West EE, Larochelle A, Chinian F, Mukherjee S, Afzali B, Claudia K*, and Zhang NR* (2022).  Systematic Single Cell Pathway Analysis (SCPA) reveals novel pathways engaged during early T cell activation.  **Cell Reports** 41, 111697.
+
+Cucolo L, Chen Q, Qiu J, Yu Y, Klapholz M, Budinich KA, Zhang Z, Shao Y, Brodsky IE, Jordan MS, Gilliland DG , Zhang NR, Shi J and Minn AJ (2022). The interferon-stimulated gene RIPK1 regulates cancer cell intrinsic and extrinsic resistance to immune checkpoint blockade, **Immunity** 55, 671.
+
+Wang J, Zhao Q, Bowden J, Hemani G, Smith GD, Small DS, Zhang NR (2021) Causal inference for heritable phenotypic risk factors using heterogeneous genetic instruments.  **PLoS Genetics** 17(6), e1009575.
+
+Zhao Q, Wang J, Zhen M, Zhang NR, Hennessey S, Small DS and Rader DJ (2021) A Mendelian randomization study of the role of lipoprotein subfractions in coronary artery disease.  **Elife** 10, e58361.  
+
+Navin NE, Rozenblatt-Rosen O, and Zhang NR (2021) New frontiers in single-cell genomics.  **Genome Research**, 31, ix-x.
 
 Wu C-Y, Lau BT, Kim H, Sathe A, Grimes SM, Ji HP, Zhang NR* (2021) Integrative single-cell analysis of allele-specific copy number alterations and chromatin accessibility in cancer.  **Nature Biotechnology**, doi: 10.1038/s41587-021-00911-w 
 
