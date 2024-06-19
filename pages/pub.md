@@ -24,7 +24,7 @@ Hickey JW et al. (2023) Organization of the human intestine at single-cell resol
 
 Chen S, Zhu B, Huang S, Hickey JW, Lin KZ, Snyder M, Greenleaf WJ, Nolan GP, Zhang NR*, Ma Z* (2023) Integration of spatial and single-cell data across modalities with weak linkage.  **Nature Biotechnology** (2023). https://doi.org/10.1038/s41587-023-01935-0
 
-Sathe A, Mason K, Grimes SM, Zhou Z, Lau BT, Bai X, Su A, Tan X, Lee H, Suarez CJ, Nguyen Q, Poultsides G, Zhang NR, Ji HP (2022) Colorectal cancer metastases in the liver establish immunosuppressive spatial networking between tumor associated SPP1+ macrophages and fibroblasts.  **Clinical Cancer Research* 29, 244.
+Sathe A, Mason K, Grimes SM, Zhou Z, Lau BT, Bai X, Su A, Tan X, Lee H, Suarez CJ, Nguyen Q, Poultsides G, Zhang NR, Ji HP (2022) Colorectal cancer metastases in the liver establish immunosuppressive spatial networking between tumor associated SPP1+ macrophages and fibroblasts.  **Clinical Cancer Research** 29, 244.
 
 Jiang Y, Harigaya Y, Zhang Z, Zhang H, Zang C, and Zhang NR* (2022) Nonparametric single-cell multiomic characterization of trio relationships between transcription factors, target genes, and cis-regulatory regions.  **Cell Systems** 13, 737.
 
