@@ -10,9 +10,9 @@ Fu Y, Kim H, Adams JI, Grimes SM, Huang S, Lau BT, Sathe A, Hess P, Ji HP, Zhang
 
 Wu C-Y, Rong J, Sathe A, Hess PR, Lau BT, Grimes SM, Huang S, Ji HP, Zhang NR* (2024). Cancer subclone detection based on DNA copy number in single cell and spatial omic sequencing data.  **Submitted**.
 
-Zhang Z, Mathew D, Lim T, Mason K, Martinez CM, Huang S, Wherry EJ, Susztak K, Minn AJ, Ma Z, Zhang NR* (2024) Signal recovery in single cell batch integration. **Submitted**.
+Gier RA, Hueros RA, Rong J, DeMarshall M, Karakasheva TA, Muir AB, Falk GW, Zhang NR, Shaffer SM. (2024) Clonal cell states link Barrett’s esophagus and esophageal adenocarcinoma.  **Submitted**.
 
-Gier RA, Hueros RA, Rong J, DeMarshall M, Karakasheva TA, Muir AB, Falk GW, Zhang NR, Shaffer SM. (2023) Clonal cell states link Barrett’s esophagus and esophageal adenocarcinoma.  **Submitted**.
+Zhang Z, Mathew D, Lim T, Mason K, Martinez CM, Huang S, Wherry EJ, Susztak K, Minn AJ, Ma Z, Zhang NR* (2024) Signal recovery in single cell batch integration. **Nature Biotechnology**, accepted in principle.
 
 Mathew D, Marmarelis ME, Foley C, Bauml M, Ye D, Ghinnagow R, Ngiow SF, Klapholz M, Jun S, Zhang Z, Zorc R, Diehn M, Hwang W-T, Zhang NR, Langer CJ, Wherry EJ, Minn AJ (2024) Clinical and Immunological Responses to Combined JAK Inhibition and PD1 Blockade for Lung Cancer. **Science**, accepted.
 

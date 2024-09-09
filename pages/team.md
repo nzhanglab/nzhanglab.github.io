@@ -21,6 +21,10 @@ Emilia Chen, PhD Student (GCB)
 
 Yuxuan Lin, PhD Student (Statistics)
 
+Eddie Yang, PhD Student (Statistics)
+
+Alisha Aristel, Statistics and Data Science Bridge Masters Student
+
 Divij Mathews, American Association of Immunologists Intersect Postdoctoral Fellow (joint with EJ Wherry Lab)
 
 Zhen Miao, Dual Masters Thesis (PhD Candidate in GCB)
@@ -29,10 +33,6 @@ Jenea Adams, Dual Masters Thesis (PhD Candidate in GCB)
 
 Sijia Huang, Bioinformatician (IBI)
 
-
-Kevin Lin, Postdoc
-
-Chi-Yun Wu, PhD Student (GCB)
 
 
 <br/>
