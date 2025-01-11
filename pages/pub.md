@@ -8,21 +8,23 @@ Klötzer KA, Abedini A, Balzer MS, Liang X, Levinsohn J, Ha E, Hogan JJ, Quinn G
 
 Fu Y, Kim H, Adams JI, Grimes SM, Huang S, Lau BT, Sathe A, Hess P, Ji HP, Zhang NR* (2024) Single cell and spatial alternative splicing analysis with long read sequencing.  **Submitted**.
 
-Wu C-Y, Rong J, Sathe A, Hess PR, Lau BT, Grimes SM, Huang S, Ji HP, Zhang NR* (2024). Cancer subclone detection based on DNA copy number in single cell and spatial omic sequencing data.  **Submitted**.
-
 Gier RA, Hueros RA, Rong J, DeMarshall M, Karakasheva TA, Muir AB, Falk GW, Zhang NR, Shaffer SM. (2024) Clonal cell states link Barrett’s esophagus and esophageal adenocarcinoma.  **Submitted**.
 
-Zhang Z, Mathew D, Lim T, Mason K, Martinez CM, Huang S, Wherry EJ, Susztak K, Minn AJ, Ma Z, Zhang NR* (2024) Signal recovery in single cell batch integration. **Nature Biotechnology**, accepted in principle.
+1.	Yu W, Biyik-Sit R, Uzun Y, Chen C-H, Thadi A, Sussman JH, Pang M, Wu C-Y, Grossmann LD, Gao P, Wu DW, Yousey A, Zhang M, Turn CS, Zhang Z, Bandyopadhyay S, Huang J, Patel T, Chen C, Martinez D, Surrey LF, Hogarty MD, Bernt K, Zhang NR, Maris JM, Tan K (2025) Longitudinal single-cell multiomic atlas of high-risk neuroblastoma reveals chemotherapy-induced tumor microenvironment rewiring Clonal cell states link Barrett’s esophagus and esophageal adenocarcinoma.  **Nature Genetics, to appear.**
 
-Mathew D, Marmarelis ME, Foley C, Bauml M, Ye D, Ghinnagow R, Ngiow SF, Klapholz M, Jun S, Zhang Z, Zorc R, Diehn M, Hwang W-T, Zhang NR, Langer CJ, Wherry EJ, Minn AJ (2024) Clinical and Immunological Responses to Combined JAK Inhibition and PD1 Blockade for Lung Cancer. **Science**, accepted.
+Wu C-Y, Rong J, Sathe A, Hess PR, Lau BT, Grimes SM, Huang S, Ji HP, Zhang NR* (2025). Cancer subclone detection based on DNA copy number in single cell and spatial omic sequencing data.  **Nature Methods, to appear**.
 
-Lin K and Zhang NR* (2023) Quantifying common and distinct information in single-cell multimodal data with Tilted Canonical Correlation Analysis.  **Proceedings of the National Academy of Sciences**, 120 (32) e2303647120.
+Zhang Z, Mathew D, Lim T, Mason K, Martinez CM, Huang S, Wherry EJ, Susztak K, Minn AJ, Ma Z, Zhang NR* (2025) Signal recovery in single cell batch integration. **Nature Biotechnology**,  published online Nov 26 2024.
+
+Mathew D, Marmarelis ME, Foley C, Bauml M, Ye D, Ghinnagow R, Ngiow SF, Klapholz M, Jun S, Zhang Z, Zorc R, Diehn M, Hwang W-T, Zhang NR, Langer CJ, Wherry EJ, Minn AJ (2024) Clinical and Immunological Responses to Combined JAK Inhibition and PD1 Blockade for Lung Cancer. **Science** 384, 1303-1304.
 
 Mason K, Sathe A, Hess P, Rong J, Wu C-Y, Furth E, Susztak K, Levinsohn J, Ji HP, Zhang NR* (2024) Niche-DE: niche differential gene expression analysis in spatial transcriptomics data identifies context-dependent cell-cell interactions. **Genome Biology** 25, 14.
 
-Hickey JW et al. (2023) Organization of the human intestine at single-cell resolution. **Nature** 619 (7970), 572-584.
+Chen S, Zhu B, Huang S, Hickey JW, Lin KZ, Snyder M, Greenleaf WJ, Nolan GP, Zhang NR*, Ma Z* (2024) Integration of spatial and single-cell data across modalities with weak linkage.  **Nature Biotechnology** 42, 1096-1106.
 
-Chen S, Zhu B, Huang S, Hickey JW, Lin KZ, Snyder M, Greenleaf WJ, Nolan GP, Zhang NR*, Ma Z* (2023) Integration of spatial and single-cell data across modalities with weak linkage.  **Nature Biotechnology** (2023). https://doi.org/10.1038/s41587-023-01935-0
+Lin K and Zhang NR* (2023) Quantifying common and distinct information in single-cell multimodal data with Tilted Canonical Correlation Analysis.  **Proceedings of the National Academy of Sciences**, 120 (32) e2303647120.
+
+Hickey JW et al. (2023) Organization of the human intestine at single-cell resolution. **Nature** 619 (7970), 572-584.
 
 Sathe A, Mason K, Grimes SM, Zhou Z, Lau BT, Bai X, Su A, Tan X, Lee H, Suarez CJ, Nguyen Q, Poultsides G, Zhang NR, Ji HP (2022) Colorectal cancer metastases in the liver establish immunosuppressive spatial networking between tumor associated SPP1+ macrophages and fibroblasts.  **Clinical Cancer Research** 29, 244.
 
