@@ -4,15 +4,13 @@ title: Publications (since 2011)
 description: Publications
 ---
 
-Klötzer KA, Abedini A, Balzer MS, Liang X, Levinsohn J, Ha E, Hogan JJ, Quinn G, Bloom RD, Schuller M, Eller K, Zhang NR*, Susztak K*. (2024) Unraveling the Cellular Features of Kidney Disease in a Cross-Species Integrated Single-Cell Kidney Atlas via Pathway-Level Gene Expression Coordination with ScSpectra.  **Submitted**.
+Klötzer KA, Abedini A, Balzer MS, Liang X, Levinsohn J, Ha E, Hogan JJ, Quinn G, Bloom RD, Schuller M, Eller K, Zhang NR*, Susztak K*. (2025) Unraveling the Cellular Features of Kidney Disease in a Cross-Species Integrated Single-Cell Kidney Atlas via Pathway-Level Gene Expression Coordination with ScSpectra.  **Nature Genetics, to appear.**
 
-Fu Y, Kim H, Adams JI, Grimes SM, Huang S, Lau BT, Sathe A, Hess P, Ji HP, Zhang NR* (2024) Single cell and spatial alternative splicing analysis with long read sequencing.  **Submitted**.
-
-Gier RA, Hueros RA, Rong J, DeMarshall M, Karakasheva TA, Muir AB, Falk GW, Zhang NR, Shaffer SM. (2024) Clonal cell states link Barrett’s esophagus and esophageal adenocarcinoma.  **Submitted**.
-
-1.	Yu W, Biyik-Sit R, Uzun Y, Chen C-H, Thadi A, Sussman JH, Pang M, Wu C-Y, Grossmann LD, Gao P, Wu DW, Yousey A, Zhang M, Turn CS, Zhang Z, Bandyopadhyay S, Huang J, Patel T, Chen C, Martinez D, Surrey LF, Hogarty MD, Bernt K, Zhang NR, Maris JM, Tan K (2025) Longitudinal single-cell multiomic atlas of high-risk neuroblastoma reveals chemotherapy-induced tumor microenvironment rewiring Clonal cell states link Barrett’s esophagus and esophageal adenocarcinoma.  **Nature Genetics, to appear.**
+Yu W, Biyik-Sit R, Uzun Y, Chen C-H, Thadi A, Sussman JH, Pang M, Wu C-Y, Grossmann LD, Gao P, Wu DW, Yousey A, Zhang M, Turn CS, Zhang Z, Bandyopadhyay S, Huang J, Patel T, Chen C, Martinez D, Surrey LF, Hogarty MD, Bernt K, Zhang NR, Maris JM, Tan K (2025) Longitudinal single-cell multiomic atlas of high-risk neuroblastoma reveals chemotherapy-induced tumor microenvironment rewiring Clonal cell states link Barrett’s esophagus and esophageal adenocarcinoma.  **Nature Genetics, to appear.**
 
 Wu C-Y, Rong J, Sathe A, Hess PR, Lau BT, Grimes SM, Huang S, Ji HP, Zhang NR* (2025). Cancer subclone detection based on DNA copy number in single cell and spatial omic sequencing data.  **Nature Methods, to appear**.
+
+Li H, Wang D, Gao Q, Tan P, Wang Y, Cai X, Li A, Zhao Y, Thurman AL, Malekpour SA, Zhang Y, Sala R, Cipriano A, Wei C-L, Sebastiano V, Song C, Zhang NR, Au KF*. (2025) MiniQuant: long reads improve gene isoform quantification by reducing the data deconvolution error.  **Nature Biotechnology, to appear.**
 
 Zhang Z, Mathew D, Lim T, Mason K, Martinez CM, Huang S, Wherry EJ, Susztak K, Minn AJ, Ma Z, Zhang NR* (2025) Signal recovery in single cell batch integration. **Nature Biotechnology**,  published online Nov 26 2024.
 

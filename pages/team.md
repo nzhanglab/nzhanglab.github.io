@@ -4,6 +4,10 @@ title: Meet the Team!
 description: List of Lab Members
 ---
 
+![Lab photo 1](assets/pics/labphoto1.jpeg)
+![Lab photo 2](assets/pics/labphoto2.jpeg)
+
+
 **We are always looking for motivated students from Statistics, Biology, Computer Science, Bioinformatics, or similar fields.  [Contact Nancy](mailto:nzh@wharton.upenn.edu) if you are interested, please include your CV and brief research statement.**
 
 

@@ -7,6 +7,12 @@ description: List of software developed by our group
 
 ### For single cell data analysis:
 
+**NicheDE** (spatial niche-differential expression analysis)(
+([Github](https://github.com/kaishumason/NicheDE))
+
+**CellANOVA** (cell state space analysis of variance)(
+([Github](https://github.com/Janezjz/cellanova))
+
 **Alleloscope** (allele-specific copy number estimation for scDNA and scATAC sequencing)
 ([Github](https://github.com/seasoncloud/Alleloscope))
 
