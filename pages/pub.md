@@ -4,7 +4,7 @@ title: Publications (since 2011)
 description: Publications
 ---
 
-Klötzer KA, Abedini A, Balzer MS, Liang X, Levinsohn J, Ha E, Hogan JJ, Quinn G, Bloom RD, Schuller M, Eller K, Zhang NR*, Susztak K*. (2025) Unraveling the Cellular Features of Kidney Disease in a Cross-Species Integrated Single-Cell Kidney Atlas via Pathway-Level Gene Expression Coordination with ScSpectra.  **Nature Genetics, to appear.**
+Klötzer KA, Abedini A, Balzer MS, Liang X, Levinsohn J, Ha E, Hogan JJ, Quinn G, Bloom RD, Schuller M, Eller K, Zhang NR\*, Susztak K\*. (2025) Unraveling the Cellular Features of Kidney Disease in a Cross-Species Integrated Single-Cell Kidney Atlas via Pathway-Level Gene Expression Coordination with ScSpectra.  **Nature Genetics, to appear.**
 
 Yu W, Biyik-Sit R, Uzun Y, Chen C-H, Thadi A, Sussman JH, Pang M, Wu C-Y, Grossmann LD, Gao P, Wu DW, Yousey A, Zhang M, Turn CS, Zhang Z, Bandyopadhyay S, Huang J, Patel T, Chen C, Martinez D, Surrey LF, Hogarty MD, Bernt K, Zhang NR, Maris JM, Tan K (2025) Longitudinal single-cell multiomic atlas of high-risk neuroblastoma reveals chemotherapy-induced tumor microenvironment rewiring Clonal cell states link Barrett’s esophagus and esophageal adenocarcinoma.  **Nature Genetics, to appear.**
 
