@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Publications
-description: Publications from the Zhang Statistical Genomics Lab
+title: Publications &amp; Software
+description: Publications and software from the Zhang Statistical Genomics Lab
 ---
 
 <style>
