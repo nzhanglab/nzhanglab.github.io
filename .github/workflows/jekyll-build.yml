@@ -1,0 +1,38 @@
+# Build check for branches. GitHub Pages builds `master` on its own with the
+# github-pages gem and `--safe`; this reproduces that so template errors surface
+# on a branch instead of breaking the live site.
+name: Jekyll build check
+
+on:
+  push:
+    branches-ignore: [master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install the github-pages gem
+        run: gem install github-pages --no-document
+
+      - name: Build the site
+        run: jekyll build --safe --trace --destination _site
+
+      - name: Check the publications page rendered
+        run: |
+          test -f _site/pages/pub.html || { echo "pub.html missing"; exit 1; }
+          entries=$(grep -o 'class="pub pub-' _site/pages/pub.html | wc -l)
+          chips=$(grep -o 'class="tg tg-m' _site/pages/pub.html | wc -l)
+          echo "publication entries rendered: $entries"
+          echo "methodology tag chips rendered: $chips"
+          test "$entries" -ge 80 || { echo "too few entries: $entries"; exit 1; }
+          test "$chips" -ge 18 || { echo "filter bar missing: $chips"; exit 1; }
+          grep -q 'Liquid Exception\|Liquid error' _site/pages/pub.html && { echo "Liquid error in output"; exit 1; }
+          echo "OK"
