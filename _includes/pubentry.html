@@ -1,0 +1,28 @@
+{%- assign p = include.p -%}
+<div class="pub pub-{{ p.status }}" data-m="{{ p.methods | join: ' ' }}" data-b="{{ p.bio | join: ' ' }}">
+  <div class="t">{{ p.title }}</div>
+  <div class="a">{{ p.authors }}</div>
+  <div class="v"><em>{{ p.venue }}</em>{% if p.detail %} {{ p.detail }}{% endif %}{% if p.status == 'published' %} ({{ p.year }}){% endif %}</div>
+  <div class="lnk">
+    {%- assign shown = 0 -%}
+    {%- if p.doi -%}
+      <a href="https://doi.org/{{ p.doi }}">Journal</a>{%- assign shown = 1 -%}
+    {%- endif -%}
+    {%- if p.preprint -%}
+      {% if shown == 1 %}<span class="sep">&middot;</span>{% endif %}<a href="https://doi.org/{{ p.preprint }}">Preprint</a>{%- assign shown = 1 -%}
+    {%- endif -%}
+    {%- for s in p.software -%}
+      {% if shown == 1 %}<span class="sep">&middot;</span>{% endif %}<a href="{{ s.url }}">Repo ({{ s.name }})</a>{%- assign shown = 1 -%}
+    {%- endfor -%}
+  </div>
+  <div class="tags">
+    {%- for k in p.methods -%}
+      {%- assign t = site.data.pubtags.method | where: "key", k | first -%}
+      {%- if t -%}<span class="tg tg-m tg-{{ k }}" data-g="m" data-k="{{ k }}">{{ t.label }}</span>{%- endif -%}
+    {%- endfor -%}
+    {%- for k in p.bio -%}
+      {%- assign t = site.data.pubtags.bio | where: "key", k | first -%}
+      {%- if t -%}<span class="tg tg-b tg-{{ k }}" data-g="b" data-k="{{ k }}">{{ t.label }}</span>{%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>

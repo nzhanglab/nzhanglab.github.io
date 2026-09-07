@@ -1,0 +1,981 @@
+# Publications, newest first. Rebuild the page by editing this file only.
+# status: published | preprint | review
+# methods/bio: keys from _data/pubtags.yml
+
+- title: "Dissecting the coordinated progression of cell states in spatial transcriptomics with CoPro"
+  authors: "<strong>Miao Z</strong>, Qu Y, <strong>Huang S</strong>, Laux L, Peters S, <strong>Aristel A</strong>, <strong>Zhang Z</strong>, <strong>Zhang NR</strong>*"
+  year: 2026
+  venue: "bioRxiv"
+  status: preprint
+  preprint: "10.64898/2026.04.17.719309"
+  software:
+    - name: "CoPro"
+      url: "https://github.com/Zhen-Miao/CoPro"
+  methods: [sp, sc, pa]
+  bio: []
+
+- title: "Deciphering cell fate and clonal dynamics via integrative single-cell lineage modeling"
+  authors: "<strong>Fu Y</strong>, <strong>Mathew D</strong>, Wang M, <strong>Chen XE</strong>, <strong>Lin KZ</strong>, Schaff D, Shaffer SM, Pardoll DM, Jackson C, <strong>Zhang NR</strong>*"
+  year: 2025
+  venue: "bioRxiv"
+  status: preprint
+  preprint: "10.1101/2025.09.01.673503"
+  software:
+    - name: "multiomeFate"
+      url: "https://github.com/nancyrzhanglab/multiomeFate"
+  methods: [sc, lt, int]
+  bio: [can]
+
+- title: "A measure of transcriptional dyscoordination for quantifying aging in single cells"
+  authors: "<strong>Yang Y</strong>, <strong>Hess PR</strong>, <strong>Huang S</strong>, Teneche MG, Wang H, Miller KN, Davis AE, Miciano C, Li KY, Mamde S, Yip K, Ren B, Yang Q, Smoot E, Wang A, Johnson B, Wilson P, Adams PD, <strong>Zhang NR</strong>*"
+  year: 2026
+  venue: "bioRxiv"
+  status: preprint
+  preprint: "10.64898/2026.01.24.701460"
+  software:
+    - name: "Transcriptional Dyscoordination"
+      url: "https://github.com/EddieYang1222/transcriptional-dyscoordination"
+  methods: [sc, np]
+  bio: [age]
+
+- title: "Mitochondrial clone tracing within spatially intact human tissues"
+  authors: "Bracht SA, <strong>Rong J</strong>, Gier RA, DeMarshall M, Golden H, Dhakal D, <strong>Zhang NR</strong>, Shaffer SM*"
+  year: 2025
+  venue: "bioRxiv"
+  status: preprint
+  preprint: "10.1101/2025.07.11.664452"
+  software:
+    - name: "SUMMIT"
+      url: "https://github.com/jiazhen-rong/SUMMIT"
+  methods: [sp, lt, sc]
+  bio: [gi]
+
+- title: "Dual checkpoint blockade of glioblastoma with anti-PD-1 and anti-LAG-3 promotes expansion of tumor-reactive T cell clones along a unique pathway of differentiation"
+  authors: "Wang M, <strong>Fu Y</strong>, Bom S, Ning Y, Matthews D, Zhang M, Lucas CH, Choi J, <strong>Zhang NR</strong>, Jackson CM*"
+  year: 2025
+  venue: "bioRxiv"
+  status: preprint
+  preprint: "10.1101/2025.09.06.674490"
+  software:
+    - name: "Clonotrace"
+      url: "https://github.com/yuntianf/Clonotrace"
+  methods: [sc, lt]
+  bio: [can, imm, neu]
+
+- title: "Targeting interferon-driven inflammatory memory prevents epigenetic evolution of cancer immunotherapy resistance"
+  authors: "Qiu J, Ye D, <strong>Chen XE</strong>, Dangle N, Yoshor B, Zhang T, Shao Y, <strong>Zhang NR</strong>, Minn AJ*"
+  year: 2024
+  venue: "bioRxiv"
+  status: preprint
+  preprint: "10.1101/2024.08.13.607862"
+  methods: [sc, gr]
+  bio: [can, imm]
+
+- title: "Ultra-scalable differential testing for spatial omics"
+  authors: "<strong>Mason K</strong>&dagger;, <strong>Jiang Y</strong>&dagger;, Kl&#246;tzer KA, <strong>Zhang NR</strong>*"
+  year: 2025
+  venue: "In review"
+  status: review
+  software:
+    - name: "SpotGLM"
+      url: "https://github.com/kaishumason/SpotGLM"
+    - name: "SPARROW"
+      url: "https://github.com/kaishumason/SPARROW"
+  methods: [sp, de, sc]
+  bio: []
+
+- title: "Intestinal immune dysregulation fuels islet autoimmunity in type 1 diabetes"
+  authors: "Bartolo L, Afroze S, <strong>Lin Y</strong>, Ansari A, Pan Y-G, Liu C, <strong>Zhang NR</strong>, Naji A, Su LF*"
+  year: 2025
+  venue: "In review"
+  status: review
+  methods: [sc]
+  bio: [imm, gi]
+
+- title: "Temporal and clonal resolution of cellular evolution under stress"
+  authors: "<strong>Chen XE</strong>&dagger;, <strong>Lin KZ</strong>&dagger;, Schaff D&dagger;, Vander Velde R, Cote C, <strong>Huang S</strong>, Minn AJ, Shaffer SM*, <strong>Zhang NR</strong>*"
+  year: 2025
+  venue: "In review"
+  status: review
+  methods: [sc, lt, te]
+  bio: [can]
+
+- title: "Integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via DBiTplus"
+  authors: "Enninful A, <strong>Zhang Z</strong>, Klymyshyn D, Ingalls M, Yang M, Zong H, &hellip;, <strong>Zhang NR</strong>, &hellip;, Xu ML, Ma Z, Fan R*"
+  year: 2026
+  venue: "Nature Methods"
+  detail: "23, 1827&ndash;1839"
+  status: published
+  doi: "10.1038/s41592-025-02948-0"
+  preprint: "10.1101/2024.11.07.622523"
+  software:
+    - name: "DBiT-plus"
+      url: "https://github.com/Janezjz/DBiT-plus"
+  methods: [sp, int, sc]
+  bio: []
+
+- title: "Pre-existing cell states predict resistance to multiple treatments"
+  authors: "Schaff DL, White PE, Cote CJ, Watterson GE, <strong>Lin KZ</strong>, Fasse AJ, <strong>Zhang NR</strong>, Shaffer SM*"
+  year: 2026
+  venue: "Cell Genomics"
+  detail: "6, 101191"
+  status: published
+  doi: "10.1016/j.xgen.2026.101191"
+  methods: [sc, lt, te]
+  bio: [can]
+
+- title: "Robust footprinting with sample-specific Tn5 bias correction for bulk and single cell ATAC-seq"
+  authors: "<strong>Lin Y</strong>, Wang H, Wilson PC*, <strong>Zhang NR</strong>*"
+  year: 2026
+  venue: "Nature Communications"
+  detail: "17"
+  status: published
+  doi: "10.1038/s41467-026-73164-3"
+  preprint: "10.1101/2025.10.17.683160"
+  software:
+    - name: "TraceBind"
+      url: "https://github.com/lyx-lin/TraceBind"
+  methods: [gr, sc]
+  bio: []
+
+- title: "A longitudinal single-cell and spatial multiomic atlas of pediatric high-grade glioma"
+  authors: "Sussman JH&dagger;, Oldridge DA&dagger;, Yu W&dagger;, Chen C-H, Zellmer AM, <strong>Rong J</strong>, &hellip;, <strong>Zhang NR</strong>, De Raedt T, Cole K, Tan K*"
+  year: 2026
+  venue: "Cell Reports Medicine"
+  detail: "7, 102766"
+  status: published
+  doi: "10.1016/j.xcrm.2026.102766"
+  preprint: "10.1101/2024.03.06.583588"
+  methods: [sc, sp]
+  bio: [can, neu]
+
+- title: "Cancer subclone detection based on DNA copy number in single-cell and spatial omic sequencing data"
+  authors: "<strong>Wu C-Y</strong>, <strong>Rong J</strong>, Sathe A, <strong>Hess PR</strong>, Lau BT, Grimes SM, <strong>Huang S</strong>, Ji HP*, <strong>Zhang NR</strong>*"
+  year: 2025
+  venue: "Nature Methods"
+  detail: "22, 1846&ndash;1856"
+  status: published
+  doi: "10.1038/s41592-025-02773-5"
+  software:
+    - name: "Clonalscope"
+      url: "https://github.com/seasoncloud/Clonalscope"
+  methods: [cn, te, sc, sp]
+  bio: [can]
+
+- title: "Analysis of individual patient pathway coordination in a cross-species single-cell kidney atlas"
+  authors: "Kl&#246;tzer KA, Abedini A, Li S, Balzer MS, Liang X, Levinsohn J, &hellip;, Halmos B, <strong>Zhang NR</strong>*, Susztak K*"
+  year: 2025
+  venue: "Nature Genetics"
+  detail: "57, 1922&ndash;1934"
+  status: published
+  doi: "10.1038/s41588-025-02285-0"
+  software:
+    - name: "CellSpectra"
+      url: "https://github.com/kloetzerka/CellSpectra"
+  methods: [pa, sc, int]
+  bio: [kid]
+
+- title: "Longitudinal single-cell multiomic atlas of high-risk neuroblastoma reveals chemotherapy-induced tumor microenvironment rewiring"
+  authors: "Yu W, Biyik-Sit R, Uzun Y, Chen C-H, Thadi A, Sussman JH, &hellip;, <strong>Zhang NR</strong>, Maris JM, Tan K*"
+  year: 2025
+  venue: "Nature Genetics"
+  detail: "57, 1142&ndash;1154"
+  status: published
+  doi: "10.1038/s41588-025-02158-6"
+  methods: [sc, int]
+  bio: [can]
+
+- title: "Improving gene isoform quantification with miniQuant"
+  authors: "Li H, Wang D, Gao Q, Tan P, Wang Y, Cai X, Li A, Zhao Y, Thurman AL, Malekpour SA, Zhang Y, Sala R, Cipriano A, Wei C-L, Sebastiano V, Song C, <strong>Zhang NR</strong>, Au KF*"
+  year: 2025
+  venue: "Nature Biotechnology"
+  detail: "44, 477&ndash;489"
+  status: published
+  doi: "10.1038/s41587-025-02633-9"
+  software:
+    - name: "miniQuant"
+      url: "https://github.com/Augroup/miniQuant"
+  methods: [lr, di, gr]
+  bio: []
+
+- title: "Single cell and spatial alternative splicing analysis with Nanopore long read sequencing"
+  authors: "<strong>Fu Y</strong>*, Kim H, Roy S, <strong>Huang S</strong>, <strong>Adams JI</strong>, Grimes SM, Lau BT, Sathe A, Ji HP*, <strong>Zhang NR</strong>*"
+  year: 2025
+  venue: "Nature Communications"
+  detail: "16, 6654"
+  status: published
+  doi: "10.1038/s41467-025-60902-2"
+  software:
+    - name: "Longcell"
+      url: "https://github.com/yuntianf/Longcell"
+  methods: [lr, sc, sp, gr]
+  bio: [can]
+
+- title: "Clonal cell states link gastroesophageal junction tissues with metaplasia and cancer"
+  authors: "Gier RA, Bracht SA, <strong>Rong J</strong>, Reyes Hueros RLA, Wahlsten ML, Cote C, &hellip;, Falk GW, <strong>Zhang NR</strong>, Shaffer SM*"
+  year: 2025
+  venue: "Nature Communications"
+  detail: "16, 10952"
+  status: published
+  doi: "10.1038/s41467-025-66302-w"
+  software:
+    - name: "scmtVT"
+      url: "https://github.com/jiazhen-rong/scmtVT"
+  methods: [sc, lt, te]
+  bio: [can, gi]
+
+- title: "Recovery of biological signals lost in single-cell batch integration with CellANOVA"
+  authors: "<strong>Zhang Z</strong>, <strong>Mathew D</strong>, Lim TL, <strong>Mason K</strong>, Martinez CM, <strong>Huang S</strong>, Wherry EJ, Susztak K, Minn AJ, Ma Z*, <strong>Zhang NR</strong>*"
+  year: 2024
+  venue: "Nature Biotechnology"
+  detail: "43, 1861&ndash;1877"
+  status: published
+  doi: "10.1038/s41587-024-02463-1"
+  software:
+    - name: "CellANOVA"
+      url: "https://github.com/Janezjz/cellanova"
+  methods: [bc, int, sc]
+  bio: [imm, kid]
+
+- title: "A multiomic atlas identifies a treatment-resistant, bone marrow progenitor-like cell population in T cell acute lymphoblastic leukemia"
+  authors: "Xu J, Chen C, Sussman JH, Yoshimura S, Vincent T, P&#246;l&#246;nen P, &hellip;, <strong>Zhang NR</strong>, &hellip;, Mullighan CG, Tan K*, Teachey DT*"
+  year: 2024
+  venue: "Nature Cancer"
+  detail: "6, 102&ndash;122"
+  status: published
+  doi: "10.1038/s43018-024-00863-5"
+  methods: [sc, int]
+  bio: [can]
+
+- title: "Niche-DE: niche-differential gene expression analysis in spatial transcriptomics data identifies context-dependent cell-cell interactions"
+  authors: "<strong>Mason K</strong>, Sathe A, <strong>Hess PR</strong>, <strong>Rong J</strong>, <strong>Wu C-Y</strong>, Furth E, Susztak K, Levinsohn J, Ji HP, <strong>Zhang NR</strong>*"
+  year: 2024
+  venue: "Genome Biology"
+  detail: "25, 14"
+  status: published
+  doi: "10.1186/s13059-023-03159-6"
+  preprint: "10.1101/2023.01.03.522646"
+  software:
+    - name: "NicheDE"
+      url: "https://github.com/kaishumason/NicheDE"
+  methods: [sp, de, sc]
+  bio: [can]
+
+- title: "Combined JAK inhibition and PD-1 immunotherapy for non-small cell lung cancer patients"
+  authors: "<strong>Mathew D</strong>, Marmarelis ME, Foley C, Bauml JM, Ye D, Ghinnagow R, Ngiow SF, Klapholz M, Jun S, <strong>Zhang Z</strong>, Zorc R, Diehn M, Hwang W-T, <strong>Zhang NR</strong>, Langer CJ, Wherry EJ, Minn AJ*"
+  year: 2024
+  venue: "Science"
+  detail: "384, eadf1329"
+  status: published
+  doi: "10.1126/science.adf1329"
+  methods: [sc]
+  bio: [can, imm]
+
+- title: "A comparative study of structural variant calling in WGS from Alzheimer's disease families"
+  authors: "Malamon JS&dagger;, Farrell JJ&dagger;, <strong>Xia LC</strong>, Dombroski BA, Das RG, Way J, &hellip;, <strong>Zhang NR</strong>, &hellip;, Schellenberg GD, Lee WP&dagger;*, Vardarajan BN&dagger;*"
+  year: 2024
+  venue: "Life Science Alliance"
+  detail: "7, e202302181"
+  status: published
+  doi: "10.26508/lsa.202302181"
+  methods: [vd]
+  bio: [neu]
+
+- title: "Integration of spatial and single-cell data across modalities with weakly linked features"
+  authors: "Chen S&dagger;, Zhu B&dagger;, <strong>Huang S</strong>, Hickey JW, <strong>Lin KZ</strong>, Snyder M, Greenleaf WJ, Nolan GP, <strong>Zhang NR</strong>*, Ma Z*"
+  year: 2023
+  venue: "Nature Biotechnology"
+  detail: "42, 1096&ndash;1106"
+  status: published
+  doi: "10.1038/s41587-023-01935-0"
+  preprint: "10.1101/2023.01.12.523851"
+  software:
+    - name: "MaxFuse"
+      url: "https://github.com/shuxiaoc/maxfuse"
+  methods: [int, sp, sc]
+  bio: []
+
+- title: "Quantifying common and distinct information in single-cell multimodal data with tilted canonical correlation analysis"
+  authors: "<strong>Lin KZ</strong>, <strong>Zhang NR</strong>*"
+  year: 2023
+  venue: "PNAS"
+  detail: "120, e2303647120"
+  status: published
+  doi: "10.1073/pnas.2303647120"
+  preprint: "10.1101/2022.10.07.511320"
+  software:
+    - name: "Tilted-CCA"
+      url: "https://github.com/linnykos/tiltedCCA"
+  methods: [int, sc, np]
+  bio: []
+
+- title: "Organization of the human intestine at single-cell resolution"
+  authors: "Hickey JW, Becker WR, Nevins SA, Horning A, Perez AE, Zhu C, &hellip;, <strong>Zhang NR</strong>, &hellip;, Nolan GP*, Greenleaf WJ*, Snyder M*"
+  year: 2023
+  venue: "Nature"
+  detail: "619, 572&ndash;584"
+  status: published
+  doi: "10.1038/s41586-023-05915-x"
+  methods: [sp, sc]
+  bio: [gi]
+
+- title: "Systematic single-cell pathway analysis to characterize early T cell activation"
+  authors: "Bibby JA, <strong>Agarwal D</strong>, Freiwald T, Kunz N, Merle NS, West EE, Singh P, Larochelle A, Chinian F, Mukherjee S, Afzali B, Kemper C*, <strong>Zhang NR</strong>*"
+  year: 2022
+  venue: "Cell Reports"
+  detail: "41, 111697"
+  status: published
+  doi: "10.1016/j.celrep.2022.111697"
+  software:
+    - name: "SCPA"
+      url: "https://github.com/jackbibby1/SCPA"
+  methods: [pa, sc]
+  bio: [imm]
+
+- title: "Nonparametric single-cell multiomic characterization of trio relationships between transcription factors, target genes, and cis-regulatory regions"
+  authors: "<strong>Jiang Y</strong>, Harigaya Y, <strong>Zhang Z</strong>, Zhang H, Zang C, <strong>Zhang NR</strong>*"
+  year: 2022
+  venue: "Cell Systems"
+  detail: "13, 737&ndash;751.e4"
+  status: published
+  doi: "10.1016/j.cels.2022.08.004"
+  software:
+    - name: "TRIPOD"
+      url: "https://github.com/yuchaojiang/TRIPOD"
+  methods: [gr, sc, np, int]
+  bio: []
+
+- title: "The interferon-stimulated gene RIPK1 regulates cancer cell intrinsic and extrinsic resistance to immune checkpoint blockade"
+  authors: "Cucolo L, Chen Q, Qiu J, Yu Y, Klapholz M, Budinich KA, <strong>Zhang Z</strong>, Shao Y, Brodsky IE, Jordan MS, Gilliland DG, <strong>Zhang NR</strong>, Shi J, Minn AJ*"
+  year: 2022
+  venue: "Immunity"
+  detail: "55, 671&ndash;685.e10"
+  status: published
+  doi: "10.1016/j.immuni.2022.03.007"
+  methods: [sc]
+  bio: [can, imm]
+
+- title: "Colorectal cancer metastases in the liver establish immunosuppressive spatial networking between tumor-associated SPP1+ macrophages and fibroblasts"
+  authors: "Sathe A, <strong>Mason K</strong>, Grimes SM, <strong>Zhou Z</strong>, Lau BT, Bai X, Su A, Tan X, Lee H, Suarez CJ, Nguyen Q, Poultsides G, <strong>Zhang NR</strong>, Ji HP*"
+  year: 2022
+  venue: "Clinical Cancer Research"
+  detail: "29, 244&ndash;260"
+  status: published
+  doi: "10.1158/1078-0432.CCR-22-2041"
+  preprint: "10.1101/2020.09.01.273672"
+  software:
+    - name: "CACTI"
+      url: "https://github.com/kaishumason/CACTI_Proximity_Test"
+  methods: [sp, sc]
+  bio: [can, imm, gi]
+
+- title: "Integrative single-cell analysis of allele-specific copy number alterations and chromatin accessibility in cancer"
+  authors: "<strong>Wu C-Y</strong>, Lau BT, Kim HS, Sathe A, Grimes SM, Ji HP, <strong>Zhang NR</strong>*"
+  year: 2021
+  venue: "Nature Biotechnology"
+  detail: "39, 1259&ndash;1269"
+  status: published
+  doi: "10.1038/s41587-021-00911-w"
+  software:
+    - name: "Alleloscope"
+      url: "https://github.com/seasoncloud/Alleloscope"
+  methods: [cn, sc, int, gr, te]
+  bio: [can]
+
+- title: "New frontiers in single-cell genomics"
+  authors: "Navin NE, Rozenblatt-Rosen O, <strong>Zhang NR</strong>"
+  year: 2021
+  venue: "Genome Research"
+  detail: "31, ix&ndash;x"
+  status: published
+  doi: "10.1101/gr.276129.121"
+  methods: [sc]
+  bio: []
+
+- title: "Causal inference for heritable phenotypic risk factors using heterogeneous genetic instruments"
+  authors: "<strong>Wang J</strong>, Zhao Q, Bowden J, Hemani G, Davey Smith G, Small DS, <strong>Zhang NR</strong>"
+  year: 2021
+  venue: "PLoS Genetics"
+  detail: "17, e1009575"
+  status: published
+  doi: "10.1371/journal.pgen.1009575"
+  software:
+    - name: "GRAPPLE"
+      url: "https://github.com/jingshuw/GRAPPLE"
+  methods: [ci]
+  bio: []
+
+- title: "A Mendelian randomization study of the role of lipoprotein subfractions in coronary artery disease"
+  authors: "Zhao Q*, <strong>Wang J</strong>, <strong>Miao Z</strong>, <strong>Zhang NR</strong>, Hennessy S, Small DS, Rader DJ"
+  year: 2021
+  venue: "eLife"
+  detail: "10, e58361"
+  status: published
+  doi: "10.7554/eLife.58361"
+  methods: [ci]
+  bio: [cvd]
+
+- title: "DENDRO: genetic heterogeneity profiling and subclone detection by single-cell RNA sequencing"
+  authors: "<strong>Zhou Z</strong>, Xu B, Minn AJ, <strong>Zhang NR</strong>*"
+  year: 2020
+  venue: "Genome Biology"
+  detail: "21, 10"
+  status: published
+  doi: "10.1186/s13059-019-1922-x"
+  software:
+    - name: "DENDRO"
+      url: "https://github.com/zhouzilu/DENDRO"
+  methods: [te, sc, cn]
+  bio: [can]
+
+- title: "Surface protein imputation from single cell transcriptomes by deep neural networks"
+  authors: "<strong>Zhou Z</strong>, Ye C, <strong>Wang J</strong>, <strong>Zhang NR</strong>*"
+  year: 2020
+  venue: "Nature Communications"
+  detail: "11, 651"
+  status: published
+  doi: "10.1038/s41467-020-14391-0"
+  software:
+    - name: "cTP-net"
+      url: "https://github.com/zhouzilu/cTPnet"
+  methods: [ai, di, sc]
+  bio: []
+
+- title: "Data denoising and post-denoising corrections in single cell RNA sequencing"
+  authors: "<strong>Agarwal D</strong>, <strong>Wang J</strong>, <strong>Zhang NR</strong>*"
+  year: 2020
+  venue: "Statistical Science"
+  detail: "35, 112&ndash;128"
+  status: published
+  doi: "10.1214/19-STS7560"
+  methods: [di, sc]
+  bio: []
+
+- title: "Distribution-free multisample tests based on optimal matchings with applications to single cell genomics"
+  authors: "Mukherjee S, <strong>Agarwal D</strong>, <strong>Zhang NR</strong>, Bhattacharya BB"
+  year: 2020
+  venue: "Journal of the American Statistical Association"
+  detail: "117, 627&ndash;638"
+  status: published
+  doi: "10.1080/01621459.2020.1791131"
+  methods: [np, sc]
+  bio: []
+
+- title: "The Human Tumor Atlas Network: charting tumor transitions across space and time at single-cell resolution"
+  authors: "Rozenblatt-Rosen O, Regev A, Oberdoerffer P, Nawy T, Hupalowska A, &hellip;, <strong>Zhang NR</strong>, &hellip; (Human Tumor Atlas Network)"
+  year: 2020
+  venue: "Cell"
+  detail: "181, 236&ndash;249"
+  status: published
+  doi: "10.1016/j.cell.2020.03.053"
+  methods: [sc, sp]
+  bio: [can]
+
+- title: "Bulk tissue cell type deconvolution with multi-subject single-cell expression reference"
+  authors: "<strong>Wang X</strong>, Park J, Susztak K, <strong>Zhang NR</strong>*, Li M*"
+  year: 2019
+  venue: "Nature Communications"
+  detail: "10, 380"
+  status: published
+  doi: "10.1038/s41467-018-08023-x"
+  software:
+    - name: "MuSiC"
+      url: "https://github.com/xuranw/MuSiC"
+  methods: [dc, sc]
+  bio: [kid]
+
+- title: "Data denoising with transfer learning in single-cell transcriptomics"
+  authors: "<strong>Wang J</strong>, <strong>Agarwal D</strong>, <strong>Huang M</strong>, Hu G, <strong>Zhou Z</strong>, Ye C, <strong>Zhang NR</strong>*"
+  year: 2019
+  venue: "Nature Methods"
+  detail: "16, 875&ndash;878"
+  status: published
+  doi: "10.1038/s41592-019-0537-1"
+  software:
+    - name: "SAVER-X"
+      url: "https://github.com/jingshuw/SAVERX"
+  methods: [di, ai, sc]
+  bio: []
+
+- title: "Opposing functions of interferon coordinate adaptive and innate immune responses to cancer immune checkpoint blockade"
+  authors: "Benci JL, Johnson LR, Choa R, Xu Y, Qiu J, <strong>Zhou Z</strong>, &hellip;, <strong>Zhang NR</strong>, &hellip;, Wolchok JD, Kambayashi T, Minn AJ*"
+  year: 2019
+  venue: "Cell"
+  detail: "178, 933&ndash;948.e14"
+  status: published
+  doi: "10.1016/j.cell.2019.07.019"
+  methods: [sc]
+  bio: [can, imm]
+
+- title: "Elite control of HIV is associated with distinct functional and transcriptional signatures in lymphoid tissue CD8+ T cells"
+  authors: "Nguyen S, Deleage C, Darko S, Ransier A, Truong DP, <strong>Agarwal D</strong>, &hellip;, <strong>Zhang NR</strong>, &hellip;, Deeks SG, Buggert M, Betts MR*"
+  year: 2019
+  venue: "Science Translational Medicine"
+  detail: "11, eaax4077"
+  status: published
+  doi: "10.1126/scitranslmed.aax4077"
+  methods: [sc]
+  bio: [imm, inf]
+
+- title: "Cell-type-specific complement expression in the healthy and diseased retina"
+  authors: "Pauly D, <strong>Agarwal D</strong>, Dana N, Sch&#228;fer N, Biber J, Wunderlich KA, &hellip;, <strong>Zhang NR</strong>, &hellip;, Stambolian D, Li M, Grosche A*"
+  year: 2019
+  venue: "Cell Reports"
+  detail: "29, 2835&ndash;2848.e4"
+  status: published
+  doi: "10.1016/j.celrep.2019.10.084"
+  preprint: "10.1101/413088"
+  methods: [sc, de]
+  bio: [imm, neu]
+
+- title: "Semblance: an empirical similarity kernel on probability spaces"
+  authors: "<strong>Agarwal D</strong>, <strong>Zhang NR</strong>*"
+  year: 2019
+  venue: "Science Advances"
+  detail: "5, eaau9630"
+  status: published
+  doi: "10.1126/sciadv.aau9630"
+  software:
+    - name: "Semblance"
+      url: "https://cran.r-project.org/web/packages/Semblance/index.html"
+  methods: [np]
+  bio: []
+
+- title: "SAVER: gene expression recovery for single-cell RNA sequencing"
+  authors: "<strong>Huang M</strong>, <strong>Wang J</strong>, Torre E, Dueck H, Shaffer S, Bonasio R, Murray JI, Raj A, Li M, <strong>Zhang NR</strong>*"
+  year: 2018
+  venue: "Nature Methods"
+  detail: "15, 539&ndash;542"
+  status: published
+  doi: "10.1038/s41592-018-0033-z"
+  preprint: "10.1101/138677"
+  software:
+    - name: "SAVER"
+      url: "https://github.com/mohuangx/SAVER"
+  methods: [di, sc]
+  bio: []
+
+- title: "Gene expression distribution deconvolution in single-cell RNA sequencing"
+  authors: "<strong>Wang J</strong>, <strong>Huang M</strong>, Torre E, Dueck H, Shaffer S, Murray JI, Raj A, Li M, <strong>Zhang NR</strong>*"
+  year: 2018
+  venue: "PNAS"
+  detail: "115, E6437&ndash;E6446"
+  status: published
+  doi: "10.1073/pnas.1721085115"
+  preprint: "10.1101/227033"
+  software:
+    - name: "DESCEND"
+      url: "https://github.com/jingshuw/descend"
+  methods: [dc, sc]
+  bio: []
+
+- title: "CODEX2: full-spectrum copy number variation detection by high-throughput DNA sequencing"
+  authors: "<strong>Jiang Y</strong>*, Wang R, Urrutia E, Anastopoulos IN, Nathanson KL, <strong>Zhang NR</strong>*"
+  year: 2018
+  venue: "Genome Biology"
+  detail: "19, 202"
+  status: published
+  doi: "10.1186/s13059-018-1578-y"
+  software:
+    - name: "CODEX2"
+      url: "https://github.com/yuchaojiang/CODEX2"
+  methods: [cn]
+  bio: [can]
+
+- title: "Integrative DNA copy number detection and genotyping from sequencing and array-based platforms"
+  authors: "<strong>Zhou Z</strong>, Wang W, Wang L-S, <strong>Zhang NR</strong>*"
+  year: 2018
+  venue: "Bioinformatics"
+  detail: "34, 2349&ndash;2355"
+  status: published
+  doi: "10.1093/bioinformatics/bty104"
+  software:
+    - name: "iCNV"
+      url: "https://github.com/zhouzilu/iCNV"
+  methods: [cn, int]
+  bio: []
+
+- title: "Integrative pipeline for profiling DNA copy number and inferring tumor phylogeny"
+  authors: "Urrutia E, <strong>Chen H</strong>, <strong>Zhou Z</strong>, <strong>Zhang NR</strong>*, <strong>Jiang Y</strong>*"
+  year: 2018
+  venue: "Bioinformatics"
+  detail: "34, 2126&ndash;2128"
+  status: published
+  doi: "10.1093/bioinformatics/bty057"
+  software:
+    - name: "MARATHON"
+      url: "https://github.com/yuchaojiang/MARATHON"
+  methods: [cn, te]
+  bio: [can]
+
+- title: "Sensitivity analysis and power for instrumental variable studies"
+  authors: "<strong>Wang X</strong>, <strong>Jiang Y</strong>, <strong>Zhang NR</strong>, Small DS"
+  year: 2018
+  venue: "Biometrics"
+  detail: "74, 1150&ndash;1160"
+  status: published
+  doi: "10.1111/biom.12873"
+  methods: [ci]
+  bio: []
+
+- title: "First giant steps toward a cell atlas of atherosclerosis"
+  authors: "Zhang H, <strong>Zhang NR</strong>, Li M, Reilly MP*"
+  year: 2018
+  venue: "Circulation Research"
+  detail: "122, 1632&ndash;1634"
+  status: published
+  doi: "10.1161/CIRCRESAHA.118.313076"
+  methods: [sc]
+  bio: [cvd]
+
+- title: "SCALE: modeling allele-specific gene expression by single-cell RNA sequencing"
+  authors: "<strong>Jiang Y</strong>, <strong>Zhang NR</strong>*, Li M*"
+  year: 2017
+  venue: "Genome Biology"
+  detail: "18, 74"
+  status: published
+  doi: "10.1186/s13059-017-1200-8"
+  software:
+    - name: "SCALE"
+      url: "https://github.com/yuchaojiang/SCALE"
+  methods: [gr, sc]
+  bio: []
+
+- title: "Accounting for technical noise in differential expression analysis of single-cell RNA sequencing data"
+  authors: "Jia C, Hu Y, Kelly D, Kim J, Li M*, <strong>Zhang NR</strong>*"
+  year: 2017
+  venue: "Nucleic Acids Research"
+  detail: "45, 10978&ndash;10988"
+  status: published
+  doi: "10.1093/nar/gkx754"
+  software:
+    - name: "TASC"
+      url: "https://github.com/scrna-seq/TASC"
+  methods: [de, sc, di]
+  bio: []
+
+- title: "Allele-specific copy number estimation by whole exome sequencing"
+  authors: "<strong>Chen H</strong>, <strong>Jiang Y</strong>, Maxwell KN, Nathanson KL, <strong>Zhang NR</strong>*"
+  year: 2017
+  venue: "Annals of Applied Statistics"
+  detail: "11, 1169&ndash;1192"
+  status: published
+  doi: "10.1214/17-AOAS1043"
+  software:
+    - name: "FALCON-X"
+      url: "https://cran.r-project.org/web/packages/falconx/index.html"
+  methods: [cn]
+  bio: [can]
+
+- title: "Identification of large rearrangements in cancer genomes with barcode linked reads"
+  authors: "<strong>Xia LC</strong>, Bell JM, Wood-Bouwens C, Chen JJ, <strong>Zhang NR</strong>*, Ji HP*"
+  year: 2017
+  venue: "Nucleic Acids Research"
+  detail: "46, e19"
+  status: published
+  doi: "10.1093/nar/gkx1193"
+  software:
+    - name: "SWAN"
+      url: "https://bitbucket.org/charade/swan/overview"
+  methods: [vd]
+  bio: [can]
+
+- title: "BRCA locus-specific loss of heterozygosity in germline BRCA1 and BRCA2 carriers"
+  authors: "Maxwell KN, Wubbenhorst B, Wenz BM, De Sloover D, Pluta J, Emery L, &hellip;, <strong>Zhang NR</strong>, &hellip;, Feldman M, Domchek SM, Nathanson KL*"
+  year: 2017
+  venue: "Nature Communications"
+  detail: "8, 319"
+  status: published
+  doi: "10.1038/s41467-017-00388-9"
+  methods: [cn]
+  bio: [can]
+
+- title: "Genetic and genomic characterization of 462 melanoma patient-derived xenografts, tumor biopsies, and cell lines"
+  authors: "Garman B, Anastopoulos IN, Krepler C, Brafford P, Sproesser K, <strong>Jiang Y</strong>, &hellip;, <strong>Zhang NR</strong>, Davies MA, Herlyn M, Nathanson KL*"
+  year: 2017
+  venue: "Cell Reports"
+  detail: "21, 1936&ndash;1952"
+  status: published
+  doi: "10.1016/j.celrep.2017.10.052"
+  methods: [cn]
+  bio: [can]
+
+- title: "DNA copy number profiling using single-cell sequencing"
+  authors: "<strong>Wang X</strong>, <strong>Chen H</strong>, <strong>Zhang NR</strong>"
+  year: 2017
+  venue: "Briefings in Bioinformatics"
+  detail: "19, 731&ndash;736"
+  status: published
+  doi: "10.1093/bib/bbx004"
+  methods: [cn, sc]
+  bio: []
+
+- title: "Assessing intratumor heterogeneity and tracking longitudinal and spatial clonal evolutionary history by next-generation sequencing"
+  authors: "<strong>Jiang Y</strong>, Qiu Y, Minn AJ, <strong>Zhang NR</strong>*"
+  year: 2016
+  venue: "PNAS"
+  detail: "113, E5528&ndash;E5537"
+  status: published
+  doi: "10.1073/pnas.1522203113"
+  software:
+    - name: "Canopy"
+      url: "https://cran.r-project.org/web/packages/Canopy/"
+  methods: [te, cn]
+  bio: [can]
+
+- title: "A genome-wide approach for detecting novel insertion-deletion variants of mid-range size"
+  authors: "<strong>Xia LC</strong>, Sakshuwong S, Hopmans ES, Bell JM, Grimes SM, Siegmund DO, Ji HP*, <strong>Zhang NR</strong>*"
+  year: 2016
+  venue: "Nucleic Acids Research"
+  detail: "44, e126"
+  status: published
+  doi: "10.1093/nar/gkw481"
+  software:
+    - name: "SWAN"
+      url: "https://bitbucket.org/charade/swan/overview"
+    - name: "SVEngine"
+      url: "https://bitbucket.org/charade/svengine"
+  methods: [vd, cp]
+  bio: []
+
+- title: "Scan statistics on Poisson random fields with applications in genomics"
+  authors: "<strong>Zhang NR</strong>, Yakir B, <strong>Xia LC</strong>, Siegmund DO"
+  year: 2016
+  venue: "Annals of Applied Statistics"
+  detail: "10, 726&ndash;755"
+  status: published
+  doi: "10.1214/15-AOAS892"
+  methods: [cp]
+  bio: []
+
+- title: "Global copy number profiling of cancer genomes"
+  authors: "Wang X, Chen M, Yu X, Pornputtapong N, <strong>Chen H</strong>, <strong>Zhang NR</strong>, Powers RS, Krauthammer M*"
+  year: 2016
+  venue: "Bioinformatics"
+  detail: "32, 926&ndash;928"
+  status: published
+  doi: "10.1093/bioinformatics/btv676"
+  software:
+    - name: "CLOSE"
+      url: "https://github.com/xfwang/CLOSE"
+  methods: [cn]
+  bio: [can]
+
+- title: "Graph-based change-point detection"
+  authors: "<strong>Chen H</strong>, <strong>Zhang NR</strong>"
+  year: 2015
+  venue: "Annals of Statistics"
+  detail: "43, 139&ndash;176"
+  status: published
+  doi: "10.1214/14-AOS1269"
+  software:
+    - name: "gSeg"
+      url: "https://cran.r-project.org/web/packages/gSeg/index.html"
+  methods: [cp, np]
+  bio: []
+
+- title: "Allele-specific copy number profiling by next-generation DNA sequencing"
+  authors: "<strong>Chen H</strong>, Bell JM, Zavala NA, Ji HP, <strong>Zhang NR</strong>*"
+  year: 2015
+  venue: "Nucleic Acids Research"
+  detail: "43, e23"
+  status: published
+  doi: "10.1093/nar/gku1252"
+  software:
+    - name: "FALCON"
+      url: "https://cran.r-project.org/web/packages/falcon/index.html"
+  methods: [cn]
+  bio: [can]
+
+- title: "CODEX: a normalization and copy number variation detection method for whole exome sequencing"
+  authors: "<strong>Jiang Y</strong>, Oldridge DA, Diskin SJ, <strong>Zhang NR</strong>*"
+  year: 2015
+  venue: "Nucleic Acids Research"
+  detail: "43, e39"
+  status: published
+  doi: "10.1093/nar/gku1363"
+  software:
+    - name: "CODEX2"
+      url: "https://github.com/yuchaojiang/CODEX2"
+  methods: [cn]
+  bio: [can]
+
+- title: "Emergence of hemagglutinin mutations during the course of influenza infection"
+  authors: "Cushing A, Kamali A, Winters M, Hopmans ES, Bell JM, Grimes SM, <strong>Xia LC</strong>, <strong>Zhang NR</strong>, Moss RB, Holodniy M, Ji HP*"
+  year: 2015
+  venue: "Scientific Reports"
+  detail: "5, 16178"
+  status: published
+  doi: "10.1038/srep16178"
+  methods: [vd]
+  bio: [inf]
+
+- title: "Memory acquisition and retrieval impact different epigenetic processes that regulate gene expression"
+  authors: "Peixoto LL, Wimmer ME, Poplawski SG, Tudor JC, Kenworthy CA, Liu S, Mizuno K, Garcia BA, <strong>Zhang NR</strong>, Giese KP, Abel T*"
+  year: 2015
+  venue: "BMC Genomics"
+  detail: "16, S5"
+  status: published
+  doi: "10.1186/1471-2164-16-S5-S5"
+  methods: [gr, de]
+  bio: [neu]
+
+- title: "Allelic variation contributes to bacterial host specificity"
+  authors: "Yue M, Han X, De Masi L, Zhu C, Ma X, Zhang J, &hellip;, <strong>Zhang NR</strong>, Rankin SC, Schifferli DM*"
+  year: 2015
+  venue: "Nature Communications"
+  detail: "6, 8754"
+  status: published
+  doi: "10.1038/ncomms9754"
+  methods: [vd]
+  bio: [inf]
+
+- title: "Metastatic tumor evolution and organoid modeling implicate TGFBR2 as a cancer driver in diffuse gastric cancer"
+  authors: "Nadauld LD, Garcia S, Natsoulis G, Bell JM, Miotke L, Hopmans ES, &hellip;, <strong>Zhang NR</strong>, Ford JM, Kuo CJ*, Ji HP*"
+  year: 2014
+  venue: "Genome Biology"
+  detail: "15, 428"
+  status: published
+  doi: "10.1186/s13059-014-0428-9"
+  methods: [te, cn]
+  bio: [can, gi]
+
+- title: "Graph-based tests for two-sample comparisons of categorical data"
+  authors: "<strong>Chen H</strong>, <strong>Zhang NR</strong>"
+  year: 2013
+  venue: "Statistica Sinica"
+  detail: "23, 1479&ndash;1503"
+  status: published
+  doi: "10.5705/ss.2012.125s"
+  software:
+    - name: "gCat"
+      url: "https://cran.r-project.org/web/packages/gCat/index.html"
+  methods: [np]
+  bio: []
+
+- title: "Identification of insertion deletion mutations from deep targeted resequencing"
+  authors: "Natsoulis G&dagger;, <strong>Zhang NR</strong>&dagger;, Welch K, Bell JM, Ji HP*"
+  year: 2013
+  venue: "Journal of Data Mining in Genomics &amp; Proteomics"
+  detail: "4, 132"
+  status: published
+  doi: "10.4172/2153-0602.1000132"
+  methods: [vd]
+  bio: []
+
+- title: "A cross-sample statistical model for SNP detection in short-read sequencing data"
+  authors: "Muralidharan O, Natsoulis G, Bell JM, Newburger D, Xu H, Kela I, Ji HP, <strong>Zhang NR</strong>*"
+  year: 2012
+  venue: "Nucleic Acids Research"
+  detail: "40, e5"
+  status: published
+  doi: "10.1093/nar/gkr851"
+  methods: [vd]
+  bio: []
+
+- title: "Ultrasensitive detection of rare mutations using next-generation targeted resequencing"
+  authors: "Flaherty P, Natsoulis G, Muralidharan O, Winters M, Buenrostro J, Bell JM, Brown S, Holodniy M, <strong>Zhang NR</strong>, Ji HP*"
+  year: 2012
+  venue: "Nucleic Acids Research"
+  detail: "40, e2"
+  status: published
+  doi: "10.1093/nar/gkr861"
+  methods: [vd]
+  bio: []
+
+- title: "Change-point model on nonhomogeneous Poisson processes with application in copy number profiling by next-generation DNA sequencing"
+  authors: "<strong>Shen JJ</strong>, <strong>Zhang NR</strong>*"
+  year: 2012
+  venue: "Annals of Applied Statistics"
+  detail: "6, 476&ndash;496"
+  status: published
+  doi: "10.1214/11-AOAS517"
+  software:
+    - name: "seqCBS"
+      url: "https://cran.r-project.org/web/packages/seqCBS/index.html"
+  methods: [cp, cn]
+  bio: []
+
+- title: "Detecting mutations in mixed sample sequencing data using empirical Bayes"
+  authors: "Muralidharan O, Natsoulis G, Bell JM, Ji HP, <strong>Zhang NR</strong>*"
+  year: 2012
+  venue: "Annals of Applied Statistics"
+  detail: "6, 1047&ndash;1067"
+  status: published
+  doi: "10.1214/12-AOAS538"
+  methods: [vd]
+  bio: []
+
+- title: "Model selection for high-dimensional, multi-sequence change-point problems"
+  authors: "<strong>Zhang NR</strong>, Siegmund DO"
+  year: 2012
+  venue: "Statistica Sinica"
+  detail: "22, 1507&ndash;1538"
+  status: published
+  doi: "10.5705/ss.2010.257"
+  methods: [cp]
+  bio: []
+
+- title: "Multiple hypothesis testing adjusted for latent variables, with an application to the AGEMAP gene expression data"
+  authors: "<strong>Sun Y</strong>, <strong>Zhang NR</strong>, Owen AB"
+  year: 2012
+  venue: "Annals of Applied Statistics"
+  detail: "6, 1664&ndash;1688"
+  status: published
+  doi: "10.1214/12-AOAS561"
+  software:
+    - name: "leapp"
+      url: "https://cran.r-project.org/web/packages/leapp/index.html"
+  methods: [bc, de]
+  bio: [age]
+
+- title: "Estimation of parent specific DNA copy number in tumors using high-density genotyping arrays"
+  authors: "<strong>Chen H</strong>, Xing H, <strong>Zhang NR</strong>*"
+  year: 2011
+  venue: "PLoS Computational Biology"
+  detail: "7, e1001060"
+  status: published
+  doi: "10.1371/journal.pcbi.1001060"
+  methods: [cn]
+  bio: [can]
+
+- title: "Detecting simultaneous variant intervals in aligned sequences"
+  authors: "Siegmund DO, Yakir B, <strong>Zhang NR</strong>"
+  year: 2011
+  venue: "Annals of Applied Statistics"
+  detail: "5, 645&ndash;668"
+  status: published
+  doi: "10.1214/10-AOAS400"
+  methods: [cp]
+  bio: []
+
+- title: "False discovery rates and copy number variation"
+  authors: "Efron B, <strong>Zhang NR</strong>"
+  year: 2011
+  venue: "Biometrika"
+  detail: "98, 251&ndash;271"
+  status: published
+  doi: "10.1093/biomet/asr018"
+  methods: [cp, cn]
+  bio: []
+
+- title: "A flexible approach for highly multiplexed candidate gene targeted resequencing"
+  authors: "Natsoulis G, Bell JM, Xu H, Buenrostro JD, Ordonez H, Grimes S, Newburger D, Jensen M, Zahn JM, <strong>Zhang NR</strong>, Ji HP*"
+  year: 2011
+  venue: "PLoS ONE"
+  detail: "6, e21088"
+  status: published
+  doi: "10.1371/journal.pone.0021088"
+  methods: [vd]
+  bio: []
+
+- title: "False discovery rate for scanning statistics"
+  authors: "Siegmund DO, <strong>Zhang NR</strong>, Yakir B"
+  year: 2011
+  venue: "Biometrika"
+  detail: "98, 979&ndash;985"
+  status: published
+  doi: "10.1093/biomet/asr057"
+  methods: [cp]
+  bio: []
+

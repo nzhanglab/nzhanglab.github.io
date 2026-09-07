@@ -1,0 +1,103 @@
+# Tag registry for the publications page. Edit labels/colours here.
+# 'fill' is the background (methodology); 'edge' its border.
+# Biology tags use 'color' for bold text, no fill.
+
+method:
+  - key: sc
+    label: "Single Cell"
+    fill: "#dceafa"
+    edge: "#7aa8d8"
+  - key: sp
+    label: "Spatial Omics"
+    fill: "#d5f0e2"
+    edge: "#79c4a0"
+  - key: int
+    label: "Integration"
+    fill: "#e6ddf7"
+    edge: "#a48fd4"
+  - key: bc
+    label: "Batch Correction"
+    fill: "#dee0f7"
+    edge: "#8f95d6"
+  - key: di
+    label: "Denoising/Imputation"
+    fill: "#d3eff2"
+    edge: "#77c3cc"
+  - key: dc
+    label: "Deconvolution"
+    fill: "#d6f2ea"
+    edge: "#77cbb6"
+  - key: lr
+    label: "Long Read"
+    fill: "#e0f2d3"
+    edge: "#9ecb78"
+  - key: cn
+    label: "DNA Copy Number"
+    fill: "#fbe6cd"
+    edge: "#dfa960"
+  - key: te
+    label: "Tumor Evolution"
+    fill: "#fbdcd2"
+    edge: "#e09b83"
+  - key: lt
+    label: "Lineage Tracing"
+    fill: "#fbefc9"
+    edge: "#dcc164"
+  - key: gr
+    label: "Gene Regulation"
+    fill: "#f7dcf0"
+    edge: "#d491c5"
+  - key: de
+    label: "Differential Expression"
+    fill: "#d2f0ec"
+    edge: "#74c8bd"
+  - key: pa
+    label: "Pathway Analysis"
+    fill: "#e9f0cc"
+    edge: "#bcc86c"
+  - key: ai
+    label: "AI and Deep Learning"
+    fill: "#eeddf7"
+    edge: "#bb8fd6"
+  - key: vd
+    label: "Variant Detection"
+    fill: "#f7e2da"
+    edge: "#d9a48f"
+  - key: cp
+    label: "Change-Point & Scan Statistics"
+    fill: "#fbdde6"
+    edge: "#dd8fa8"
+  - key: np
+    label: "Nonparametric Methods"
+    fill: "#f7dde9"
+    edge: "#d78fae"
+  - key: ci
+    label: "Causal Inference"
+    fill: "#fadadd"
+    edge: "#dd8f96"
+
+bio:
+  - key: can
+    label: "Cancer"
+    color: "#b3252c"
+  - key: imm
+    label: "Immunology"
+    color: "#1a6fb0"
+  - key: kid
+    label: "Kidney"
+    color: "#0e7c66"
+  - key: age
+    label: "Aging"
+    color: "#7d3fb5"
+  - key: neu
+    label: "Neuroscience"
+    color: "#c2620c"
+  - key: cvd
+    label: "Cardiovascular"
+    color: "#a81a6d"
+  - key: inf
+    label: "Infectious Disease"
+    color: "#4f7d14"
+  - key: gi
+    label: "Gastrointestinal"
+    color: "#3b4bad"
