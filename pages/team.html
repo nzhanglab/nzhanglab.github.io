@@ -17,7 +17,7 @@ even if the build script is rerun. {%- endcomment -%}
 {%- assign reel_order = "img-0801,img-2383,img-0693,img-3879,img-4189,img-4186,img-2058,img-2066,img-5506,img-5587,ee9587ac-027c-4c2c-ae3a-db57c82abcea,img-5921" | split: "," -%}
 {%- comment -%} Dated photographs run newest first, matching the alumni order
 beside them. The two undated ones sit where the PI placed them. {%- endcomment -%}
-{%- assign lane_order = "img-4250,img-6536,img-6701,img-6057,img-3954,img-2365,cc12e793-6e87-4432-96f5-59f4255b61b7" | split: "," -%}
+{%- assign lane_order = "img-4250,img-6701,img-6057,img-3954,img-2365,cc12e793-6e87-4432-96f5-59f4255b61b7" | split: "," -%}
 
 <div class="team">
 
@@ -84,10 +84,16 @@ beside them. The two undated ones sit where the PI placed them. {%- endcomment -
 
   <div class="team-lane">
     {%- assign per_row = 3 -%}
-    {%- for slug in lane_order -%}
+    {%- assign total = T.alumni | size -%}
+    {%- assign rows = total | divided_by: per_row -%}
+    {%- assign exact = rows | times: per_row -%}
+    {%- if exact < total %}{% assign rows = rows | plus: 1 %}{% endif -%}
+    {%- for i in (1..rows) -%}
+      {%- assign idx = forloop.index0 -%}
+      {%- assign slug = lane_order[idx] -%}
       {%- assign p = MEM | where: "slug", slug | first -%}
-      {%- assign start = forloop.index0 | times: per_row -%}
-      <div class="team-lane-row">
+      {%- assign start = idx | times: per_row -%}
+      <div class="team-lane-row{% unless p %} no-photo{% endunless %}">
         <div class="team-lane-text">
           <ul class="team-lane-list">
             {%- for a in T.alumni offset: start limit: per_row -%}

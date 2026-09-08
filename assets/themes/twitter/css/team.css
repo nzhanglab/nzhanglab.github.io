@@ -285,6 +285,8 @@ h2.team-eyebrow, .team-eyebrow {
   align-items: center;
 }
 .team-lane-row:nth-child(even) .team-lane-photo { order: -1; }
+/* When the photographs run out, the remaining names take the full width. */
+.team-lane-row.no-photo { grid-template-columns: 1fr; }
 
 .team-lane-photo figure { margin: 0; }
 .team-lane-photo .lp img {
