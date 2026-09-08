@@ -294,8 +294,7 @@
   color: var(--muted);
   margin-top: 9px;
   display: flex;
-  justify-content: space-between;
-  gap: 12px;
+  justify-content: flex-end;   /* year only - no caption text here */
 }
 .team-lane-photo .year { font-variant-numeric: tabular-nums; white-space: nowrap; }
 

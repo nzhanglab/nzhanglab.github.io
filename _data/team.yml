@@ -150,3 +150,11 @@ captions:
   img-6536: A farewell gathering in the lab office
   cc12e793-6e87-4432-96f5-59f4255b61b7: Lab members beside a whiteboard of derivations
   img-7296: An early lab gathering
+
+# Short visible captions: "Occasion, date". Only filled in where the occasion
+# is actually evidenced by the photograph (a sign, balloons, a landmark).
+# A photo with no entry here shows only its date - add one and it appears.
+occasions:
+  img-0801: Celebration of Dr. Fu
+  img-2383: STATGEN
+  img-4186: Valley Forge

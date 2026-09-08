@@ -10,6 +10,7 @@ wide: true
 {%- assign REEL = site.data.photos.reel -%}
 {%- assign MEM = site.data.photos.memory -%}
 {%- assign CAP = T.captions -%}
+{%- assign OCC = T.occasions -%}
 
 {%- comment -%} Photos are addressed by slug so the composition is stable
 even if the build script is rerun. {%- endcomment -%}
@@ -38,7 +39,8 @@ even if the build script is rerun. {%- endcomment -%}
           {% include labphoto.html photo=p dir="reel" alt=cap
              sizes="(max-width: 600px) 87vw, (max-width: 900px) 62vw, 44vw"
              eager=is_first %}
-          <figcaption>{{ CAP[slug] }}{% if p.date %} &middot; {{ p.date | date: "%B %Y" }}{% endif %}</figcaption>
+          {%- assign occ = OCC[slug] -%}
+          <figcaption>{% if occ %}{{ occ }}{% if p.date %} &middot; {% endif %}{% endif %}{% if p.date %}{{ p.date | date: "%B %Y" }}{% endif %}</figcaption>
         </figure>
         {%- endif -%}
       {%- endfor -%}
@@ -87,7 +89,8 @@ even if the build script is rerun. {%- endcomment -%}
     <div class="team-break">
       <figure>
         {% include labphoto.html photo=brk dir="reel" alt=brkcap sizes="(max-width: 1240px) 100vw, 1240px" %}
-        <figcaption>{{ CAP["img-4186"] }}{% if brk.date %} &middot; {{ brk.date | date: "%B %Y" }}{% endif %}</figcaption>
+        {%- assign brkocc = OCC["img-4186"] -%}
+        <figcaption>{% if brkocc %}{{ brkocc }}{% if brk.date %} &middot; {% endif %}{% endif %}{% if brk.date %}{{ brk.date | date: "%B %Y" }}{% endif %}</figcaption>
       </figure>
     </div>
     {%- endif -%}
@@ -165,10 +168,7 @@ even if the build script is rerun. {%- endcomment -%}
             <figure>
               {% include labphoto.html photo=p dir="memory" alt=lanecap
                  sizes="(max-width: 600px) 92vw, 46vw" %}
-              <figcaption>
-                <span>{{ CAP[slug] }}</span>
-                {%- if p.date %}<span class="year">{{ p.date | date: "%Y" }}</span>{% endif -%}
-              </figcaption>
+              {%- if p.date -%}<figcaption><span class="year">{{ p.date | date: "%Y" }}</span></figcaption>{%- endif -%}
             </figure>
           </div>
         </div>
