@@ -37,6 +37,36 @@ jobs:
           grep -q 'Liquid Exception\|Liquid error' _site/pages/pub.html && { echo "Liquid error in output"; exit 1; }
           echo "OK"
 
+      # A stray brace or an orphaned declaration makes the browser silently
+      # discard every rule after it, which is invisible in a Jekyll build.
+      - name: Check the stylesheets parse
+        run: |
+          python3 - <<'PY'
+          import glob, re, sys
+          bad = False
+          for path in glob.glob("_site/assets/**/*.css", recursive=True):
+              src = open(path, encoding="utf-8").read()
+              body = re.sub(r"/\*.*?\*/", "", src, flags=re.S)
+              depth = 0
+              for ch in body:
+                  if ch == "{": depth += 1
+                  elif ch == "}":
+                      depth -= 1
+                      if depth < 0:
+                          print("%s: stray closing brace" % path); bad = True; depth = 0
+              if depth:
+                  print("%s: %d unclosed block(s)" % (path, depth)); bad = True
+              depth = 0
+              for n, line in enumerate(body.split("\n"), 1):
+                  text = line.strip()
+                  depth += line.count("{") - line.count("}")
+                  if depth == 0 and text.endswith(";") and not text.startswith(("@", "}")):
+                      print("%s:%d: declaration outside any rule: %s" % (path, n, text[:50]))
+                      bad = True
+              print("checked %s" % path)
+          sys.exit(1 if bad else 0)
+          PY
+
       # Lets the built site be downloaded and previewed at real viewport
       # widths, which is the only way to review layout changes here.
       - name: Upload the built site

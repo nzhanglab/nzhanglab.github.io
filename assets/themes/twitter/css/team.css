@@ -318,7 +318,7 @@
 }
 
 /* Phone: one vertical rhythm. The reel becomes touch-first and shows a sliver
-   of the next frame; memory lane stops alternating and becomes a story. */
+   of the next frame; the alumni rows stop alternating and stack. */
 @media (max-width: 600px) {
   .team { font-size: 15px; }
 
@@ -349,13 +349,6 @@
   .team-lane-row:nth-child(even) .team-lane-photo { order: 0; }
 
   .team-join { padding: 22px 18px; }
-
-    content: attr(data-label) " ";
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
 }
 
 /* Narrow phones: portraits get the full width so faces stay recognisable. */
