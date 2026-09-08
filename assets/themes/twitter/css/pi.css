@@ -138,26 +138,30 @@
    Responsive
    ========================================================================== */
 
-/* Tablet: the portrait column gets too narrow to sit beside the text well
-   before the text itself becomes cramped. */
-@media (max-width: 720px) {
+/* Two columns only while the text column stays a readable width. Below this
+   the portrait would squeeze it to about forty characters, so stack instead. */
+@media (max-width: 900px) {
   .pi-intro {
     grid-template-columns: 1fr;
     gap: clamp(20px, 4vw, 28px);
     justify-items: center;
+    text-align: left;
   }
-  .pi-portrait { width: min(60%, 260px); }
-  .pi-intro .pi-intro-text { width: 100%; }
+  .pi-portrait { width: min(46%, 300px); }
+  .pi-intro-text { width: 100%; }
+  /* Stacked, the opening prose needs the same measure as the rest. */
+  .pi-intro p { max-width: var(--measure); }
 }
 
 @media (max-width: 600px) {
   .pi { font-size: 15.5px; }
   .pi-head h1 { font-size: clamp(27px, 8vw, 34px); }
-  /* Keep the portrait modest so the first screen is not mostly image. */
-  .pi-portrait { width: 60%; }
+  /* The container is 88vw, so 68% of it is ~60% of the screen - large enough
+     to be a portrait, small enough that the first screen is not mostly image. */
+  .pi-portrait { width: 68%; }
 }
 
 @media (max-width: 380px) {
-  .pi-portrait { width: 64%; }
+  .pi-portrait { width: 72%; }
   .pi-links { font-size: 13px; gap: 2px 8px; }
 }
