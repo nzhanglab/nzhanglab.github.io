@@ -57,11 +57,11 @@ description: Publications and software from the Zhang Statistical Genomics Lab
 
 <div class="pubfilter">
   <div class="grp">
-    <span class="grplab">Methodology</span>
+    <span class="grplab">Filter by Methodology</span>
     {% for t in site.data.pubtags.method %}<span class="tg tg-m tg-{{ t.key }}" data-g="m" data-k="{{ t.key }}">{{ t.label }}</span>{% endfor %}
   </div>
   <div class="grp">
-    <span class="grplab">Biology</span>
+    <span class="grplab">Filter by Biology</span>
     {% for t in site.data.pubtags.bio %}<span class="tg tg-b tg-{{ t.key }}" data-g="b" data-k="{{ t.key }}">{{ t.label }}</span>{% endfor %}
   </div>
   <div class="pubstatus"><span id="pubcount"></span><span id="pubclear"></span></div>
