@@ -56,45 +56,37 @@ even if the build script is rerun. {%- endcomment -%}
   <p class="team-eyebrow">Our People</p>
   <h2 class="team-h2" id="people-h">The group today</h2>
 
-  {%- for g in T.groups -%}
-  <div class="team-group">
-    <h3>{{ g.name }}</h3>
-    <ul class="team-people">
-      {%- for m in g.members -%}
-      {%- assign portrait = site.data.photos.members | where: "slug", m.photo | first -%}
-      <li class="team-person">
-        <figure>
-          {%- if portrait -%}
-            {%- assign palt = m.name | prepend: "Portrait of " -%}
-            {% include labphoto.html photo=portrait dir="members" alt=palt small=400 large=800
-               sizes="(max-width: 380px) 90vw, (max-width: 600px) 44vw, (max-width: 900px) 44vw, 30vw" %}
-          {%- else -%}
-            {%- assign parts = m.name | split: " " -%}
-            <div class="team-initials" aria-hidden="true">{% for w in parts %}{{ w | slice: 0 }}{% endfor %}</div>
-          {%- endif -%}
-        </figure>
-        <p class="name">{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</p>
-        {%- if m.role and m.role != "" %}<p class="role">{{ m.role }}</p>{% endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  </div>
-
-  {%- comment -%} One candid breaks the grid after the PhD students. {%- endcomment -%}
-  {%- if forloop.first -%}
-    {%- assign brk = REEL | where: "slug", "img-4186" | first -%}
-    {%- if brk -%}
-    {%- assign brkcap = CAP["img-4186"] -%}
-    <div class="team-break">
+  <ul class="team-people">
+    {%- for m in T.members -%}
+    {%- assign portrait = site.data.photos.members | where: "slug", m.photo | first -%}
+    <li class="team-person">
       <figure>
-        {% include labphoto.html photo=brk dir="reel" alt=brkcap sizes="(max-width: 1240px) 100vw, 1240px" %}
-        {%- assign brkocc = OCC["img-4186"] -%}
-        <figcaption>{% if brkocc %}{{ brkocc }}{% if brk.date %} &middot; {% endif %}{% endif %}{% if brk.date %}{{ brk.date | date: "%B %Y" }}{% endif %}</figcaption>
+        {%- if portrait -%}
+          {%- assign palt = m.name | prepend: "Portrait of " -%}
+          {% include labphoto.html photo=portrait dir="members" alt=palt small=400 large=800
+             sizes="(max-width: 380px) 104px, (max-width: 760px) 44vw, (max-width: 1000px) 32vw, 250px" %}
+        {%- else -%}
+          {%- assign parts = m.name | split: " " -%}
+          <div class="team-initials" aria-hidden="true">{% for w in parts %}{{ w | slice: 0 }}{% endfor %}</div>
+        {%- endif -%}
       </figure>
-    </div>
-    {%- endif -%}
+      <p class="name">{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</p>
+      {%- if m.role and m.role != "" %}<p class="role">{{ m.role }}</p>{% endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  {%- comment -%} A candid breaks the run of portraits. {%- endcomment -%}
+  {%- assign brk = REEL | where: "slug", "img-4186" | first -%}
+  {%- if brk -%}
+  {%- assign brkcap = OCC["img-4186"] -%}
+  <div class="team-break">
+    <figure>
+      {% include labphoto.html photo=brk dir="reel" alt=brkcap sizes="(max-width: 1080px) 100vw, 1080px" %}
+      <figcaption>{% if brkcap %}{{ brkcap }}{% if brk.date %} &middot; {% endif %}{% endif %}{% if brk.date %}{{ brk.date | date: "%B %Y" }}{% endif %}</figcaption>
+    </figure>
+  </div>
   {%- endif -%}
-  {%- endfor -%}
 </section>
 
 <!-- --------------------------------------------------------------- alumni -->

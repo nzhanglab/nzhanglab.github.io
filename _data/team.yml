@@ -12,42 +12,39 @@ tagline: >-
   A multidisciplinary group at the intersection of statistics, computer science
   and biology, looking for new ways to think about and work with genomic data.
 
-groups:
-  - name: PhD Students
-    members:
-      - name: Jiazhen Rong
-        role: PhD Student, Genomics &amp; Computational Biology
-        photo: jiazhen-rong
-        url: https://jiazhen-rong.github.io/
-      - name: Emilia Chen
-        role: PhD Student, Genomics &amp; Computational Biology
-        photo: emilia-chen
-      - name: Yuxuan Lin
-        role: PhD Student, Statistics and Data Science
-        photo: yuxuan-lin
-      - name: Eddie Yang
-        role: PhD Student, Statistics and Data Science
-        photo: eddie-yang
-      - name: Yijia Jiang
-        role: PhD Student, Genomics &amp; Computational Biology
-        photo: yijia-jiang
-      - name: Tracy Wang
-        role: PhD Student, Genomics &amp; Computational Biology
-        photo: tracy-wang
-      - name: Nakial Cross
-        role: PhD Student, Genomics &amp; Computational Biology
-        photo: nakial-cross
-
-  # These two are not in the CV mentoring tables, so their roles are unconfirmed.
-  # Fill in `role:` and they render exactly like the group above.
-  - name: Also in the Lab
-    members:
-      - name: Anthony Qu
-        role: ""
-        photo: anthony-qu
-      - name: Rohit Khurana
-        role: ""
-        photo: rohit-khurana
+# Current members, most senior first. The order of the seven doctoral
+# advisees follows the advisee table in the CV, which runs by cohort.
+# Anthony Qu and Rohit Khurana are not in that table, so their seniority and
+# roles are unconfirmed - they are placed last pending confirmation.
+members:
+  - name: Jiazhen Rong
+    role: PhD Student, Genomics &amp; Computational Biology
+    photo: jiazhen-rong
+    url: https://jiazhen-rong.github.io/
+  - name: Yuxuan Lin
+    role: PhD Student, Statistics and Data Science
+    photo: yuxuan-lin
+  - name: Emilia Chen
+    role: PhD Student, Genomics &amp; Computational Biology
+    photo: emilia-chen
+  - name: Eddie Yang
+    role: PhD Student, Statistics and Data Science
+    photo: eddie-yang
+  - name: Yijia Jiang
+    role: PhD Student, Genomics &amp; Computational Biology
+    photo: yijia-jiang
+  - name: Tracy Wang
+    role: PhD Student, Genomics &amp; Computational Biology
+    photo: tracy-wang
+  - name: Nakial Cross
+    role: PhD Student, Genomics &amp; Computational Biology
+    photo: nakial-cross
+  - name: Anthony Qu
+    role: ""
+    photo: anthony-qu
+  - name: Rohit Khurana
+    role: ""
+    photo: rohit-khurana
 
 # Newest departures first. `now` may be omitted when the destination is unknown.
 alumni:
