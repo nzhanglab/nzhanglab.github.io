@@ -120,7 +120,7 @@ h2.team-eyebrow, .team-eyebrow {
 
 .team-reel .lp img {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  height: clamp(180px, 18vw, 255px);
   object-fit: cover;
   border-radius: 2px;
   background: var(--paper);
@@ -364,7 +364,7 @@ h2.team-eyebrow, .team-eyebrow {
   }
   .team-reel > figure,
   .team-reel > figure:nth-child(3n) { width: 86vw; }
-  .team-reel .lp img { aspect-ratio: 4 / 3; }
+  .team-reel .lp img { height: auto; aspect-ratio: 4 / 3; }
   .team-reel-nav { display: none; }   /* swipe is the primary affordance */
 
   .team-people { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
