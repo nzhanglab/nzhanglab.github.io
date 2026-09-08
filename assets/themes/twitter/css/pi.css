@@ -1,0 +1,163 @@
+/* ==========================================================================
+   PI page. Loaded only by pages/pi.html (via `extra_css` in its front matter),
+   so nothing here can affect another page.
+
+   Shares the team page's vocabulary - warm neutrals, a system serif for names,
+   small uppercase labels for section headings - so the two read as one site
+   without either importing the other's stylesheet.
+   ========================================================================== */
+
+.pi {
+  --ink:    #22201d;
+  --body:   #403b35;
+  --muted:  #7d746a;
+  --rule:   #e4ded5;
+  --accent: #8a3b2f;
+  --serif:  Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+
+  --measure: 66ch;   /* ~66 characters: comfortable for continuous prose */
+
+  color: var(--body);
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+/* This page supplies its own heading block. */
+.page-header { display: none; }
+
+/* Wide enough for a portrait beside text, narrow enough that the prose below
+   does not run past a readable measure. */
+.container-wide { max-width: min(880px, 88vw); }
+
+.pi *, .pi *::before, .pi *::after { box-sizing: border-box; }
+.pi img { display: block; max-width: 100%; height: auto; }
+.pi p { max-width: var(--measure); }
+
+.pi a { color: #08c; }
+.pi a:focus-visible,
+.pi .pi-links a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* --- name and title ------------------------------------------------------- */
+.pi-head { margin: clamp(6px, 2vw, 18px) 0 clamp(26px, 4vw, 40px); }
+
+.pi-head h1 {
+  font-family: var(--serif);
+  font-size: clamp(30px, 4.6vw, 42px);
+  font-weight: normal;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+
+.pi-title {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--body);
+  margin: 0;
+  max-width: 58ch;
+}
+.pi-title .role { color: var(--ink); }
+.pi-title .affil { color: var(--muted); }
+.pi-title a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
+.pi-title a:hover { color: var(--accent); border-bottom-color: currentColor; }
+
+/* --- link row ------------------------------------------------------------- */
+.pi-links {
+  margin: 16px 0 0;
+  font-size: 13.5px;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 10px;
+}
+.pi-links a { color: var(--body); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.pi-links a:hover { color: var(--accent); border-bottom-color: currentColor; }
+.pi-links .sep { color: #c9c1b6; }
+
+/* --- portrait beside the opening prose ------------------------------------ */
+.pi-intro {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: clamp(24px, 4vw, 44px);
+  align-items: start;
+  padding-top: clamp(22px, 3vw, 32px);
+  border-top: 1px solid var(--rule);
+}
+
+.pi-portrait { margin: 0; }
+.pi-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.pi-intro p { margin: 0 0 1.05em; max-width: none; }
+.pi-intro p:last-child { margin-bottom: 0; }
+
+/* --- sections ------------------------------------------------------------- */
+.pi-section { margin-top: clamp(38px, 6vw, 66px); }
+
+.pi-section h2 {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 clamp(14px, 2vw, 20px);
+}
+
+.pi-section p { margin: 0 0 1.05em; }
+.pi-section p:last-child { margin-bottom: 0; }
+
+/* The two questions the work comes back to. A thin rule and some air, rather
+   than quotation marks or display type. */
+.pi-questions {
+  list-style: none;
+  margin: clamp(18px, 2.6vw, 26px) 0;
+  padding: 0 0 0 clamp(16px, 2.4vw, 24px);
+  border-left: 2px solid var(--rule);
+  max-width: var(--measure);
+}
+.pi-questions li {
+  font-family: var(--serif);
+  font-size: clamp(17px, 1.9vw, 20px);
+  line-height: 1.45;
+  color: var(--ink);
+}
+.pi-questions li + li { margin-top: clamp(12px, 1.6vw, 16px); }
+
+.pi-note { font-size: 14.5px; color: var(--muted); }
+.pi-note a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.pi-note a:hover { color: var(--accent); }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+/* Tablet: the portrait column gets too narrow to sit beside the text well
+   before the text itself becomes cramped. */
+@media (max-width: 720px) {
+  .pi-intro {
+    grid-template-columns: 1fr;
+    gap: clamp(20px, 4vw, 28px);
+    justify-items: center;
+  }
+  .pi-portrait { width: min(60%, 260px); }
+  .pi-intro .pi-intro-text { width: 100%; }
+}
+
+@media (max-width: 600px) {
+  .pi { font-size: 15.5px; }
+  .pi-head h1 { font-size: clamp(27px, 8vw, 34px); }
+  /* Keep the portrait modest so the first screen is not mostly image. */
+  .pi-portrait { width: 60%; }
+}
+
+@media (max-width: 380px) {
+  .pi-portrait { width: 64%; }
+  .pi-links { font-size: 13px; gap: 2px 8px; }
+}

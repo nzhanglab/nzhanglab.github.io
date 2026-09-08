@@ -1,0 +1,95 @@
+---
+layout: page
+title: Nancy Zhang
+description: Nancy R. Zhang, Ge Li and Ning Zhao Professor of Statistics, University of Pennsylvania
+extra_css: pi.css
+wide: true
+---
+
+{%- assign portrait = site.data.photos.pi | where: "slug", "nancy-zhang" | first -%}
+
+<div class="pi">
+
+<header class="pi-head">
+  <h1>Nancy Zhang</h1>
+  <p class="pi-title">
+    <span class="role">Ge Li and Ning Zhao Professor of Statistics</span><br>
+    <span class="affil"><a href="https://statistics.wharton.upenn.edu/">Department of Statistics and Data Science</a>,
+    <a href="https://www.wharton.upenn.edu/">The Wharton School</a>,
+    <a href="https://www.upenn.edu/">University of Pennsylvania</a></span><br>
+    <span class="affil">Member, <a href="https://www.med.upenn.edu/gcb/">Graduate Group in Genomics and Computational Biology</a></span>
+  </p>
+  <p class="pi-links">
+    <a href="{{ site.JB.BASE_PATH }}/assets/nzhang_cv.pdf">CV</a><span class="sep">&middot;</span>
+    <a href="https://scholar.google.com/citations?user=6EErockAAAAJ&amp;hl=en">Google Scholar</a><span class="sep">&middot;</span>
+    <a href="https://statistics.wharton.upenn.edu/profile/nzh/">Wharton profile</a><span class="sep">&middot;</span>
+    <a href="mailto:nzh@wharton.upenn.edu">Email</a>
+  </p>
+</header>
+
+<div class="pi-intro">
+  <figure class="pi-portrait">
+    {%- if portrait -%}
+    <picture>
+      <source type="image/webp"
+              srcset="{{ site.JB.BASE_PATH }}/assets/photos/pi/{{ portrait.slug }}-320.webp 320w,
+                      {{ site.JB.BASE_PATH }}/assets/photos/pi/{{ portrait.slug }}-640.webp 640w"
+              sizes="(max-width: 720px) 60vw, 280px">
+      <img src="{{ site.JB.BASE_PATH }}/assets/photos/pi/{{ portrait.slug }}-640.jpg"
+           srcset="{{ site.JB.BASE_PATH }}/assets/photos/pi/{{ portrait.slug }}-320.jpg 320w,
+                   {{ site.JB.BASE_PATH }}/assets/photos/pi/{{ portrait.slug }}-640.jpg 640w"
+           sizes="(max-width: 720px) 60vw, 280px"
+           width="{{ portrait.w }}" height="{{ portrait.h }}"
+           alt="Portrait of Nancy Zhang">
+    </picture>
+    {%- endif -%}
+  </figure>
+
+  <div class="pi-intro-text">
+    <p>I came to statistics through biology. While I was finishing a mathematics
+    degree at Stanford, the first draft of the human genome was nearing completion,
+    microarrays were beginning to change how biological research was done, and the
+    term &ldquo;GWAS&rdquo; had not yet been coined. The idea that quantitative
+    models, applied to data from high-throughput experiments, could give a systemic
+    understanding of biology was hard to resist.</p>
+
+    <p>Being a mathematics major, though, had rather little to do with knowing what
+    to do with data. So I went on to a PhD in statistics, and picked up the biology
+    I needed along the way.</p>
+  </div>
+</div>
+
+<section class="pi-section">
+  <h2>How I think about research</h2>
+  <p>Nearly everything I have worked on comes back to two questions:</p>
+  <ul class="pi-questions">
+    <li>What can the data from a particular experiment meaningfully tell us?</li>
+    <li>How can we answer that transparently, rigorously, and at scale?</li>
+  </ul>
+  <p>The first is as much a question about the experiment as about the analysis,
+  and it is the one that decides whether the second is worth asking.</p>
+</section>
+
+<section class="pi-section">
+  <h2>Current interests</h2>
+  <p>For the last several years the lab has worked mostly with single-cell and
+  spatial transcriptomic data. Much of what we do concerns cell state &mdash; how it
+  is defined, how it varies within a tissue or a tumor, and how it changes along a
+  lineage or with age &mdash; together with the statistical questions that come with
+  trying to measure any of that reliably.</p>
+  <p class="pi-note">The methodological threads run further back than that &mdash;
+  copy number, deconvolution, change-point and nonparametric methods among them.
+  They are easier to see in the
+  <a href="{{ site.JB.BASE_PATH }}/pages/pub.html">publications</a>, which can be
+  filtered by topic.</p>
+</section>
+
+<section class="pi-section">
+  <h2>Teaching and advising</h2>
+  <p>I advise students in both Statistics and Data Science and the Graduate Group in
+  Genomics and Computational Biology, and the
+  <a href="{{ site.JB.BASE_PATH }}/pages/team.html">lab</a> has always been a mix of
+  the two.</p>
+</section>
+
+</div>
