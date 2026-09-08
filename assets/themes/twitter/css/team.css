@@ -461,12 +461,18 @@
   .team-person {
     display: grid;
     grid-template-columns: 104px 1fr;
-    gap: 14px;
-    align-items: center;
+    /* Named areas keep the role beside the portrait; with plain auto-flow it
+       wrapped onto a second row underneath it. */
+    grid-template-areas: "photo name" "photo role";
+    grid-template-rows: auto auto;
+    align-content: center;
+    column-gap: 14px;
     padding: 13px 0;
     border-bottom: 1px solid var(--rule);
   }
-  .team-person figure { margin: 0; }
+  .team-person figure { grid-area: photo; margin: 0; align-self: center; }
+  .team-person .name { grid-area: name; align-self: end; }
+  .team-person .role { grid-area: role; align-self: start; }
   .team-person .team-initials { font-size: 22px; }
   .team-person .name { margin-bottom: 3px; }
 
