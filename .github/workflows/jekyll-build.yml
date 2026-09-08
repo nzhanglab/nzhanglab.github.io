@@ -37,6 +37,26 @@ jobs:
           grep -q 'Liquid Exception\|Liquid error' _site/pages/pub.html && { echo "Liquid error in output"; exit 1; }
           echo "OK"
 
+      - name: Check the team page
+        run: |
+          python3 - <<'PY'
+          import re, sys, collections
+          src = open("_site/pages/team.html", encoding="utf-8").read()
+          bad = False
+          # Each archival photograph should appear once; a repeat means a
+          # lookup fell through rather than being skipped.
+          slugs = re.findall(r"/assets/photos/memory/([a-z0-9-]+)-900\.jpg", src)
+          for slug, n in collections.Counter(slugs).items():
+              if n > 1:
+                  print("memory photo repeated: %s (%d times)" % (slug, n)); bad = True
+          people = src.count('class="team-person"')
+          alumni = src.count('<span class="name">')
+          print("members: %d, alumni: %d, archival photos: %d" % (people, alumni, len(slugs)))
+          if people < 5 or alumni < 15:
+              print("suspiciously few people rendered"); bad = True
+          sys.exit(1 if bad else 0)
+          PY
+
       # A stray brace or an orphaned declaration makes the browser silently
       # discard every rule after it, which is invisible in a Jekyll build.
       - name: Check the stylesheets parse

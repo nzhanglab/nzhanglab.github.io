@@ -85,13 +85,20 @@ beside them. The two undated ones sit where the PI placed them. {%- endcomment -
   <div class="team-lane">
     {%- assign per_row = 3 -%}
     {%- assign total = T.alumni | size -%}
+    {%- assign photo_count = lane_order | size -%}
     {%- assign rows = total | divided_by: per_row -%}
     {%- assign exact = rows | times: per_row -%}
     {%- if exact < total %}{% assign rows = rows | plus: 1 %}{% endif -%}
     {%- for i in (1..rows) -%}
       {%- assign idx = forloop.index0 -%}
-      {%- assign slug = lane_order[idx] -%}
-      {%- assign p = MEM | where: "slug", slug | first -%}
+      {%- comment -%} Past the end of lane_order the lookup must be skipped:
+      `where` with a nil value does not filter, so it would return the first
+      memory photo and repeat it. {%- endcomment -%}
+      {%- assign p = false -%}
+      {%- if idx < photo_count -%}
+        {%- assign slug = lane_order[idx] -%}
+        {%- assign p = MEM | where: "slug", slug | first -%}
+      {%- endif -%}
       {%- assign start = idx | times: per_row -%}
       <div class="team-lane-row{% unless p %} no-photo{% endunless %}">
         <div class="team-lane-text">
