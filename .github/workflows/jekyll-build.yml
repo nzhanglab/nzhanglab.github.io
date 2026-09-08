@@ -45,7 +45,9 @@ jobs:
           bad = False
           # Each archival photograph should appear once; a repeat means a
           # lookup fell through rather than being skipped.
-          slugs = re.findall(r"/assets/photos/memory/([a-z0-9-]+)-900\.jpg", src)
+          # Match the <img src> only: srcset repeats the same file, which would
+          # otherwise make every photograph look duplicated.
+          slugs = re.findall(r'<img src="[^"]*/assets/photos/memory/([a-z0-9-]+)-900\.jpg"', src)
           for slug, n in collections.Counter(slugs).items():
               if n > 1:
                   print("memory photo repeated: %s (%d times)" % (slug, n)); bad = True
