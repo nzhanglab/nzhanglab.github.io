@@ -36,8 +36,8 @@ members:
     h: 236
     orient: portrait
   - slug: "yuxuan-lin"
-    w: 640
-    h: 800
+    w: 800
+    h: 1000
     orient: portrait
 
 memory:
