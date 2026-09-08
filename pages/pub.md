@@ -37,6 +37,7 @@ description: Publications and software from the Zhang Statistical Genomics Lab
 .pub .v em { font-style: normal; font-weight: bold; }
 .pub-preprint .v, .pub-review .v { color: #999; font-size: 12px; }
 .pub-preprint .v em, .pub-review .v em { font-weight: normal; font-style: italic; }
+.pub-inpress .v em { font-weight: bold; }
 .pub .lnk { font-size: 11px; margin-top: 2px; }
 .pub .lnk a { color: #08c; text-decoration: none; }
 .pub .lnk a:hover { text-decoration: underline; }
@@ -77,7 +78,7 @@ description: Publications and software from the Zhang Statistical Genomics Lab
 
 {% if pending.size > 0 %}
 <div class="pubsec">
-<div class="pubyear">In Review and Preprints</div>
+<div class="pubyear">In Press and In Review</div>
 {% for p in pending %}{% include pubentry.html p=p %}{% endfor %}
 </div>
 {% endif %}

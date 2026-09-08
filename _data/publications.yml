@@ -2,6 +2,20 @@
 # status: published | preprint | review
 # methods/bio: keys from _data/pubtags.yml
 
+- title: "Ultra-scalable differential testing for spatial omics"
+  authors: "<strong>Mason K</strong>&dagger;, <strong>Jiang Y</strong>&dagger;, Kl&#246;tzer KA, <strong>Zhang NR</strong>*"
+  year: 2025
+  venue: "Nature Biotechnology"
+  detail: "(in press)"
+  status: inpress
+  software:
+    - name: "SpotGLM"
+      url: "https://github.com/kaishumason/SpotGLM"
+    - name: "SPARROW"
+      url: "https://github.com/kaishumason/SPARROW"
+  methods: [sp, de, sc]
+  bio: []
+
 - title: "Dissecting the coordinated progression of cell states in spatial transcriptomics with CoPro"
   authors: "<strong>Miao Z</strong>, Qu Y, <strong>Huang S</strong>, Laux L, Peters S, <strong>Aristel A</strong>, <strong>Zhang Z</strong>, <strong>Zhang NR</strong>*"
   year: 2026
@@ -70,19 +84,6 @@
   preprint: "10.1101/2024.08.13.607862"
   methods: [sc, gr]
   bio: [can, imm]
-
-- title: "Ultra-scalable differential testing for spatial omics"
-  authors: "<strong>Mason K</strong>&dagger;, <strong>Jiang Y</strong>&dagger;, Kl&#246;tzer KA, <strong>Zhang NR</strong>*"
-  year: 2025
-  venue: "In review"
-  status: review
-  software:
-    - name: "SpotGLM"
-      url: "https://github.com/kaishumason/SpotGLM"
-    - name: "SPARROW"
-      url: "https://github.com/kaishumason/SPARROW"
-  methods: [sp, de, sc]
-  bio: []
 
 - title: "Intestinal immune dysregulation fuels islet autoimmunity in type 1 diabetes"
   authors: "Bartolo L, Afroze S, <strong>Lin Y</strong>, Ansari A, Pan Y-G, Liu C, <strong>Zhang NR</strong>, Naji A, Su LF*"
