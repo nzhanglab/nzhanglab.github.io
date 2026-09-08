@@ -8,14 +8,10 @@
 # file exists the template falls back to an initials tile, so adding a
 # portrait later is just: drop the file in, rerun tools/build-photos.py.
 
-tagline: >-
-  A multidisciplinary group at the intersection of statistics, computer science
-  and biology, looking for new ways to think about and work with genomic data.
-
 # Current members, most senior first. The order of the seven doctoral
 # advisees follows the advisee table in the CV, which runs by cohort.
-# Anthony Qu and Rohit Khurana are not in that table, so their seniority and
-# roles are unconfirmed - they are placed last pending confirmation.
+# Rohit Khurana and Anthony Qu are not in that table; the PI placed them
+# last, in that order, as the two most recent to join.
 members:
   - name: Jiazhen Rong
     role: PhD Student, Genomics &amp; Computational Biology
@@ -39,12 +35,12 @@ members:
   - name: Nakial Cross
     role: PhD Student, Genomics &amp; Computational Biology
     photo: nakial-cross
-  - name: Anthony Qu
-    role: ""
-    photo: anthony-qu
   - name: Rohit Khurana
-    role: ""
+    role: MD/PhD Student, Genomics &amp; Computational Biology
     photo: rohit-khurana
+  - name: Anthony Qu
+    role: PhD Student, Genomics &amp; Computational Biology
+    photo: anthony-qu
 
 # Newest departures first. `now` may be omitted when the destination is unknown.
 alumni:

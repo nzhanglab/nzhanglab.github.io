@@ -14,14 +14,13 @@ wide: true
 
 {%- comment -%} Photos are addressed by slug so the composition is stable
 even if the build script is rerun. {%- endcomment -%}
-{%- assign reel_order = "img-0801,img-2383,img-0693,img-3879,img-4189,img-2058,img-2066,img-5506,img-5587,ee9587ac-027c-4c2c-ae3a-db57c82abcea,img-5921" | split: "," -%}
+{%- assign reel_order = "img-0801,img-2383,img-0693,img-3879,img-4189,img-4186,img-2058,img-2066,img-5506,img-5587,ee9587ac-027c-4c2c-ae3a-db57c82abcea,img-5921" | split: "," -%}
 {%- assign lane_order = "img-4250,img-1997,img-6701,img-3954,img-6057,img-2365,img-6536" | split: "," -%}
 
 <div class="team">
 
 <header class="team-hero team-section">
-  <h1>Meet the Zhang Lab</h1>
-  <p>{{ T.tagline }}</p>
+  <h1>Meet the team</h1>
 </header>
 
 <!-- ---------------------------------------------------------------- reel -->
@@ -53,8 +52,7 @@ even if the build script is rerun. {%- endcomment -%}
 
 <!-- -------------------------------------------------------------- people -->
 <section class="team-section" aria-labelledby="people-h">
-  <p class="team-eyebrow">Our People</p>
-  <h2 class="team-h2" id="people-h">The group today</h2>
+  <h2 class="team-eyebrow" id="people-h">The Group Today</h2>
 
   <ul class="team-people">
     {%- for m in T.members -%}
@@ -76,17 +74,6 @@ even if the build script is rerun. {%- endcomment -%}
     {%- endfor -%}
   </ul>
 
-  {%- comment -%} A candid breaks the run of portraits. {%- endcomment -%}
-  {%- assign brk = REEL | where: "slug", "img-4186" | first -%}
-  {%- if brk -%}
-  {%- assign brkcap = OCC["img-4186"] -%}
-  <div class="team-break">
-    <figure>
-      {% include labphoto.html photo=brk dir="reel" alt=brkcap sizes="(max-width: 1080px) 100vw, 1080px" %}
-      <figcaption>{% if brkcap %}{{ brkcap }}{% if brk.date %} &middot; {% endif %}{% endif %}{% if brk.date %}{{ brk.date | date: "%B %Y" }}{% endif %}</figcaption>
-    </figure>
-  </div>
-  {%- endif -%}
 </section>
 
 <!-- --------------------------------------------------------------- alumni -->
