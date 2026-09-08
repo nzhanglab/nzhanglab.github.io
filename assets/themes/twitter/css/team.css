@@ -1,0 +1,461 @@
+/* ==========================================================================
+   Team page. Loaded only by pages/team.md (via `extra_css` in its front
+   matter), so selectors here cannot affect any other page.
+
+   Type: the site's Helvetica stack carries body copy; headings use a system
+   serif so the page reads as academic-editorial without a webfont request.
+   Colour: warm neutrals rather than the theme's pure grey, plus one muted
+   brick accent used sparingly for eyebrows and rules.
+   ========================================================================== */
+
+.team {
+  --ink:      #22201d;
+  --body:     #4b463f;
+  --muted:    #7d746a;
+  --rule:     #e4ded5;
+  --paper:    #faf7f3;
+  --accent:   #8a3b2f;
+  --serif:    Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+
+  --gutter:   clamp(16px, 4vw, 40px);
+  --stack:    clamp(48px, 8vw, 104px);   /* space between major sections */
+  --measure:  68ch;
+
+  color: var(--body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* This page supplies its own hero, so the theme's generic page header goes. */
+.page-header { display: none; }
+
+/* The layout's container is 700px; `wide: true` in the front matter opts this
+   page into a wider measure without touching the rest of the site. */
+.container-wide { max-width: 1240px; }
+
+.team *, .team *::before, .team *::after { box-sizing: border-box; }
+.team img { display: block; max-width: 100%; height: auto; }
+
+.team h1, .team h2, .team h3 {
+  font-family: var(--serif);
+  color: var(--ink);
+  font-weight: normal;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+/* --- section scaffolding -------------------------------------------------- */
+.team-section { margin: var(--stack) 0 0; }
+.team-section:first-child { margin-top: clamp(8px, 2vw, 20px); }
+
+.team-eyebrow {
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+
+.team-h2 {
+  font-size: clamp(24px, 3.6vw, 36px);
+  line-height: 1.15;
+  margin: 0 0 6px;
+}
+
+.team-lede {
+  max-width: var(--measure);
+  color: var(--muted);
+  margin: 0 0 clamp(20px, 3vw, 32px);
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+/* --- hero ----------------------------------------------------------------- */
+.team-hero { padding: clamp(4px, 2vw, 18px) 0 clamp(20px, 3vw, 30px); }
+
+.team-hero h1 {
+  font-size: clamp(30px, 6.2vw, 58px);
+  line-height: 1.04;
+  margin: 0 0 clamp(10px, 1.6vw, 16px);
+}
+
+.team-hero p {
+  max-width: 46ch;
+  font-size: clamp(15px, 1.9vw, 19px);
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* --- horizontal photo reel ------------------------------------------------ */
+.team-reel-wrap { position: relative; }
+
+.team-reel {
+  display: flex;
+  gap: clamp(10px, 1.6vw, 18px);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: var(--gutter);
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule) transparent;
+}
+.team-reel::-webkit-scrollbar { height: 6px; }
+.team-reel::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 4px; }
+
+.team-reel > figure {
+  flex: 0 0 auto;
+  margin: 0;
+  scroll-snap-align: start;
+  width: 44%;
+}
+/* A little variation keeps the strip from reading as a filmstrip of clones. */
+.team-reel > figure:nth-child(3n) { width: 30%; }
+
+.team-reel .lp img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 2px;
+  background: var(--paper);
+}
+
+.team-reel figcaption {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.team-reel-nav {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.team-reel-nav button {
+  width: 44px; height: 44px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--ink);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  transition: border-color .15s ease, background .15s ease;
+}
+.team-reel-nav button:hover { border-color: var(--muted); background: var(--paper); }
+.team-reel-nav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.team-reel-nav button[disabled] { opacity: .35; cursor: default; }
+
+/* --- people --------------------------------------------------------------- */
+.team-group + .team-group { margin-top: clamp(34px, 5vw, 60px); }
+
+.team-group h3 {
+  font-size: 13px;
+  font-family: inherit;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: bold;
+  margin: 0 0 clamp(16px, 2vw, 24px);
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.team-people {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(22px, 3vw, 40px) clamp(18px, 2.6vw, 34px);
+}
+
+.team-person figure { margin: 0 0 12px; }
+
+.team-person .lp img,
+.team-initials {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* Typeset initials stand in until a portrait is added. Muted, rotating tints
+   so a grid of them reads as a considered pattern rather than a gap. */
+.team-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: clamp(26px, 3.4vw, 40px);
+  letter-spacing: 0.04em;
+  color: #6f6459;
+  background: #efeae2;
+  border: 1px solid var(--rule);
+  user-select: none;
+}
+.team-person:nth-child(4n+2) .team-initials { background: #e9ece6; color: #63705f; }
+.team-person:nth-child(4n+3) .team-initials { background: #f0e9e6; color: #7c635b; }
+.team-person:nth-child(4n+4) .team-initials { background: #e8eaee; color: #5f6874; }
+
+.team-person .name {
+  font-family: var(--serif);
+  font-size: clamp(16px, 1.7vw, 19px);
+  color: var(--ink);
+  line-height: 1.25;
+  margin: 0 0 3px;
+}
+.team-person .name a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
+.team-person .name a:hover,
+.team-person .name a:focus-visible { color: var(--accent); border-bottom-color: currentColor; }
+
+.team-person .role {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* --- editorial photo break ------------------------------------------------ */
+.team-break { margin: clamp(30px, 4.5vw, 54px) 0; }
+.team-break figure { margin: 0; }
+.team-break .lp img {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.team-break figcaption { font-size: 12px; color: var(--muted); margin-top: 9px; }
+
+/* --- lab life ------------------------------------------------------------- */
+.team-life {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: clamp(12px, 1.8vw, 20px);
+}
+.team-life figure { margin: 0; }
+.team-life .lp img { width: 100%; height: 100%; object-fit: cover; border-radius: 2px; }
+.team-life .tall { grid-row: span 2; }
+.team-life .tall .lp img { aspect-ratio: 4 / 5; }
+.team-life .wide .lp img { aspect-ratio: 3 / 2; }
+
+/* --- alumni --------------------------------------------------------------- */
+.team-featured {
+  list-style: none;
+  margin: 0 0 clamp(30px, 4vw, 46px);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(16px, 2.2vw, 30px);
+}
+.team-featured li { border-top: 2px solid var(--ink); padding-top: 12px; }
+.team-featured .name {
+  font-family: var(--serif);
+  font-size: clamp(16px, 1.6vw, 18px);
+  color: var(--ink);
+  margin: 0 0 5px;
+}
+.team-featured .then { font-size: 12px; color: var(--muted); margin: 0 0 7px; }
+.team-featured .now { font-size: 13.5px; color: var(--body); margin: 0; line-height: 1.45; }
+
+/* Memory lane: alumni text and a historical photograph, alternating sides.
+   Distinguished from recent photography by a paper mount rather than a filter,
+   so the originals stay honest. */
+.team-memory { margin-top: var(--stack); }
+
+.team-lane { display: grid; gap: clamp(18px, 3vw, 44px); }
+.team-lane-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(18px, 3vw, 40px);
+  align-items: center;
+}
+.team-lane-row:nth-child(even) .team-lane-photo { order: -1; }
+
+.team-lane-photo figure {
+  margin: 0;
+  background: #fff;
+  padding: clamp(8px, 1vw, 13px);
+  border: 1px solid var(--rule);
+  box-shadow: 0 1px 2px rgba(34, 32, 29, .05);
+}
+.team-lane-photo .lp img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.team-lane-photo figcaption {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 9px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.team-lane-photo .year { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.team-lane-list { list-style: none; margin: 0; padding: 0; }
+.team-lane-list li { padding: 11px 0; border-bottom: 1px solid var(--rule); }
+.team-lane-list li:first-child { padding-top: 0; }
+.team-lane-list .name { font-family: var(--serif); font-size: 17px; color: var(--ink); }
+.team-lane-list .meta { font-size: 13px; color: var(--muted); line-height: 1.45; }
+
+/* --- full alumni list ----------------------------------------------------- */
+.team-all { margin-top: clamp(30px, 4vw, 50px); }
+.team-all > summary {
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--ink);
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+}
+.team-all > summary::-webkit-details-marker { display: none; }
+.team-all > summary::before {
+  content: "+";
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--accent);
+  line-height: 1;
+}
+.team-all[open] > summary::before { content: "\2212"; }
+.team-all > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.team-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 14px; }
+.team-table caption { text-align: left; font-size: 12px; color: var(--muted); padding: 12px 0 6px; }
+.team-table th {
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: bold;
+  padding: 10px 14px 10px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.team-table td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.team-table td:first-child { font-family: var(--serif); font-size: 16px; color: var(--ink); white-space: nowrap; }
+.team-table .yr { font-variant-numeric: tabular-nums; color: var(--muted); }
+
+/* --- joining ------------------------------------------------------------- */
+.team-join {
+  margin-top: var(--stack);
+  background: var(--paper);
+  border-top: 2px solid var(--ink);
+  padding: clamp(24px, 3.4vw, 44px);
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: clamp(22px, 3.4vw, 48px);
+  align-items: center;
+}
+.team-join h2 { margin-top: 0; }
+.team-join p { max-width: 52ch; }
+.team-join .lp img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px; }
+
+.team-cta {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 12px 20px;
+  min-height: 44px;
+  background: var(--ink);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 14px;
+}
+.team-cta:hover, .team-cta:focus-visible { background: var(--accent); color: #fff; text-decoration: none; }
+.team-cta:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ==========================================================================
+   Responsive. Breakpoints chosen where these compositions actually break,
+   not by device name.
+   ========================================================================== */
+
+/* Laptop / tablet landscape: the four-across featured alumni row is the
+   first thing to feel cramped. */
+@media (max-width: 1100px) {
+  .team-featured { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Tablet: people drop to two columns, lab life stops being asymmetric. */
+@media (max-width: 900px) {
+  .team-people { grid-template-columns: repeat(2, 1fr); }
+  .team-reel > figure,
+  .team-reel > figure:nth-child(3n) { width: 62%; }
+  .team-life { grid-template-columns: 1fr 1fr; }
+  .team-life .tall { grid-row: auto; }
+  .team-life .tall .lp img { aspect-ratio: 3 / 2; }
+  .team-join { grid-template-columns: 1fr; }
+  .team-join .team-join-photo { order: -1; }
+}
+
+/* Phone: one vertical rhythm. The reel becomes touch-first and shows a sliver
+   of the next frame; memory lane stops alternating and becomes a story. */
+@media (max-width: 600px) {
+  .team { font-size: 15px; }
+
+  .team-reel {
+    scroll-snap-type: x proximity;
+    gap: 10px;
+    /* Bleed to the screen edges so the reel reads as swipeable. */
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: var(--gutter);
+    scroll-padding-left: var(--gutter);
+  }
+  .team-reel > figure,
+  .team-reel > figure:nth-child(3n) { width: 87%; }
+  .team-reel .lp img { aspect-ratio: 4 / 3; }
+  .team-reel-nav { display: none; }   /* swipe is the primary affordance */
+
+  .team-people { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
+
+  .team-break .lp img { aspect-ratio: 3 / 2; }
+
+  .team-life { grid-template-columns: 1fr; }
+  .team-life .tall .lp img,
+  .team-life .wide .lp img { aspect-ratio: 3 / 2; }
+
+  .team-featured { grid-template-columns: 1fr; gap: 0; }
+  .team-featured li { border-top: none; border-bottom: 1px solid var(--rule); padding: 14px 0; }
+  .team-featured li:first-child { border-top: 2px solid var(--ink); }
+
+  .team-lane-row { grid-template-columns: 1fr; gap: 16px; }
+  /* Photo always follows its alumni block on a phone - no side-swapping. */
+  .team-lane-row:nth-child(even) .team-lane-photo { order: 0; }
+  .team-lane-photo figure { padding: 7px; }
+
+  .team-join { padding: 22px 18px; }
+
+  /* The alumni table becomes stacked records rather than a scrolling grid. */
+  .team-table, .team-table tbody, .team-table tr, .team-table td { display: block; width: 100%; }
+  .team-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .team-table tr { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .team-table td { border: none; padding: 0 0 3px; }
+  .team-table td:first-child { font-size: 17px; white-space: normal; }
+  .team-table td[data-label]::before {
+    content: attr(data-label) " ";
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+}
+
+/* Narrow phones: portraits get the full width so faces stay recognisable. */
+@media (max-width: 380px) {
+  .team-people { grid-template-columns: 1fr; gap: 22px; }
+  .team-reel > figure,
+  .team-reel > figure:nth-child(3n) { width: 90%; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .team-reel { scroll-behavior: smooth; }
+}

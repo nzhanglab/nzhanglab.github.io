@@ -1,0 +1,23 @@
+{%- comment -%}
+Responsive lab photograph.
+
+  photo   entry from _data/photos.yml (slug, w, h, orient, date)
+  dir     reel | memory | members
+  sizes   CSS sizes attribute
+  class   extra class on the <picture>
+  eager   truthy to skip lazy-loading (use only for the first image)
+  alt     alt text; omit for decorative images
+{%- endcomment -%}
+{%- assign p = include.photo -%}
+{%- assign base = include.dir | prepend: '/assets/photos/' | prepend: site.JB.BASE_PATH -%}
+<picture class="lp {{ include.class }}">
+  <source type="image/webp"
+          srcset="{{ base }}/{{ p.slug }}-900.webp 900w, {{ base }}/{{ p.slug }}-1600.webp 1600w"
+          sizes="{{ include.sizes | default: '100vw' }}">
+  <img src="{{ base }}/{{ p.slug }}-900.jpg"
+       srcset="{{ base }}/{{ p.slug }}-900.jpg 900w, {{ base }}/{{ p.slug }}-1600.jpg 1600w"
+       sizes="{{ include.sizes | default: '100vw' }}"
+       width="{{ p.w }}" height="{{ p.h }}"
+       alt="{{ include.alt }}"
+       {% unless include.eager %}loading="lazy" decoding="async"{% endunless %}>
+</picture>

@@ -1,0 +1,152 @@
+# Team page content. Names, roles and alumni destinations are carried over
+# verbatim from the previous pages/team.md.
+#
+# photo: matches a filename stem in ../Photos/CurrentMembers/. When no such
+# file exists the template falls back to an initials tile, so adding a
+# portrait later is just: drop the file in, rerun tools/build-photos.py.
+
+tagline: >-
+  A multidisciplinary group at the intersection of statistics, computer science
+  and biology, looking for new ways to think about and work with genomic data.
+
+groups:
+  - name: PhD Students
+    members:
+      - name: Yuntian Fu
+        role: PhD Student, Genomics &amp; Computational Biology
+        photo: yuntian-fu
+      - name: Kaishu Mason
+        role: PhD Student, Statistics
+        photo: kaishu-mason
+      - name: Jane Zhang
+        role: PhD Student, Statistics
+        photo: jane-zhang
+      - name: Jiazhen Rong
+        role: PhD Student, Genomics &amp; Computational Biology
+        photo: jiazhen-rong
+        url: https://jiazhen-rong.github.io/
+      - name: Emilia Chen
+        role: PhD Student, Genomics &amp; Computational Biology
+        photo: emilia-chen
+      - name: Yuxuan Lin
+        role: PhD Student, Statistics
+        photo: yuxuan-lin
+      - name: Eddie Yang
+        role: PhD Student, Statistics
+        photo: eddie-yang
+
+  - name: Postdocs &amp; Research Staff
+    members:
+      - name: Divij Mathews
+        role: >-
+          American Association of Immunologists Intersect Postdoctoral Fellow
+          (joint with the E. J. Wherry Lab)
+        photo: divij-mathews
+      - name: Sijia Huang
+        role: Bioinformatician, Institute for Biomedical Informatics
+        photo: sijia-huang
+
+  - name: Master's Students
+    members:
+      - name: Alisha Aristel
+        role: Statistics and Data Science Bridge Master's Student
+        photo: alisha-aristel
+      - name: Zhen Miao
+        role: Dual Master's Thesis (PhD Candidate, Genomics &amp; Computational Biology)
+        photo: zhen-miao
+      - name: Jenea Adams
+        role: Dual Master's Thesis (PhD Candidate, Genomics &amp; Computational Biology)
+        photo: jenea-adams
+
+# Ordering preserved from the original table (most recent departure first).
+alumni:
+  - name: Kevin Lin
+    year: 2023
+    was: Postdoc
+    now: Assistant Professor, Department of Biostatistics, University of Washington
+    kind: faculty
+  - name: Chi-Yun Wu
+    year: 2022
+    was: PhD Student (GCB)
+    now: Postdoc, Gladstone Institute
+    kind: research
+  - name: Divyansh Agarwal
+    year: 2020
+    was: MD-PhD Student (GCB)
+    now: Resident, Massachusetts General Hospital, Harvard Medical School
+    kind: medicine
+  - name: Zilu Zhou
+    year: 2020
+    was: PhD Student (GCB)
+    now: Data Scientist, Google
+    kind: industry
+  - name: Mo Huang
+    year: 2020
+    was: PhD Student (STAT)
+    now: Senior Scientist, Merck Pharmaceuticals
+    kind: industry
+  - name: Jingshu Wang
+    year: 2019
+    was: Postdoc
+    now: Assistant Professor, Department of Statistics, University of Chicago
+    kind: faculty
+  - name: Xuran Wang
+    year: 2019
+    was: PhD Student (AMCS)
+    now: Postdoc, Carnegie Mellon Department of Statistics
+    kind: research
+  - name: Charlie Li Xia
+    year: 2017
+    was: Postdoc (joint with Hanlee Ji)
+    now: Assistant Professor, Albert Einstein College of Medicine
+    kind: faculty
+  - name: Yuchao Jiang
+    year: 2017
+    was: PhD Student (GCB)
+    now: Assistant Professor, Departments of Genetics and Biostatistics, University of North Carolina
+    kind: faculty
+  - name: Hao Chen
+    year: 2014
+    was: PhD Student (Stanford STAT)
+    now: Assistant Professor, Department of Statistics, University of California Davis
+    kind: faculty
+  - name: Jeremy Shen
+    year: 2012
+    was: PhD Student (Stanford STAT)
+    now: Two Sigma Investments
+    kind: industry
+  - name: Yunting Sun
+    year: 2012
+    was: PhD Student (Stanford STAT)
+    now: Senior Scientist, Google Inc.
+    kind: industry
+
+# Alumni highlighted at the top of "Where Are They Now?", chosen to span the
+# range of destinations in the list above rather than simply the first few.
+featured_alumni: [Kevin Lin, Jingshu Wang, Zilu Zhou, Divyansh Agarwal]
+
+# Alt text written from looking at each photograph. Dates come from EXIF only;
+# photos whose files carry no date are left undated rather than guessed.
+captions:
+  img-0801: Lab members celebrating a PhD defence beneath "Dr Fu" balloons
+  img-2383: The lab at the STATGEN 2026 meeting
+  img-5506: Lab members in matching Section on Statistics in Genomics shirts at sunset
+  img-4189: Lab members on a hike beside a creek and waterfall
+  img-4186: The lab visiting the National Memorial Arch at Valley Forge
+  img-3879: An evening lab gathering outdoors under string lights
+  ee9587ac-027c-4c2c-ae3a-db57c82abcea: Lab members serving food around a table
+  img-0693: The lab gathered in a seminar room around a cake
+  img-2058: The lab on the staircase of the Academic Research Building
+  img-2066: The lab together in a lounge
+  img-5494: Lab members outside a conference venue
+  img-5587: The lab at a conference, badges on
+  img-5921: The lab around a table of shared food
+  img-6057: Two lab members performing, one on violin and one at a keyboard
+  img-2365: A large group gathered in a conference room for a celebration
+  img-3954: The lab around a birthday cake
+  img-1997: Lab members with congratulation balloons
+  img-4250: The lab meeting around a seminar table
+  img-6701: Lab members together indoors
+  img-6536: A farewell gathering in the lab office
+  cc12e793-6e87-4432-96f5-59f4255b61b7: Lab members beside a whiteboard of derivations
+  img-7296: An early lab gathering
