@@ -32,7 +32,8 @@ even if the build script is rerun. {%- endcomment -%}
         {%- assign p = REEL | where: "slug", slug | first -%}
         {%- if p -%}
         {%- assign cap = CAP[slug] -%}
-        {%- assign is_first = forloop.first -%}
+        {%- assign is_first = false -%}
+        {%- if forloop.index <= 2 -%}{%- assign is_first = true -%}{%- endif -%}
         <figure>
           {% include labphoto.html photo=p dir="reel" alt=cap
              sizes="(max-width: 600px) 87vw, (max-width: 900px) 62vw, 44vw"

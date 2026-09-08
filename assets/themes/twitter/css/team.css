@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Team page. Loaded only by pages/team.md (via `extra_css` in its front
+   Team page. Loaded only by pages/team.html (via `extra_css` in its front
    matter), so selectors here cannot affect any other page.
 
    Type: the site's Helvetica stack carries body copy; headings use a system
@@ -72,6 +72,8 @@
 
 /* --- hero ----------------------------------------------------------------- */
 .team-hero { padding: clamp(4px, 2vw, 18px) 0 clamp(20px, 3vw, 30px); }
+/* The opening reel reads as part of the hero, so it gets a tighter gap. */
+.team-hero + .team-section { margin-top: clamp(18px, 3vw, 40px); }
 
 .team-hero h1 {
   font-size: clamp(30px, 6.2vw, 58px);
@@ -300,8 +302,9 @@
 .team-lane-list { list-style: none; margin: 0; padding: 0; }
 .team-lane-list li { padding: 11px 0; border-bottom: 1px solid var(--rule); }
 .team-lane-list li:first-child { padding-top: 0; }
-.team-lane-list .name { font-family: var(--serif); font-size: 17px; color: var(--ink); }
-.team-lane-list .meta { font-size: 13px; color: var(--muted); line-height: 1.45; }
+.team-lane-list .name { display: block; font-family: var(--serif); font-size: 17px;
+  color: var(--ink); margin-bottom: 2px; }
+.team-lane-list .meta { display: block; font-size: 13px; color: var(--muted); line-height: 1.45; }
 
 /* --- full alumni list ----------------------------------------------------- */
 .team-all { margin-top: clamp(30px, 4vw, 50px); }
@@ -411,7 +414,7 @@
     scroll-padding-left: var(--gutter);
   }
   .team-reel > figure,
-  .team-reel > figure:nth-child(3n) { width: 87%; }
+  .team-reel > figure:nth-child(3n) { width: 86vw; }
   .team-reel .lp img { aspect-ratio: 4 / 3; }
   .team-reel-nav { display: none; }   /* swipe is the primary affordance */
 
@@ -451,9 +454,24 @@
 
 /* Narrow phones: portraits get the full width so faces stay recognisable. */
 @media (max-width: 380px) {
-  .team-people { grid-template-columns: 1fr; gap: 22px; }
+  .team-people { grid-template-columns: 1fr; gap: 0; }
+
+  /* Portrait beside the name rather than above it: keeps faces recognisable,
+     keeps names easy to scan, and stops the section running very long. */
+  .team-person {
+    display: grid;
+    grid-template-columns: 104px 1fr;
+    gap: 14px;
+    align-items: center;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .team-person figure { margin: 0; }
+  .team-person .team-initials { font-size: 22px; }
+  .team-person .name { margin-bottom: 3px; }
+
   .team-reel > figure,
-  .team-reel > figure:nth-child(3n) { width: 90%; }
+  .team-reel > figure:nth-child(3n) { width: 88vw; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
