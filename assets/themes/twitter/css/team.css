@@ -34,13 +34,13 @@
 
    `max-width` alone leaves no margin at all once the viewport is narrower than
    the cap, so between roughly 1000 and 1080px the content ran edge to edge.
-   Capping at 84vw instead keeps at least 8% clear on each side at every
+   Capping at 82vw instead keeps at least 8% clear on each side at every
    desktop width, while still stopping at 1080px on a large monitor. Phones
    keep their own tighter gutter below. */
 .container-wide { max-width: 1080px; }
 
 @media (min-width: 600px) {
-  .container-wide { max-width: min(1080px, 84vw); }
+  .container-wide { max-width: min(1080px, 82vw); }
 }
 
 .team *, .team *::before, .team *::after { box-sizing: border-box; }
