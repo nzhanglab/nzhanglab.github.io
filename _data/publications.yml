@@ -101,7 +101,7 @@
   bio: [can]
 
 - title: "Integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via DBiTplus"
-  authors: "Enninful A, <strong>Zhang Z</strong>, Klymyshyn D, Ingalls M, Yang M, Zong H, &hellip;, <strong>Zhang NR</strong>, &hellip;, Xu ML, Ma Z, Fan R*"
+  authors: "Enninful A&dagger;, <strong>Zhang Z</strong>&dagger;, Klymyshyn D, Ingalls M, Yang M, Zong H, &hellip;, <strong>Zhang NR</strong>, &hellip;, Xu ML*, Ma Z*, Fan R*"
   year: 2026
   venue: "Nature Methods"
   detail: "23, 1827&ndash;1839"
@@ -238,7 +238,7 @@
   bio: [imm, kid]
 
 - title: "A multiomic atlas identifies a treatment-resistant, bone marrow progenitor-like cell population in T cell acute lymphoblastic leukemia"
-  authors: "Xu J, Chen C, Sussman JH, Yoshimura S, Vincent T, P&#246;l&#246;nen P, &hellip;, <strong>Zhang NR</strong>, &hellip;, Mullighan CG, Tan K*, Teachey DT*"
+  authors: "Xu J&dagger;, Chen C&dagger;, Sussman JH, Yoshimura S, Vincent T, P&#246;l&#246;nen P, &hellip;, <strong>Zhang NR</strong>, &hellip;, Mullighan CG, Tan K*, Teachey DT*"
   year: 2024
   venue: "Nature Cancer"
   detail: "6, 102&ndash;122"
