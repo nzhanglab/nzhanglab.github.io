@@ -31,10 +31,12 @@ even if the build script is rerun. {%- endcomment -%}
       {%- for slug in reel_order -%}
         {%- assign p = REEL | where: "slug", slug | first -%}
         {%- if p -%}
+        {%- assign cap = CAP[slug] -%}
+        {%- assign is_first = forloop.first -%}
         <figure>
-          {% include labphoto.html photo=p dir="reel" alt=CAP[slug]
+          {% include labphoto.html photo=p dir="reel" alt=cap
              sizes="(max-width: 600px) 87vw, (max-width: 900px) 62vw, 44vw"
-             eager=forloop.first %}
+             eager=is_first %}
           <figcaption>{{ CAP[slug] }}{% if p.date %} &middot; {{ p.date | date: "%B %Y" }}{% endif %}</figcaption>
         </figure>
         {%- endif -%}
@@ -80,9 +82,10 @@ even if the build script is rerun. {%- endcomment -%}
   {%- if forloop.first -%}
     {%- assign brk = REEL | where: "slug", "img-4186" | first -%}
     {%- if brk -%}
+    {%- assign brkcap = CAP["img-4186"] -%}
     <div class="team-break">
       <figure>
-        {% include labphoto.html photo=brk dir="reel" alt=CAP["img-4186"] sizes="(max-width: 1240px) 100vw, 1240px" %}
+        {% include labphoto.html photo=brk dir="reel" alt=brkcap sizes="(max-width: 1240px) 100vw, 1240px" %}
         <figcaption>{{ CAP["img-4186"] }}{% if brk.date %} &middot; {{ brk.date | date: "%B %Y" }}{% endif %}</figcaption>
       </figure>
     </div>
@@ -102,8 +105,9 @@ even if the build script is rerun. {%- endcomment -%}
     {%- for slug in life_order -%}
       {%- assign p = REEL | where: "slug", slug | first -%}
       {%- if p -%}
+      {%- assign cap = CAP[slug] -%}
       <figure class="{% if forloop.first %}tall{% else %}wide{% endif %}">
-        {% include labphoto.html photo=p dir="reel" alt=CAP[slug]
+        {% include labphoto.html photo=p dir="reel" alt=cap
            sizes="(max-width: 600px) 92vw, (max-width: 900px) 46vw, 40vw" %}
       </figure>
       {%- endif -%}
@@ -144,6 +148,7 @@ even if the build script is rerun. {%- endcomment -%}
         {%- assign p = MEM | where: "slug", slug | first -%}
         {%- if p -%}
         {%- assign start = forloop.index0 | times: per_row -%}
+        {%- assign lanecap = CAP[slug] -%}
         <div class="team-lane-row">
           <div class="team-lane-text">
             <ul class="team-lane-list">
@@ -157,7 +162,7 @@ even if the build script is rerun. {%- endcomment -%}
           </div>
           <div class="team-lane-photo">
             <figure>
-              {% include labphoto.html photo=p dir="memory" alt=CAP[slug]
+              {% include labphoto.html photo=p dir="memory" alt=lanecap
                  sizes="(max-width: 600px) 92vw, 46vw" %}
               <figcaption>
                 <span>{{ CAP[slug] }}</span>
@@ -205,7 +210,8 @@ even if the build script is rerun. {%- endcomment -%}
   <div class="team-join-photo">
     {%- assign jp = REEL | where: "slug", "img-5494" | first -%}
     {%- if jp -%}
-      {% include labphoto.html photo=jp dir="reel" alt=CAP["img-5494"] sizes="(max-width: 900px) 92vw, 40vw" %}
+      {%- assign jcap = CAP["img-5494"] -%}
+      {% include labphoto.html photo=jp dir="reel" alt=jcap sizes="(max-width: 900px) 92vw, 40vw" %}
     {%- endif -%}
   </div>
 </section>
