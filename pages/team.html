@@ -113,7 +113,7 @@ even if the build script is rerun. {%- endcomment -%}
             {%- for a in T.alumni offset: start limit: per_row -%}
             <li>
               <span class="name">{{ a.name }}</span>
-              <span class="meta">{{ a.was }}, left {{ a.year }}{% if a.now %} &mdash; now {{ a.now }}{% endif %}</span>
+              <span class="meta">{{ a.was }}, left {{ a.year }}{% if a.now %} for {{ a.now }}{% endif %}</span>
             </li>
             {%- endfor -%}
           </ul>
