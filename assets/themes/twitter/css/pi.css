@@ -113,8 +113,11 @@
 .pi-section p { margin: 0 0 1.05em; }
 .pi-section p:last-child { margin-bottom: 0; }
 
-/* The two questions the work comes back to. A thin rule and some air, rather
-   than quotation marks or display type. */
+/* Reserved. The "How I think about research" and "Current interests" sections
+   are held back pending a rewrite; these rules stay so restoring the markup is
+   all that is needed. Recover the prose with:
+       git show 5d4c12d:pages/pi.html
+   A thin rule and some air, rather than quotation marks or display type. */
 .pi-questions {
   list-style: none;
   margin: clamp(18px, 2.6vw, 26px) 0;
