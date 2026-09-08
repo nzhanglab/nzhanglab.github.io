@@ -244,60 +244,15 @@
 .team-life .tall .lp img { aspect-ratio: 4 / 5; }
 .team-life .wide .lp img { aspect-ratio: 3 / 2; }
 
-/* --- alumni --------------------------------------------------------------- */
-.team-featured {
-  list-style: none;
-  margin: 0 0 clamp(30px, 4vw, 46px);
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(16px, 2.2vw, 30px);
-}
-.team-featured li { border-top: 2px solid var(--ink); padding-top: 12px; }
-.team-featured .name {
-  font-family: var(--serif);
-  font-size: clamp(16px, 1.6vw, 18px);
-  color: var(--ink);
-  margin: 0 0 5px;
-}
-.team-featured .then { font-size: 12px; color: var(--muted); margin: 0 0 7px; }
-.team-featured .now { font-size: 13.5px; color: var(--body); margin: 0; line-height: 1.45; }
-.team .unknown { color: #a29a90; font-style: italic; }
-
-/* Memory lane: alumni text and a historical photograph, alternating sides.
-   Distinguished from recent photography by a paper mount rather than a filter,
-   so the originals stay honest. */
-.team-memory { margin-top: var(--stack); }
-
-.team-lane { display: grid; gap: clamp(18px, 3vw, 44px); }
-.team-lane-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(18px, 3vw, 40px);
-  align-items: center;
-}
 .team-lane-row:nth-child(even) .team-lane-photo { order: -1; }
 
-.team-lane-photo figure {
-  margin: 0;
-  background: #fff;
-  padding: clamp(8px, 1vw, 13px);
-  border: 1px solid var(--rule);
-  box-shadow: 0 1px 2px rgba(34, 32, 29, .05);
-}
+.team-lane-photo figure { margin: 0; }
 .team-lane-photo .lp img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  border-radius: 2px;
 }
-.team-lane-photo figcaption {
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 9px;
-  display: flex;
-  justify-content: flex-end;   /* year only - no caption text here */
-}
-.team-lane-photo .year { font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 .team-lane-list { list-style: none; margin: 0; padding: 0; }
 .team-lane-list li { padding: 11px 0; border-bottom: 1px solid var(--rule); }
@@ -305,48 +260,6 @@
 .team-lane-list .name { display: block; font-family: var(--serif); font-size: 17px;
   color: var(--ink); margin-bottom: 2px; }
 .team-lane-list .meta { display: block; font-size: 13px; color: var(--muted); line-height: 1.45; }
-
-/* --- full alumni list ----------------------------------------------------- */
-.team-all { margin-top: clamp(30px, 4vw, 50px); }
-.team-all > summary {
-  cursor: pointer;
-  font-size: 14px;
-  color: var(--ink);
-  padding: 12px 0;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  min-height: 44px;
-}
-.team-all > summary::-webkit-details-marker { display: none; }
-.team-all > summary::before {
-  content: "+";
-  font-family: var(--serif);
-  font-size: 18px;
-  color: var(--accent);
-  line-height: 1;
-}
-.team-all[open] > summary::before { content: "\2212"; }
-.team-all > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
-.team-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 14px; }
-.team-table caption { text-align: left; font-size: 12px; color: var(--muted); padding: 12px 0 6px; }
-.team-table th {
-  text-align: left;
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-weight: bold;
-  padding: 10px 14px 10px 0;
-  border-bottom: 1px solid var(--rule);
-}
-.team-table td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
-.team-table td:first-child { font-family: var(--serif); font-size: 16px; color: var(--ink); white-space: nowrap; }
-.team-table .yr { font-variant-numeric: tabular-nums; color: var(--muted); }
 
 /* --- joining ------------------------------------------------------------- */
 .team-join {
@@ -381,12 +294,6 @@
    Responsive. Breakpoints chosen where these compositions actually break,
    not by device name.
    ========================================================================== */
-
-/* Laptop / tablet landscape: the four-across featured alumni row is the
-   first thing to feel cramped. */
-@media (max-width: 1100px) {
-  .team-featured { grid-template-columns: repeat(2, 1fr); }
-}
 
 /* Tablet: people drop to two columns, lab life stops being asymmetric. */
 @media (max-width: 900px) {
@@ -426,24 +333,13 @@
   .team-life .tall .lp img,
   .team-life .wide .lp img { aspect-ratio: 3 / 2; }
 
-  .team-featured { grid-template-columns: 1fr; gap: 0; }
-  .team-featured li { border-top: none; border-bottom: 1px solid var(--rule); padding: 14px 0; }
-  .team-featured li:first-child { border-top: 2px solid var(--ink); }
 
   .team-lane-row { grid-template-columns: 1fr; gap: 16px; }
   /* Photo always follows its alumni block on a phone - no side-swapping. */
   .team-lane-row:nth-child(even) .team-lane-photo { order: 0; }
-  .team-lane-photo figure { padding: 7px; }
 
   .team-join { padding: 22px 18px; }
 
-  /* The alumni table becomes stacked records rather than a scrolling grid. */
-  .team-table, .team-table tbody, .team-table tr, .team-table td { display: block; width: 100%; }
-  .team-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-  .team-table tr { padding: 14px 0; border-bottom: 1px solid var(--rule); }
-  .team-table td { border: none; padding: 0 0 3px; }
-  .team-table td:first-child { font-size: 17px; white-space: normal; }
-  .team-table td[data-label]::before {
     content: attr(data-label) " ";
     font-size: 11px;
     letter-spacing: 0.1em;

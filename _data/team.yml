@@ -132,10 +132,6 @@ alumni:
     was: PhD Student (Stanford STAT)
     now: Senior Scientist, Google Inc.
 
-# Highlighted at the top of "Where Are They Now?", chosen to span the range of
-# destinations rather than simply the most recent departures.
-featured_alumni: [Kevin Lin, Divij Mathews, Kaishu Mason, Zilu Zhou]
-
 # Alt text, written from looking at each photograph. Descriptive, for screen
 # readers; the short visible caption lives in `occasions` below.
 captions:

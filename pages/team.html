@@ -122,81 +122,36 @@ even if the build script is rerun. {%- endcomment -%}
 <!-- --------------------------------------------------------------- alumni -->
 <section class="team-section" aria-labelledby="alumni-h">
   <p class="team-eyebrow">Alumni</p>
-  <h2 class="team-h2" id="alumni-h">Where Are They Now?</h2>
-  <p class="team-lede">Members of the lab have gone on to faculty positions in statistics
-  and biostatistics, to research institutes, to medicine and to industry research.</p>
+  <h2 class="team-h2" id="alumni-h">Our Alums</h2>
 
-  <ul class="team-featured">
-    {%- for fname in T.featured_alumni -%}
-      {%- assign a = T.alumni | where: "name", fname | first -%}
-      {%- if a -%}
-      <li>
-        <p class="name">{{ a.name }}</p>
-        <p class="then">{{ a.was }} &middot; left {{ a.year }}</p>
-        <p class="now">{% if a.now %}{{ a.now }}{% else %}<span class="unknown">Destination not recorded</span>{% endif %}</p>
-      </li>
-      {%- endif -%}
-    {%- endfor -%}
-  </ul>
-
-  <!-- ------------------------------------------------------- memory lane -->
-  <div class="team-memory">
-    <p class="team-eyebrow">Memory Lane</p>
-    <h2 class="team-h2">The lab over the years</h2>
-    <p class="team-lede">Photographs from the lab's own albums. Dates are taken from the
-    photographs themselves; a few carry none.</p>
-
-    <div class="team-lane">
-      {%- assign per_row = 3 -%}
-      {%- for slug in lane_order -%}
-        {%- assign p = MEM | where: "slug", slug | first -%}
+  <div class="team-lane">
+    {%- assign per_row = 3 -%}
+    {%- for slug in lane_order -%}
+      {%- assign p = MEM | where: "slug", slug | first -%}
+      {%- assign start = forloop.index0 | times: per_row -%}
+      <div class="team-lane-row">
+        <div class="team-lane-text">
+          <ul class="team-lane-list">
+            {%- for a in T.alumni offset: start limit: per_row -%}
+            <li>
+              <span class="name">{{ a.name }}</span>
+              <span class="meta">{{ a.was }}, left {{ a.year }}{% if a.now %} &mdash; now {{ a.now }}{% endif %}</span>
+            </li>
+            {%- endfor -%}
+          </ul>
+        </div>
         {%- if p -%}
-        {%- assign start = forloop.index0 | times: per_row -%}
-        {%- assign lanecap = CAP[slug] -%}
-        <div class="team-lane-row">
-          <div class="team-lane-text">
-            <ul class="team-lane-list">
-              {%- for a in T.alumni offset: start limit: per_row -%}
-              <li>
-                <span class="name">{{ a.name }}</span>
-                <span class="meta">{{ a.was }}, left {{ a.year }}{% if a.now %} &mdash; now {{ a.now }}{% endif %}</span>
-              </li>
-              {%- endfor -%}
-            </ul>
-          </div>
-          <div class="team-lane-photo">
-            <figure>
-              {% include labphoto.html photo=p dir="memory" alt=lanecap
-                 sizes="(max-width: 600px) 92vw, 46vw" %}
-              {%- if p.date -%}<figcaption><span class="year">{{ p.date | date: "%Y" }}</span></figcaption>{%- endif -%}
-            </figure>
-          </div>
+        <div class="team-lane-photo">
+          {%- assign lanealt = CAP[slug] -%}
+          <figure>
+            {% include labphoto.html photo=p dir="memory" alt=lanealt
+               sizes="(max-width: 600px) 92vw, 46vw" %}
+          </figure>
         </div>
         {%- endif -%}
-      {%- endfor -%}
-    </div>
+      </div>
+    {%- endfor -%}
   </div>
-
-  <!-- --------------------------------------------------- full alumni list -->
-  <details class="team-all">
-    <summary>View all alumni ({{ T.alumni | size }})</summary>
-    <table class="team-table">
-      <caption>Everyone who has been part of the lab, most recent first.</caption>
-      <thead>
-        <tr><th scope="col">Name</th><th scope="col">Left</th><th scope="col">Role in lab</th><th scope="col">Position after the lab</th></tr>
-      </thead>
-      <tbody>
-        {%- for a in T.alumni -%}
-        <tr>
-          <td>{{ a.name }}</td>
-          <td class="yr" data-label="Left">{{ a.year }}</td>
-          <td data-label="In the lab">{{ a.was }}</td>
-          <td data-label="Now">{% if a.now %}{{ a.now }}{% else %}<span class="unknown">&mdash;</span>{% endif %}</td>
-        </tr>
-        {%- endfor -%}
-      </tbody>
-    </table>
-  </details>
 </section>
 
 <!-- ----------------------------------------------------------------- join -->
