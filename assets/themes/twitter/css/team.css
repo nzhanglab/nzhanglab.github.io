@@ -30,19 +30,23 @@
 .page-header { display: none; }
 
 /* The layout's container is 700px; `wide: true` in the front matter opts this
-   page into a wider measure without touching the rest of the site. */
+   page into a wider measure without touching the rest of the site.
+
+   `max-width` alone leaves no margin at all once the viewport is narrower than
+   the cap, so between roughly 1000 and 1080px the content ran edge to edge.
+   Capping at 84vw instead keeps at least 8% clear on each side at every
+   desktop width, while still stopping at 1080px on a large monitor. Phones
+   keep their own tighter gutter below. */
 .container-wide { max-width: 1080px; }
+
+@media (min-width: 600px) {
+  .container-wide { max-width: min(1080px, 84vw); }
+}
 
 .team *, .team *::before, .team *::after { box-sizing: border-box; }
 .team img { display: block; max-width: 100%; height: auto; }
 
-.team h1, .team h2, .team h3 {
-  font-family: var(--serif);
-  color: var(--ink);
-  font-weight: normal;
-  letter-spacing: -0.01em;
-  text-wrap: balance;
-}
+.team h1, .team h2 { text-wrap: balance; }
 
 /* --- section scaffolding -------------------------------------------------- */
 .team-section { margin: var(--stack) 0 0; }
@@ -51,18 +55,15 @@
 h2.team-eyebrow, .team-eyebrow {
   font-family: inherit;
   font-weight: bold;
+  text-align: center;
+  text-indent: 0.16em;
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
-  margin: 0 0 10px;
+  margin: 0 0 clamp(18px, 2.6vw, 30px);
 }
 
-.team-h2 {
-  font-size: clamp(24px, 3.6vw, 36px);
-  line-height: 1.15;
-  margin: 0 0 6px;
-}
 
 .team-lede {
   max-width: var(--measure);
@@ -77,9 +78,17 @@ h2.team-eyebrow, .team-eyebrow {
 .team-hero + .team-section { margin-top: clamp(18px, 3vw, 40px); }
 
 .team-hero h1 {
-  font-size: clamp(30px, 6.2vw, 58px);
-  line-height: 1.04;
-  margin: 0 0 clamp(10px, 1.6vw, 16px);
+  font-family: inherit;
+  font-size: clamp(19px, 3.4vw, 33px);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  /* letter-spacing adds a trailing gap; nudge back so it centres optically */
+  text-indent: 0.2em;
+  text-align: center;
+  color: var(--ink);
+  line-height: 1.25;
+  margin: 0;
 }
 
 
@@ -303,7 +312,7 @@ h2.team-eyebrow, .team-eyebrow {
   gap: clamp(22px, 3.4vw, 48px);
   align-items: center;
 }
-.team-join h2 { margin-top: 0; }
+.team-join h2 { margin-top: 0; text-align: left; text-indent: 0; }
 .team-join p { max-width: 52ch; }
 .team-join .lp img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px; }
 
