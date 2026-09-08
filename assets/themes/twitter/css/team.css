@@ -244,6 +244,16 @@
 .team-life .tall .lp img { aspect-ratio: 4 / 5; }
 .team-life .wide .lp img { aspect-ratio: 3 / 2; }
 
+/* --- alumni --------------------------------------------------------------- */
+/* Names in reverse chronological order with photographs interspersed,
+   alternating sides on wide screens and stacking into one column on phones. */
+.team-lane { display: grid; gap: clamp(18px, 3vw, 44px); margin-top: clamp(6px, 1.5vw, 14px); }
+.team-lane-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(18px, 3vw, 40px);
+  align-items: center;
+}
 .team-lane-row:nth-child(even) .team-lane-photo { order: -1; }
 
 .team-lane-photo figure { margin: 0; }
