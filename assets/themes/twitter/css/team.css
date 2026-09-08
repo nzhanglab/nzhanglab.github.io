@@ -31,7 +31,7 @@
 
 /* The layout's container is 700px; `wide: true` in the front matter opts this
    page into a wider measure without touching the rest of the site. */
-.container-wide { max-width: 1240px; }
+.container-wide { max-width: 1080px; }
 
 .team *, .team *::before, .team *::after { box-sizing: border-box; }
 .team img { display: block; max-width: 100%; height: auto; }
@@ -171,9 +171,13 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(22px, 3vw, 40px) clamp(18px, 2.6vw, 34px);
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(22px, 3vw, 36px) clamp(16px, 2.2vw, 28px);
 }
+
+/* Never let a portrait balloon past a sensible headshot size, whatever the
+   column width works out to. */
+.team-person figure { max-width: 280px; }
 
 .team-person figure { margin: 0 0 12px; }
 
@@ -231,18 +235,6 @@
   border-radius: 2px;
 }
 .team-break figcaption { font-size: 12px; color: var(--muted); margin-top: 9px; }
-
-/* --- lab life ------------------------------------------------------------- */
-.team-life {
-  display: grid;
-  grid-template-columns: 1.55fr 1fr;
-  gap: clamp(12px, 1.8vw, 20px);
-}
-.team-life figure { margin: 0; }
-.team-life .lp img { width: 100%; height: 100%; object-fit: cover; border-radius: 2px; }
-.team-life .tall { grid-row: span 2; }
-.team-life .tall .lp img { aspect-ratio: 4 / 5; }
-.team-life .wide .lp img { aspect-ratio: 3 / 2; }
 
 /* --- alumni --------------------------------------------------------------- */
 /* Names in reverse chronological order with photographs interspersed,
@@ -305,14 +297,16 @@
    not by device name.
    ========================================================================== */
 
-/* Tablet: people drop to two columns, lab life stops being asymmetric. */
-@media (max-width: 900px) {
+/* Laptop: four columns become three before the portraits get too narrow. */
+@media (max-width: 1000px) {
+  .team-people { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Tablet: two columns of people. */
+@media (max-width: 760px) {
   .team-people { grid-template-columns: repeat(2, 1fr); }
   .team-reel > figure,
   .team-reel > figure:nth-child(3n) { width: 62%; }
-  .team-life { grid-template-columns: 1fr 1fr; }
-  .team-life .tall { grid-row: auto; }
-  .team-life .tall .lp img { aspect-ratio: 3 / 2; }
   .team-join { grid-template-columns: 1fr; }
   .team-join .team-join-photo { order: -1; }
 }
@@ -339,9 +333,6 @@
 
   .team-break .lp img { aspect-ratio: 3 / 2; }
 
-  .team-life { grid-template-columns: 1fr; }
-  .team-life .tall .lp img,
-  .team-life .wide .lp img { aspect-ratio: 3 / 2; }
 
 
   .team-lane-row { grid-template-columns: 1fr; gap: 16px; }

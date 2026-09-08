@@ -14,8 +14,7 @@ wide: true
 
 {%- comment -%} Photos are addressed by slug so the composition is stable
 even if the build script is rerun. {%- endcomment -%}
-{%- assign reel_order = "img-0801,img-2383,img-5506,img-4189,img-3879,ee9587ac-027c-4c2c-ae3a-db57c82abcea,img-4186,img-0693" | split: "," -%}
-{%- assign life_order = "img-2066,img-5587,img-5921,img-2058" | split: "," -%}
+{%- assign reel_order = "img-0801,img-2383,img-0693,img-3879,img-4189,img-2058,img-2066,img-5506,img-5587,ee9587ac-027c-4c2c-ae3a-db57c82abcea,img-5921" | split: "," -%}
 {%- assign lane_order = "img-4250,img-1997,img-6701,img-3954,img-6057,img-2365,img-6536" | split: "," -%}
 
 <div class="team">
@@ -96,27 +95,6 @@ even if the build script is rerun. {%- endcomment -%}
     {%- endif -%}
   {%- endif -%}
   {%- endfor -%}
-</section>
-
-<!-- ------------------------------------------------------------- lab life -->
-<section class="team-section" aria-labelledby="life-h">
-  <p class="team-eyebrow">Lab Life</p>
-  <h2 class="team-h2" id="life-h">Between the results</h2>
-  <p class="team-lede">Group meetings and conference trips, hikes, birthdays and the
-  occasional defence celebration.</p>
-
-  <div class="team-life">
-    {%- for slug in life_order -%}
-      {%- assign p = REEL | where: "slug", slug | first -%}
-      {%- if p -%}
-      {%- assign cap = CAP[slug] -%}
-      <figure class="{% if forloop.first %}tall{% else %}wide{% endif %}">
-        {% include labphoto.html photo=p dir="reel" alt=cap
-           sizes="(max-width: 600px) 92vw, (max-width: 900px) 46vw, 40vw" %}
-      </figure>
-      {%- endif -%}
-    {%- endfor -%}
-  </div>
 </section>
 
 <!-- --------------------------------------------------------------- alumni -->
