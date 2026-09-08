@@ -8,6 +8,7 @@ Responsive lab photograph.
   large   larger derivative width   (default 1600; members are built at 800)
   class   extra class on the <picture>
   eager   truthy to skip lazy-loading (use only for the first image)
+  focus   object-position value, when the default centre crop cuts someone off
   alt     alt text; omit for decorative images
 
 Widths must match those produced by tools/build-photos.py for that folder.
@@ -17,4 +18,5 @@ Widths must match those produced by tools/build-photos.py for that folder.
 {%- assign sm = include.small | default: 900 -%}
 {%- assign lg = include.large | default: 1600 -%}
 {%- assign sz = include.sizes | default: '100vw' -%}
-<picture class="lp {{ include.class }}"><source type="image/webp" srcset="{{ base }}/{{ p.slug }}-{{ sm }}.webp {{ sm }}w, {{ base }}/{{ p.slug }}-{{ lg }}.webp {{ lg }}w" sizes="{{ sz }}"><img src="{{ base }}/{{ p.slug }}-{{ sm }}.jpg" srcset="{{ base }}/{{ p.slug }}-{{ sm }}.jpg {{ sm }}w, {{ base }}/{{ p.slug }}-{{ lg }}.jpg {{ lg }}w" sizes="{{ sz }}" width="{{ p.w }}" height="{{ p.h }}" alt="{{ include.alt }}"{% unless include.eager %} loading="lazy" decoding="async"{% endunless %}></picture>
+{%- assign foc = include.focus -%}
+<picture class="lp {{ include.class }}"><source type="image/webp" srcset="{{ base }}/{{ p.slug }}-{{ sm }}.webp {{ sm }}w, {{ base }}/{{ p.slug }}-{{ lg }}.webp {{ lg }}w" sizes="{{ sz }}"><img src="{{ base }}/{{ p.slug }}-{{ sm }}.jpg" srcset="{{ base }}/{{ p.slug }}-{{ sm }}.jpg {{ sm }}w, {{ base }}/{{ p.slug }}-{{ lg }}.jpg {{ lg }}w" sizes="{{ sz }}" width="{{ p.w }}" height="{{ p.h }}" alt="{{ include.alt }}"{% if foc %} style="object-position: {{ foc }}"{% endif %}{% unless include.eager %} loading="lazy" decoding="async"{% endunless %}></picture>

@@ -11,6 +11,7 @@ wide: true
 {%- assign MEM = site.data.photos.memory -%}
 {%- assign CAP = T.captions -%}
 {%- assign OCC = T.occasions -%}
+{%- assign FOCUS = T.focus -%}
 
 {%- comment -%} Photos are addressed by slug so the composition is stable
 even if the build script is rerun. {%- endcomment -%}
@@ -36,7 +37,8 @@ beside them. The two undated ones sit where the PI placed them. {%- endcomment -
         {%- assign is_first = false -%}
         {%- if forloop.index <= 2 -%}{%- assign is_first = true -%}{%- endif -%}
         <figure>
-          {% include labphoto.html photo=p dir="reel" alt=cap
+          {%- assign foc = FOCUS[slug] -%}
+          {% include labphoto.html photo=p dir="reel" alt=cap focus=foc
              sizes="(max-width: 600px) 87vw, (max-width: 900px) 62vw, 44vw"
              eager=is_first %}
           {%- assign occ = OCC[slug] -%}

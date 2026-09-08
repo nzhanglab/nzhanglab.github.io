@@ -165,3 +165,9 @@ occasions:
   img-5506: Morning jog @ STATGEN
   img-5587: Meeting our alums
   img-5921: Party 2025
+
+# Crop focus for reel photographs where the default centre crop cuts someone
+# off. Any CSS object-position value; "center top" keeps the top of the frame.
+focus:
+  # Nov 2024, on the stairs - the people on the upper steps lost their heads.
+  img-2058: center top
