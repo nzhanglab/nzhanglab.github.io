@@ -64,7 +64,7 @@ even if the build script is rerun. {%- endcomment -%}
         <figure>
           {%- if portrait -%}
             {%- assign palt = m.name | prepend: "Portrait of " -%}
-            {% include labphoto.html photo=portrait dir="members" alt=palt
+            {% include labphoto.html photo=portrait dir="members" alt=palt small=400 large=800
                sizes="(max-width: 380px) 90vw, (max-width: 600px) 44vw, (max-width: 900px) 44vw, 30vw" %}
           {%- else -%}
             {%- assign parts = m.name | split: " " -%}

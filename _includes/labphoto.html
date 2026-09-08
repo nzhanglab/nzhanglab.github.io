@@ -4,20 +4,17 @@ Responsive lab photograph.
   photo   entry from _data/photos.yml (slug, w, h, orient, date)
   dir     reel | memory | members
   sizes   CSS sizes attribute
+  small   smaller derivative width  (default 900; members are built at 400)
+  large   larger derivative width   (default 1600; members are built at 800)
   class   extra class on the <picture>
   eager   truthy to skip lazy-loading (use only for the first image)
   alt     alt text; omit for decorative images
+
+Widths must match those produced by tools/build-photos.py for that folder.
 {%- endcomment -%}
 {%- assign p = include.photo -%}
 {%- assign base = include.dir | prepend: '/assets/photos/' | prepend: site.JB.BASE_PATH -%}
-<picture class="lp {{ include.class }}">
-  <source type="image/webp"
-          srcset="{{ base }}/{{ p.slug }}-900.webp 900w, {{ base }}/{{ p.slug }}-1600.webp 1600w"
-          sizes="{{ include.sizes | default: '100vw' }}">
-  <img src="{{ base }}/{{ p.slug }}-900.jpg"
-       srcset="{{ base }}/{{ p.slug }}-900.jpg 900w, {{ base }}/{{ p.slug }}-1600.jpg 1600w"
-       sizes="{{ include.sizes | default: '100vw' }}"
-       width="{{ p.w }}" height="{{ p.h }}"
-       alt="{{ include.alt }}"
-       {% unless include.eager %}loading="lazy" decoding="async"{% endunless %}>
-</picture>
+{%- assign sm = include.small | default: 900 -%}
+{%- assign lg = include.large | default: 1600 -%}
+{%- assign sz = include.sizes | default: '100vw' -%}
+<picture class="lp {{ include.class }}"><source type="image/webp" srcset="{{ base }}/{{ p.slug }}-{{ sm }}.webp {{ sm }}w, {{ base }}/{{ p.slug }}-{{ lg }}.webp {{ lg }}w" sizes="{{ sz }}"><img src="{{ base }}/{{ p.slug }}-{{ sm }}.jpg" srcset="{{ base }}/{{ p.slug }}-{{ sm }}.jpg {{ sm }}w, {{ base }}/{{ p.slug }}-{{ lg }}.jpg {{ lg }}w" sizes="{{ sz }}" width="{{ p.w }}" height="{{ p.h }}" alt="{{ include.alt }}"{% unless include.eager %} loading="lazy" decoding="async"{% endunless %}></picture>
