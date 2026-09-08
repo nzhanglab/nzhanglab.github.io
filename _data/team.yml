@@ -1,5 +1,8 @@
-# Team page content. Names, roles and alumni destinations are carried over
-# verbatim from the previous pages/team.md.
+# Team page content.
+#
+# Roles and departure years come from the mentoring tables in
+# CV_NancyZhang_20260907.docx; alumni destinations from the previous version of
+# this page and from the PI directly. Nothing here is inferred.
 #
 # photo: matches a filename stem in ../Photos/CurrentMembers/. When no such
 # file exists the template falls back to an initials tile, so adding a
@@ -12,15 +15,6 @@ tagline: >-
 groups:
   - name: PhD Students
     members:
-      - name: Yuntian Fu
-        role: PhD Student, Genomics &amp; Computational Biology
-        photo: yuntian-fu
-      - name: Kaishu Mason
-        role: PhD Student, Statistics
-        photo: kaishu-mason
-      - name: Jane Zhang
-        role: PhD Student, Statistics
-        photo: jane-zhang
       - name: Jiazhen Rong
         role: PhD Student, Genomics &amp; Computational Biology
         photo: jiazhen-rong
@@ -29,104 +23,121 @@ groups:
         role: PhD Student, Genomics &amp; Computational Biology
         photo: emilia-chen
       - name: Yuxuan Lin
-        role: PhD Student, Statistics
+        role: PhD Student, Statistics and Data Science
         photo: yuxuan-lin
       - name: Eddie Yang
-        role: PhD Student, Statistics
+        role: PhD Student, Statistics and Data Science
         photo: eddie-yang
+      - name: Yijia Jiang
+        role: PhD Student, Genomics &amp; Computational Biology
+        photo: yijia-jiang
+      - name: Tracy Wang
+        role: PhD Student, Genomics &amp; Computational Biology
+        photo: tracy-wang
+      - name: Nakial Cross
+        role: PhD Student, Genomics &amp; Computational Biology
+        photo: nakial-cross
 
-  - name: Postdocs &amp; Research Staff
+  # These two are not in the CV mentoring tables, so their roles are unconfirmed.
+  # Fill in `role:` and they render exactly like the group above.
+  - name: Also in the Lab
     members:
-      - name: Divij Mathews
-        role: >-
-          American Association of Immunologists Intersect Postdoctoral Fellow
-          (joint with the E. J. Wherry Lab)
-        photo: divij-mathews
-      - name: Sijia Huang
-        role: Bioinformatician, Institute for Biomedical Informatics
-        photo: sijia-huang
+      - name: Anthony Qu
+        role: ""
+        photo: anthony-qu
+      - name: Rohit Khurana
+        role: ""
+        photo: rohit-khurana
 
-  - name: Master's Students
-    members:
-      - name: Alisha Aristel
-        role: Statistics and Data Science Bridge Master's Student
-        photo: alisha-aristel
-      - name: Zhen Miao
-        role: Dual Master's Thesis (PhD Candidate, Genomics &amp; Computational Biology)
-        photo: zhen-miao
-      - name: Jenea Adams
-        role: Dual Master's Thesis (PhD Candidate, Genomics &amp; Computational Biology)
-        photo: jenea-adams
-
-# Ordering preserved from the original table (most recent departure first).
+# Newest departures first. `now` may be omitted when the destination is unknown.
 alumni:
+  - name: Yuntian Fu
+    year: 2026
+    was: PhD Student (GCB)
+    now: Postdoc, Dana-Farber Cancer Institute
+  - name: Zhaojun Zhang
+    year: 2026
+    was: PhD Student (Statistics and Data Science)
+  - name: Zhen Miao
+    year: 2026
+    was: Master's Thesis (PhD Candidate, GCB)
+    now: Postdoc, Fred Hutchinson Cancer Center
+  - name: Alisha Aristel
+    year: 2026
+    was: Master's Thesis
+    now: Research Fellow, National Institutes of Health
+  - name: Kaishu Mason
+    year: 2025
+    was: PhD Student (Data Science)
+    now: Senior Data Scientist, New York Mets
+  - name: Divij Mathews
+    year: 2025
+    was: Postdoc (co-mentored with John Wherry)
+    now: Department of Immunology and Microbiology, University of Colorado
+  - name: Jenea Adams
+    year: 2025
+    was: Master's Thesis (PhD Candidate, GCB)
+  - name: Paul Hess
+    year: 2024
+    was: Postdoc
   - name: Kevin Lin
     year: 2023
     was: Postdoc
     now: Assistant Professor, Department of Biostatistics, University of Washington
-    kind: faculty
   - name: Chi-Yun Wu
     year: 2022
     was: PhD Student (GCB)
     now: Postdoc, Gladstone Institute
-    kind: research
   - name: Divyansh Agarwal
     year: 2020
     was: MD-PhD Student (GCB)
     now: Resident, Massachusetts General Hospital, Harvard Medical School
-    kind: medicine
   - name: Zilu Zhou
     year: 2020
     was: PhD Student (GCB)
     now: Data Scientist, Google
-    kind: industry
   - name: Mo Huang
     year: 2020
     was: PhD Student (STAT)
     now: Senior Scientist, Merck Pharmaceuticals
-    kind: industry
   - name: Jingshu Wang
     year: 2019
     was: Postdoc
     now: Assistant Professor, Department of Statistics, University of Chicago
-    kind: faculty
   - name: Xuran Wang
     year: 2019
     was: PhD Student (AMCS)
     now: Postdoc, Carnegie Mellon Department of Statistics
-    kind: research
   - name: Charlie Li Xia
     year: 2017
     was: Postdoc (joint with Hanlee Ji)
     now: Assistant Professor, Albert Einstein College of Medicine
-    kind: faculty
   - name: Yuchao Jiang
     year: 2017
     was: PhD Student (GCB)
     now: Assistant Professor, Departments of Genetics and Biostatistics, University of North Carolina
-    kind: faculty
+  - name: Yang Jiang
+    year: 2017
+    was: PhD Student (Statistics, joint with Dylan Small)
   - name: Hao Chen
     year: 2014
     was: PhD Student (Stanford STAT)
     now: Assistant Professor, Department of Statistics, University of California Davis
-    kind: faculty
   - name: Jeremy Shen
     year: 2012
     was: PhD Student (Stanford STAT)
     now: Two Sigma Investments
-    kind: industry
   - name: Yunting Sun
     year: 2012
     was: PhD Student (Stanford STAT)
     now: Senior Scientist, Google Inc.
-    kind: industry
 
-# Alumni highlighted at the top of "Where Are They Now?", chosen to span the
-# range of destinations in the list above rather than simply the first few.
-featured_alumni: [Kevin Lin, Jingshu Wang, Zilu Zhou, Divyansh Agarwal]
+# Highlighted at the top of "Where Are They Now?", chosen to span the range of
+# destinations rather than simply the most recent departures.
+featured_alumni: [Kevin Lin, Divij Mathews, Kaishu Mason, Zilu Zhou]
 
-# Alt text written from looking at each photograph. Dates come from EXIF only;
-# photos whose files carry no date are left undated rather than guessed.
+# Alt text, written from looking at each photograph. Descriptive, for screen
+# readers; the short visible caption lives in `occasions` below.
 captions:
   img-0801: Lab members celebrating a PhD defence beneath "Dr Fu" balloons
   img-2383: The lab at the STATGEN 2026 meeting
@@ -147,13 +158,14 @@ captions:
   img-1997: Lab members with congratulation balloons
   img-4250: The lab meeting around a seminar table
   img-6701: Lab members together indoors
-  img-6536: A farewell gathering in the lab office
+  img-6536: A gathering in the lab office
   cc12e793-6e87-4432-96f5-59f4255b61b7: Lab members beside a whiteboard of derivations
   img-7296: An early lab gathering
 
 # Short visible captions: "Occasion, date". Only filled in where the occasion
 # is actually evidenced by the photograph (a sign, balloons, a landmark).
 # A photo with no entry here shows only its date - add one and it appears.
+# Memory Lane photographs show a year alone and need no entry.
 occasions:
   img-0801: Celebration of Dr. Fu
   img-2383: STATGEN

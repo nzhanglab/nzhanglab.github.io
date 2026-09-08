@@ -16,7 +16,7 @@ wide: true
 even if the build script is rerun. {%- endcomment -%}
 {%- assign reel_order = "img-0801,img-2383,img-5506,img-4189,img-3879,ee9587ac-027c-4c2c-ae3a-db57c82abcea,img-4186,img-0693" | split: "," -%}
 {%- assign life_order = "img-2066,img-5587,img-5921,img-2058" | split: "," -%}
-{%- assign lane_order = "img-2365,img-6057,img-3954,img-6701" | split: "," -%}
+{%- assign lane_order = "img-4250,img-1997,img-6701,img-3954,img-6057,img-2365,img-6536" | split: "," -%}
 
 <div class="team">
 
@@ -75,7 +75,7 @@ even if the build script is rerun. {%- endcomment -%}
           {%- endif -%}
         </figure>
         <p class="name">{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</p>
-        <p class="role">{{ m.role }}</p>
+        {%- if m.role and m.role != "" %}<p class="role">{{ m.role }}</p>{% endif -%}
       </li>
       {%- endfor -%}
     </ul>
@@ -133,7 +133,7 @@ even if the build script is rerun. {%- endcomment -%}
       <li>
         <p class="name">{{ a.name }}</p>
         <p class="then">{{ a.was }} &middot; left {{ a.year }}</p>
-        <p class="now">{{ a.now }}</p>
+        <p class="now">{% if a.now %}{{ a.now }}{% else %}<span class="unknown">Destination not recorded</span>{% endif %}</p>
       </li>
       {%- endif -%}
     {%- endfor -%}
@@ -159,7 +159,7 @@ even if the build script is rerun. {%- endcomment -%}
               {%- for a in T.alumni offset: start limit: per_row -%}
               <li>
                 <span class="name">{{ a.name }}</span>
-                <span class="meta">{{ a.was }}, left {{ a.year }} &mdash; now {{ a.now }}</span>
+                <span class="meta">{{ a.was }}, left {{ a.year }}{% if a.now %} &mdash; now {{ a.now }}{% endif %}</span>
               </li>
               {%- endfor -%}
             </ul>
@@ -191,7 +191,7 @@ even if the build script is rerun. {%- endcomment -%}
           <td>{{ a.name }}</td>
           <td class="yr" data-label="Left">{{ a.year }}</td>
           <td data-label="In the lab">{{ a.was }}</td>
-          <td data-label="Now">{{ a.now }}</td>
+          <td data-label="Now">{% if a.now %}{{ a.now }}{% else %}<span class="unknown">&mdash;</span>{% endif %}</td>
         </tr>
         {%- endfor -%}
       </tbody>

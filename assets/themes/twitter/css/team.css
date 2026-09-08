@@ -262,6 +262,7 @@
 }
 .team-featured .then { font-size: 12px; color: var(--muted); margin: 0 0 7px; }
 .team-featured .now { font-size: 13.5px; color: var(--body); margin: 0; line-height: 1.45; }
+.team .unknown { color: #a29a90; font-style: italic; }
 
 /* Memory lane: alumni text and a historical photograph, alternating sides.
    Distinguished from recent photography by a paper mount rather than a filter,
